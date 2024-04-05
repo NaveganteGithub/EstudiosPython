@@ -1,0 +1,23 @@
+# Archivos
+SEPE_Python/Tema 1 - PCEP/Ejemplo4_Funciones/paso_argumentos.py
+SEPE_Python/Tema 1 - PCEP/Ejemplo4_Funciones/funciones.py
+SEPE_Python/Tema 1 - PCEP/Ejemplo4_Funciones/args_variable.py
+SEPE_Python/Tema 1 - PCEP/Ejemplo4_Funciones/args_defecto.py
+Nanfor/Recursos/Versions/Python
+Nanfor/Recursos/Versions/Python[0-4]
+
+# Directorios
+EstudiosdeIA/
+Ideas/
+MoureDev by Brais Moure/Python desde 0 - Python Intermedio
+MoureDev by Brais Moure/Backend desde 0 - Python Avanzado
+SEPE_Python/Tema 2 - PCAP
+
+# Archivos con ciertas extensiones a ignorar
+*.txt
+*.pdf
+*.ipynb
+*.exe
+*.mkv
+*.docx
+*.odt

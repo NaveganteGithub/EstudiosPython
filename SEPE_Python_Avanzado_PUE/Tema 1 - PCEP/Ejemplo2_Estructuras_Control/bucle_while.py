@@ -26,3 +26,14 @@ print("Acceso permitido")
 while True :
     print("hola")
 """
+
+# bucle con else
+i = 0
+while i != 0:
+    print("Hola")
+    i -= 1
+else: # Solo se ejecuta en caso de que la condicion del while sea False
+    print("Adios", i != 0)
+    i += 1
+
+print(i)

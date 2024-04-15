@@ -1,4 +1,7 @@
 ''' Crear una exception personalizada'''
+import sys
+
+
 # Todas las excepciones en Python son clases que estan herando
 # directa o indirectamente de la clase BaseException
 # Nuestra excepcion personalizada sera una clase que herede de Exception
@@ -11,23 +14,28 @@ class NegativoError(Exception):  # NegativoError es una Exception
     def getMensaje(self):
         return self.mensaje
 
+'''
 edad = int(input("Introduce tu edad: "))
 if edad < 0:
     # lanzar la excepcion de forma manual
     raise NegativoError("La edad no puede ser negativa")
-
-
 '''
+
+
 try:
     edad = int(input("Introduce tu edad: "))
     if edad < 0:
         # lanzar la excepcion de forma manual
         raise NegativoError("La edad no puede ser negativa")
 except NegativoError as ex:
-    print(ex.getMensaje())
+    args, description, tb = sys.exc_info()
+    #print(sys.exc_info())
+    print(args)
+    print("Mensaje", description)
+    print("Traza", tb)
 else:
     print("Edad positiva")
-'''
+
 
 
 

@@ -177,3 +177,6 @@ numeros = (1,2,3,4,5)
 print("Min:",min(numeros))
 print("Max:",max(numeros))
 print("Sum:",sum(numeros))
+
+print(sorted(numeros))
+print(sorted(numeros, reverse=True))

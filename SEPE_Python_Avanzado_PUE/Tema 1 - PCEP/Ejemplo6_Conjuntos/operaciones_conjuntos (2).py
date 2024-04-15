@@ -20,15 +20,15 @@ print(numeros1 ^ numeros2)
 print(numeros2.symmetric_difference(numeros1))
 print(numeros2 ^ numeros1)
 
-# union de conjuntos
-print(numeros2.union(numeros1))
-print(numeros1 | numeros2)
-
 # modificar diferencia: borrar los elementos de un conjunto que estan en el otro
 numeros1.difference_update(numeros2)
 numeros1 -= numeros2
 print(numeros1)  # en numero1 elimina los pares
 print(numeros2)  # se mantiene intacto
+
+# union de conjuntos
+print(numeros2.union(numeros1))
+print(numeros1 | numeros2)
 
 # update: Modifica el conjunto uniendo los elementos de otro conjunto
 #numeros1.update(numeros2)

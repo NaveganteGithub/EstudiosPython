@@ -30,15 +30,6 @@ numeros1 -= numeros2
 print(numeros1)  # en numero1 elimina los pares
 print(numeros2)  # se mantiene intacto
 
-'''
-Te dejas:
-
-set1.update(set2)
-cjto.discard(elto)
-set1.issuperset
-set1.issubset
-'''
-
 # Modifica los elementos de un conjunto agregando los elementos de otro conjunto
 numeros1.update(numeros2)
 print(numeros1)

@@ -4,6 +4,7 @@ import pickle
 # Abrir el fichero binario en modo lectura
 #fichero = open("binario.bin", "rb")   tambien funciona
 fichero = open("binario.pckl", "rb")
+print(type(fichero)) # <class '_io.BufferedReader'>
 
 # leemos el contenido
 nombres = pickle.load(fichero)

@@ -5,9 +5,11 @@
 '''
 # abrir el fichero en modo lectura
 fichero_lectura = open("fichero.txt", "rt", encoding="utf-8")
+print(type(fichero_lectura)) # <class '_io.TextIOWrapper'>
 
 # abrir el fichero en modo escritura
 fichero_escritura = open("fichero2.txt", "w+t", encoding="utf-8")
+print(type(fichero_escritura)) # <class '_io.TextIOWrapper'>
 
 # leer el contenido del fichero.txt
 contenido = list(fichero_lectura)

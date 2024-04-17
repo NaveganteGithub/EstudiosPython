@@ -1,6 +1,6 @@
 import datetime
 import time
-
+import pytz # pip install pytz
 
 # crear un objeto date a partir de la clase date
 hoy = datetime.date(2024, 4, 16)

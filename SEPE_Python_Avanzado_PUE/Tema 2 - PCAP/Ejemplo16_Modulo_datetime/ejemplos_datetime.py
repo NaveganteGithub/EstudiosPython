@@ -19,7 +19,7 @@ print("Ahora:", datetime.utcnow()) # Ahora: 2024-04-16 12:34:36.617954
 # Obtener el timestamp (marca de tiempo)
 print("Marca de tiempo:", fecha_hora.timestamp()) # Marca de tiempo: 1637818543.000058
 
-# Establecer nuestro propio formato de fechas
+# Establecer nuestro propio formato de fechas, establece el formato de los datos de salida
 print(fecha_hora.date().strftime('%d/%m/%Y'))  # 25/11/2021   %Y 4 digitos
 print(fecha_hora.date().strftime('%d/%m/%y'))  # 25/11/21     %y 2 digitos
 
@@ -37,7 +37,7 @@ print(datetime(2024,4,16,9)   -    datetime(2024,4,15,9))  # dia
 periodo = timedelta(days=1, hours=6)
 print(datetime.today() + periodo)  # 2024-04-17 21:00:20.786069
 
-# Creamos la fecha como string y strptime la reconoce como objeto fecha
+# Creamos la fecha como string y strptime la reconoce como objeto fecha, establece el formato de los datos de entrada
 dt_string = "16/04/2024 14:52:32"
 print("dd/mm/yyyy")
 dt_object1 = datetime.strptime(dt_string, "%d/%m/%Y %H:%M:%S")

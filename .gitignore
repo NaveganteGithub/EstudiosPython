@@ -1,6 +1,8 @@
 # Archivos
 SEPE_Python_Avanzado_PUE/Tema 1 - PCEP/Image20240415091126.png
 SEPE_Python_Avanzado_PUE/Tema 1 - PCEP/Image20240415091123.png
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/pyvenv.cfg
+Investigaciones/Frameworks_y_Librerias_Externas/pyvenv.cfg
 
 # Directorios
 EstudiosdeIA/
@@ -8,6 +10,20 @@ Ideas/
 Nanfor/
 MoureDev by Brais Moure/Python desde 0 - Python Intermedio
 MoureDev by Brais Moure/Backend desde 0 - Python Avanzado
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/.ipynb_checkpoints
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/etc
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/Lib
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/Include
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/Scripts
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/share
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/Documentos/.ipynb_checkpoints
+Investigaciones/Frameworks_y_Librerias_Externas/share
+Investigaciones/Frameworks_y_Librerias_Externas/Include
+Investigaciones/Frameworks_y_Librerias_Externas/Lib
+Investigaciones/Frameworks_y_Librerias_Externas/Scripts
+Investigaciones/Frameworks_y_Librerias_Externas/etc
+EjerciciosPracticaBingAI
+Investigaciones
 
 # Archivos con ciertas extensiones a ignorar
 *.exe
@@ -15,3 +31,4 @@ MoureDev by Brais Moure/Backend desde 0 - Python Avanzado
 *.docx
 *.odt
 *.pdf
+*.sh

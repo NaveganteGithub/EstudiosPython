@@ -5,6 +5,7 @@ SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/pyvenv.cfg
 Investigaciones/Frameworks_y_Librerias_Externas/pyvenv.cfg
 
 # Directorios
+.idea
 EstudiosdeIA/
 Ideas/
 Nanfor/
@@ -22,9 +23,8 @@ Investigaciones/Frameworks_y_Librerias_Externas/Include
 Investigaciones/Frameworks_y_Librerias_Externas/Lib
 Investigaciones/Frameworks_y_Librerias_Externas/Scripts
 Investigaciones/Frameworks_y_Librerias_Externas/etc
-EjerciciosPracticaBingAI
 Investigaciones
-Nanfor/Recursos/Soluciones_tareas_Python_Nanfor
+EjerciciosGoodJob/Documentos Jupyter/Edicion
 
 # Archivos con ciertas extensiones a ignorar
 *.exe

@@ -1,0 +1,2 @@
+No hagas caso al ejercicio de Herencia de la Tarea3,
+en su lugar ve al fichero de Pruebas "0 - Clases.py"

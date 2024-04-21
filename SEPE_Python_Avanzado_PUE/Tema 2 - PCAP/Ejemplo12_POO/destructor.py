@@ -14,18 +14,37 @@ class Pelicula:
     def __str__(self):
         return f"{self.titulo}, {self.duracion}, {self.lanzamiento}"
 
-p = Pelicula('Avatar 2', 140, 2023)
-print(p)
+try:
+    p1 = Pelicula('Avatar 2', 140, 2023)
+    print(p1)
 
-delattr(p, "lanzamiento")
-print(p.__dict__)   # {'titulo': 'Avatar 2', 'duracion': 140}
-#print(p) # NameError: name 'lanzamiento' is not defined
+    # Eliminar el objeto entero
+    print(p1.__dict__)
+    del p1
+    print(p1.__dict__)  # NameError: name 'p' is not defined
 
-# Eliminar un atributo del objeto
-del p.titulo
-print(p.__dict__)  # {'duracion': 140}
-#print(p)  # AttributeError: 'Pelicula' object has no attribute 'titulo' error en la linea 15
+except:
+    pass
 
-# Eliminar el objeto entero
-del p
-print(p.__dict__)  # NameError: name 'p' is not defined
+try:
+    p2 = Pelicula('Avatar 2', 140, 2023)
+    print(p2)
+
+    # Eliminar un atributo del objeto
+    print(p2.__dict__)
+    del p2.titulo
+    print(p2.__dict__)  # {'duracion': 140}
+    #print(p)  # AttributeError: 'Pelicula' object has no attribute 'titulo' error en la linea 15
+except:
+    pass
+
+try:
+    p3 = Pelicula('Avatar 2', 140, 2023)
+    print(p3)
+    
+    print(p3.__dict__)
+    delattr(p3, "lanzamiento")
+    print(p3.__dict__)   # {'titulo': 'Avatar 2', 'duracion': 140}
+    #print(p) # NameError: name 'lanzamiento' is not defined
+except:
+    pass

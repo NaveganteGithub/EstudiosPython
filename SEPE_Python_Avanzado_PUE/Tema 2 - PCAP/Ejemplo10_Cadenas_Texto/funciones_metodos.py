@@ -43,22 +43,6 @@ print("Numerica:", "12 345".isdigit()) # False
 print("Numerica:", "12.345".isdigit()) # False
 
 # isdecimal() solo caracteres 0-9 y permite unicode
-'''
-isdecimal():
-
-Este método devuelve True si todos los caracteres en la cadena 
-son dígitos y hay al menos un carácter, de lo contrario devuelve False.
-
-Es más estricto que isdigit(), ya que solo acepta caracteres 
-que se consideran dígitos decimales en Unicode.
-
-No acepta subíndices, superíndices ni otros caracteres numéricos, 
-y solo acepta dígitos del 0 al 9.
-
-En resumen, isdigit() es más permisivo y puede devolver True para 
-caracteres numéricos no decimales, mientras que isdecimal() es más 
-estricto y solo devuelve True para dígitos decimales estándar del 0 al 9.
-'''
 print("Numerica:", "12345".isdecimal()) # True
 print("Numerica:", "12.345".isdecimal()) # False
 print("Numerica:", "00011101".isdecimal()) # True

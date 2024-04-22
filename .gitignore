@@ -1,9 +1,7 @@
 # Lista de Archivos
 SEPE_Python_Avanzado_PUE/Tema 1 - PCEP/Image20240415091126.png
 SEPE_Python_Avanzado_PUE/Tema 1 - PCEP/Image20240415091123.png
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo2x_Modulos/pyvenv.cfg
-Investigaciones/Frameworks_y_Librerias_Externas/pyvenv.cfg
-SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/*.zip
+SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Herramientas/*.zip
 
 # Lista de Directorios
 .idea
@@ -26,6 +24,10 @@ Investigaciones/Frameworks_y_Librerias_Externas/Scripts
 Investigaciones/Frameworks_y_Librerias_Externas/etc
 Investigaciones
 EjerciciosGoodJob/Documentos Jupyter/Edicion
+SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo21_POO_Avanzado/Scripts
+SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo21_POO_Avanzado/Lib
+SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo21_POO_Avanzado/Include
+
 
 # Lista de extensiones
 *.exe
@@ -34,3 +36,4 @@ EjerciciosGoodJob/Documentos Jupyter/Edicion
 *.odt
 *.pdf
 *.sh
+*.cfg

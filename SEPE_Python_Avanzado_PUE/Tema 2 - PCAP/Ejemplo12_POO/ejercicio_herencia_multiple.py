@@ -42,10 +42,9 @@ class Perro(Animal, ProductoVenta):
         self.vacunado = vacunado
         self.sexo = sexo
 
-
-def __str__(self):
-    # Lo mismo, para invocar al metodo de la superclase tambien con el nombre y self
-    return Animal.__str__(self) + ProductoVenta.__str__(self) + f" Vacunado: {self.vacunado}, Sexo: {self.sexo}"
+    def __str__(self):
+        # Lo mismo, para invocar al metodo de la superclase tambien con el nombre y self
+        return Animal.__str__(self) + ProductoVenta.__str__(self) + f" Vacunado: {self.vacunado}, Sexo: {self.sexo}"
 
 
 # Crear perro

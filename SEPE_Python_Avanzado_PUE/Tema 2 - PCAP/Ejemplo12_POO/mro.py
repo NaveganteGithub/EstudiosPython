@@ -1,3 +1,13 @@
+"""
+En herencia multiple podemos invocar el constructor con el nombre de la clase, 
+esta es una manera explícita de llamar al constructor padre digamos, 
+viene bien ya que es más directa y tienes un control más preciso digamos. 
+
+super() es más dinámico y sigue el MRO (Method Resolution Order) 
+para determinar el método que se va a llamar, es decir maneja 
+automáticamente el orden de resolución de métodos.
+"""
+
 '''
 class A:
     def super_clase(self):
@@ -66,12 +76,4 @@ dd.medio()  # Clase BB en el medio
     dd.super_clase(): Este metodo esta de forma implicita en DD
 '''
 
-
-
-
-
-
-
-
-
-
+print(DD().__mro__)

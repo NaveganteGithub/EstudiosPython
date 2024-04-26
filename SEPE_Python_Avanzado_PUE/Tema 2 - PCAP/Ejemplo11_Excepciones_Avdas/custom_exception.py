@@ -11,9 +11,6 @@ class NegativoError(Exception):  # NegativoError es una Exception
         #self.mensaje = mensaje
         super().__init__(mensaje)
 
-    def getMensaje(self):
-        return self.mensaje
-
 '''
 edad = int(input("Introduce tu edad: "))
 if edad < 0:

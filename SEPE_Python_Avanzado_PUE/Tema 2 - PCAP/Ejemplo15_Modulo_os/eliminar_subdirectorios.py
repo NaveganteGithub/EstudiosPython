@@ -5,7 +5,7 @@ os.makedirs ("mi_carpeta/prueba1/prueba2/prueba3")
 os.makedirs ("mi_carpeta/prueba1/prueba2/prueba4")
 print(os.listdir())
 
-def borrar_directorio_recursivo(ruta):
+def borrar_directorio_recursivo(ruta: Path):
     for elemento in ruta.iterdir():
         if elemento.is_dir():
             borrar_directorio_recursivo(elemento)

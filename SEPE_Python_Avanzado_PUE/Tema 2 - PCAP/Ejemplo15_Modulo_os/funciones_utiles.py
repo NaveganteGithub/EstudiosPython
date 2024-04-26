@@ -1,5 +1,4 @@
 import os
-import shutil
 
 #funciones con el sistema operativo y maquina
 

@@ -1,0 +1,9 @@
+Para que servia la libreria time
+
+Cual es la diferencia entre datetime, time, calendar
+    
+    datetime: este modulo nos preporciona clases para trabajar con fechas y horas
+
+    time: este modulo nos proporciona funciones relacionadas con el tiempo
+
+    calendar: este modulo nos proporciona funciones para trabajar con calendarios

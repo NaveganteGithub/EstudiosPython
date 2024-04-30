@@ -10,13 +10,13 @@ Ideas/
 Nanfor/
 MoureDev by Brais Moure/Python desde 0 - Python Intermedio
 MoureDev by Brais Moure/Backend desde 0 - Python Avanzado
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo20_Modulo_Pandas/.ipynb_checkpoints
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo20_Modulo_Pandas/etc
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo20_Modulo_Pandas/Lib
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo20_Modulo_Pandas/Include
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo20_Modulo_Pandas/Scripts
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo20_Modulo_Pandas/share
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo20_Modulo_Pandas/Documentos/.ipynb_checkpoints
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/.ipynb_checkpoints
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/etc
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/Lib
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/Include
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/Scripts
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/share
+SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/Documentos/.ipynb_checkpoints
 Investigaciones/Frameworks_y_Librerias_Externas/share
 Investigaciones/Frameworks_y_Librerias_Externas/Include
 Investigaciones/Frameworks_y_Librerias_Externas/Lib
@@ -24,9 +24,9 @@ Investigaciones/Frameworks_y_Librerias_Externas/Scripts
 Investigaciones/Frameworks_y_Librerias_Externas/etc
 Investigaciones
 EjerciciosGoodJob/Documentos Jupyter/Edicion
-SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo21_POO_Avanzado/Scripts
-SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo21_POO_Avanzado/Lib
-SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo21_POO_Avanzado/Include
+SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Scripts
+SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Lib
+SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Include
 
 
 # Lista de extensiones
@@ -37,3 +37,4 @@ SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo21_POO_Avanzado/Include
 *.pdf
 *.sh
 *.cfg
+*.msi

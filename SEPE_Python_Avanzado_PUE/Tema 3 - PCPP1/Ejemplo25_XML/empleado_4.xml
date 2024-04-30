@@ -1,0 +1,25 @@
+<empleados>
+    <empleado>
+        <id>00132</id>
+        <nombre>Antonio Lopez</nombre>
+
+        <email>antonio@gmail.com</email>
+        <dpto>Ventas</dpto>
+        <sueldo moneda="euros">45000</sueldo>
+    <asignado proyecto="BBVA" /></empleado>
+    <empleado>
+        <id>00133</id>
+        <nombre>Luis Sanchez</nombre>
+
+        <email>luis@yahoo.es</email>
+        <dpto>Compras</dpto>
+        <sueldo moneda="dolares">60000</sueldo>
+    <asignado proyecto="BBVA" /></empleado>
+    <empleado>
+        <id>0014</id>
+        <inombre>Fernando Alvarez</inombre>
+        <email>feral@gmail.com</email>
+        <dpto>Contabilidad</dpto>
+        <sueldo moneda="libras">53000</sueldo>
+    <asignado proyecto="BBVA" /></empleado>
+</empleados>

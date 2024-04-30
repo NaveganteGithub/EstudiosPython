@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- comentarios -->
+<!DOCTYPE empleados>
+<empleados>
+	<empleado>
+		<id>00132</id>
+		<nombre>Antonio Lopez</nombre>
+		<!--<direccion>
+			<calle>Mayor</calle>
+			<ciudad>Madrid</ciudad>
+			<codigo_postal>28014</codigo_postal>
+		</direccion>-->
+		<email>antonio@gmail.com</email>
+		<dpto>Ventas</dpto>
+		<sueldo moneda="euros">45000</sueldo>
+	</empleado>
+	<empleado>
+		<id>00133</id>
+		<nombre>Luis Sanchez</nombre>
+		<!--<direccion>
+			<calle>Castellana</calle>
+			<ciudad>Madrid</ciudad>
+			<codigo_postal>28027</codigo_postal>
+		</direccion>-->
+		<email>luis@yahoo.es</email>
+		<dpto>Compras</dpto>
+		<sueldo moneda="dolares">60000</sueldo>
+	</empleado>
+</empleados>

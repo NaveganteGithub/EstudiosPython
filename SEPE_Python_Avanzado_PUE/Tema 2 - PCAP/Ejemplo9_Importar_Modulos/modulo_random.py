@@ -23,7 +23,7 @@ random.seed()
 # randrange el ultimo valor no esta incluido
 print("Numero entero entre 0 y 50:",random.randrange(50))
 print("Numero entero entre 10 y 50;",random.randrange(10,50))
-print("Numero entero entre 10 y 50 solo pares:",random.randrange(10,50,2))
+print("Numero entero entre 10 y 50 solo pares:",random.randrange(10, 50, 2)) # Inicio, Final, Salto
 
 # randint si que lo incluye
 print("Numeros 20 al 30:",random.randint(20,30)) # coge el valor 30 tambien

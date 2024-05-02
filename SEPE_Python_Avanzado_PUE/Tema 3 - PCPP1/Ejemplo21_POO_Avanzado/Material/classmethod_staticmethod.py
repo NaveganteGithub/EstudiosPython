@@ -1,19 +1,19 @@
 # https://python.19633.com/es/Python/1002017286.html
 '''
-    Un método de clase toma clase (cls ) en sí mismo como el primer argumento. 
-    Un método de clase solo puede cambiar el estado de la clase pero 
+    - Un método de clase toma clase (cls ) en sí mismo como el primer argumento. 
+    - Un método de clase solo puede cambiar el estado de la clase pero 
     no el estado del objeto de clase porque los objetos de clase 
     no pueden acceder a los métodos de clase, solo la clase 
     puede acceder directamente a los métodos de clase. 
-    Actúa como un constructor alternativo de la clase.
+    IMPORTANTE: Actúa como un constructor alternativo de la clase.
 '''
 
 '''
-    Los métodos estáticos son métodos independientes, 
+    - Los métodos estáticos son métodos independientes, 
     lo que significa que no aceptan ni el objeto de clase 
     ni la clase en sí como argumento, 
     no funciona con variables de instancia ni con variables de clase. 
-    Se puede acceder directamente desde la Clase o desde el objeto Clase
+    - Se puede acceder directamente desde la Clase
 '''
 
 class Student:

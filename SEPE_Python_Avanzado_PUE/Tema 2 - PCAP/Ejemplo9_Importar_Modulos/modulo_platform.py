@@ -7,10 +7,10 @@ print(platform.platform(aliased=True, terse=True))
 print(platform.platform(0, 0))
 
 # funcion machine: nombre generico del procesador
-print(platform.machine())
+print(platform.machine()) # Nombre largo
 
 # funcion processor: nombre real del procesador
-print(platform.processor())
+print(platform.processor()) # Nombre acortado
 
 # funcion system: nombre del Sistema Operativo
 print(platform.system())

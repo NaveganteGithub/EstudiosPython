@@ -3,12 +3,20 @@ from paprika import equals_and_hashcode
 from paprika import data
 from paprika import singleton
 
-'''
-@to_string              # genera __str__
-@equals_and_hashcode    # genera __eq__ y __hash__
-@singleton# genera      # genera __init__(dia,mes,anyo)
-'''
-@data                   # @data engloba los 3 decoradores anteriores
+"""
+Apunte importante, en python debes de tener cuidado a la hora 
+de nombrar tus scripts, porque si nombras un script de python
+igual que una libreria que estes importante te puede dar esta
+excepcion o una parecida
+
+ImportError: cannot import name 'to_string' from partially initialized 
+module 'paprika' (most likely due to a circular import)
+"""
+
+"""@to_string                      # genera __str__
+@equals_and_hashcode            # genera __eq__ y __hash__
+@singleton                      # genera __init__(dia,mes,anyo)"""
+@data                           # @data engloba los 3 decoradores anteriores
 class FechaEncapsulada:
     
     dia: int

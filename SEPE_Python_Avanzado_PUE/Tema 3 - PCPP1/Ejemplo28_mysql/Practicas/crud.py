@@ -1,6 +1,6 @@
-import mysqlx.connection as mysql # pip install mysql-connector-python
+import mysqlx.connection as mysql # pip install mysqlx-connector-python
 
-conexion = mysql.connector.connect(
+conexion = mysql.connect(
     host="localhost",
     user="root",
     password="",
@@ -8,7 +8,7 @@ conexion = mysql.connector.connect(
 )
 
 # Obtener el cursor
-mycursor = conexion.cursor()
+mycursor = conexion.c
 
 # Mostrar las tablas que tengo en esa BBDD
 mycursor.execute("SHOW TABLES")

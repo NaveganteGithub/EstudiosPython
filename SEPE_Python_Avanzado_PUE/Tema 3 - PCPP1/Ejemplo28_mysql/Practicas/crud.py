@@ -1,10 +1,10 @@
-import mysql.connector as libmysql # pip install mysql-connector-python
+import mysql.connector # pip install mysql-connector-python
 
-conexion = libmysql.connect(
+conexion = mysql.connector.connect(
     host="localhost",
     user="root",
     password="",
-    database="cetelem"
+    database="tienda"
 )
 
 # Obtener el cursor

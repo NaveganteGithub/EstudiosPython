@@ -1,4 +1,4 @@
-import pymysql
+import mysql.connection as pymysql
 
 # Configura los detalles de la conexión
 host = 'estudiaenpython.zapto.org'

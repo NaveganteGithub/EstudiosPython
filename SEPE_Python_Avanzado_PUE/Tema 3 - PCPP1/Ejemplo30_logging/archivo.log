@@ -1,0 +1,4 @@
+[root] - CRITICAL:2024-05-02 10:19:55,559:Mensaje critico
+[root] - ERROR:2024-05-02 10:19:55,560:Mensaje error
+[root] - WARNING:2024-05-02 10:19:55,560:Mensaje de aviso
+[root] - INFO:2024-05-02 10:19:55,560:Mensaje de informacion

@@ -1,0 +1,10 @@
+"""
+Anotacion por: Pedro Ángel Viruega Muñoz
+
+MariaDB: Ofrece características avanzadas como encriptación de datos, 
+motor de almacenamiento de red y almacenamiento de columnas, que no 
+están disponibles en MySQL.
+
+MySQL: Aunque es más estable y fiable, carece de algunas
+características avanzadas presentes en MariaDB.
+"""

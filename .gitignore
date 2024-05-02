@@ -2,6 +2,9 @@
 SEPE_Python_Avanzado_PUE/Tema 1 - PCEP/Image20240415091126.png
 SEPE_Python_Avanzado_PUE/Tema 1 - PCEP/Image20240415091123.png
 SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Herramientas/*.zip
+SEPE_Python_Avanzado_PUE/*/*.pdf
+SEPE_Python_Avanzado_PUE/*.pdf
+MoureDev by Brais Moure/*/*/*.pdf
 
 # Lista de Directorios
 .idea
@@ -34,7 +37,6 @@ SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Include
 *.mkv
 *.docx
 *.odt
-*.pdf
 *.sh
 *.cfg
 *.msi

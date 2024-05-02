@@ -1,4 +1,4 @@
-import mysql.connector # pip install mysql-connector-python
+import mysqlx.connection as mysql # pip install mysql-connector-python
 
 conexion = mysql.connector.connect(
     host="localhost",

@@ -16,7 +16,7 @@
 
     4.1 Instalar el driver.
 
-        https://pynative.com/install-mysql-connector-python/
+        pip install mysqlx-connector-python
 
     4.2 Crearemos una base de datos para hacer la prueba, asi que iniciaremos sesión
 

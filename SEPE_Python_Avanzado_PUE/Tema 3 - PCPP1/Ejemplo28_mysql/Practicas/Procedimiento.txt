@@ -1,24 +1,22 @@
-1º Instalamos MySQL
+0º Instalamos MySQL
 
-2º Seguimos los pasos de la aplicacion "MySQL 8.4 Configurator" para activar y configurar el servidor.
-    La primera vez te pedira que crees la contraseña del root, 
-    mi recomendacion es escribirla en un bloc de notas para 
-    despues copiarla y pegarla en el campo
+1º Si tienes que mariadb instalado junto con mysql primero cierra 
+   todos los puertos y procesos que tengan que ver con mysql o mariadb.
 
-3º Comprobar que podemos conectarnos con el cliente de MySQL "MySQL 8.4 Command Line Client"
+2º Buscamos y ejecutamos el programa "MySQL 8.4 Configurator".
 
-4º Realizar la conexion con Python.
+3º Seguimos los pasos de la aplicacion para activar y configurar el servidor.
+    
+    3.1 La primera vez te pedira que crees la contraseña del root, 
+        mi recomendacion es escribirla en un bloc de notas para 
+        despues copiarla y pegarla en el campo.
+    
+4º Comprobar que podemos conectarnos con el cliente de MySQL "MySQL 8.4 Command Line Client"
 
-    4.1 Tendremos que descargar el driver  de Mysql para Python, concretamente la version 2.1.7
+5º Realizar la conexion con Python.
 
-        https://downloads.mysql.com/archives/c-python/
-        https://downloads.mysql.com/archives/get/p/29/file/mysql-connector-python-2.1.7.zip
-
-    4.1 Instalar el driver.
-
-        pip install mysqlx-connector-python
-
-    4.2 Crearemos una base de datos para hacer la prueba, asi que iniciaremos sesión
+    5.1 Crearemos una base de datos para hacer la prueba, 
+        asi que iniciaremos sesión
 
         mysql> create database tienda;
         Query OK, 1 row affected (0.01 sec)
@@ -44,4 +42,10 @@
         mysql> insert into PRODUCTOS values (3, "Raton", 15.14);
         Query OK, 1 row affected (0.00 sec)
 
-5º Para desactivar MySQL tienes que desactivar el proceso en segundo plano.
+    5.2 Instalar el driver. Tendras que intentar instalar el driver 
+        varias veces y apagar el PC para que la instalacion se aplique
+        correctamente.
+
+        pip install mysql-connector-python
+
+6º Para desactivar MySQL tienes que desactivar el proceso en segundo plano.

@@ -10,7 +10,9 @@ conexion = sql.connect(
 # Obtener el cursor
 mi_cursor = conexion.cursor()
 
-# Mostrar las tablas que tengo en esa BBDD
+# Mostrar las tablas que tengo en esa BBDD, 
+# con esto determinamos que se pueden lanzar 
+# consultas propias de la base de MySQL y no solo SQL
 mi_cursor.execute("SHOW TABLES")
 tablas = mi_cursor.fetchall()
 for x in tablas:

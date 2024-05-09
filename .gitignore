@@ -30,7 +30,12 @@ EjerciciosGoodJob/Documentos Jupyter/Edicion
 SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Scripts
 SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Lib
 SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Include
-
+tryhackme/python/Lib
+tryhackme/python/Include
+tryhackme/python/Scripts
+tryhackme/python/share
+tryhackme/.vscode
+tryhackme/python/Src/tools/secLists
 
 # Lista de extensiones
 *.exe

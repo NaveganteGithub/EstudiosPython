@@ -1,3 +1,13 @@
+__autor__ = "Ismael Montoro Peñasco"
+__copyright__ = "Copyright 2024, Rick and Morty"
+__credits__ = ["Ismael Montoro Peñasco"]
+
+__license__ = "MIT"
+__version__ = "1.0.0"
+__status__ = "Stable"
+__maintainer__ = "Ismael Montoro Peñasco"
+__email__ = "ismaelmontorop@protonmail.com"
+
 import random, zlib, binascii, random, time, hashlib, crc32c, gostcrypto, rsa, pyaes
 from Lib.funcionalidades.directorios import os, archivos, posicionamiento
 import Lib.cifrados.whirlpool as whirlpool

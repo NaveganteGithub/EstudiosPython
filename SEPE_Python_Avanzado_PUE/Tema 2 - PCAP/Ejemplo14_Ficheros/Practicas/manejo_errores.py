@@ -10,13 +10,24 @@ except IOError as ex:
     elif ex.errno == errno.ENOENT:
         print("Ese arhivo no existe")'''
 
-    # A partir de Python 3.7
-    match ex.errno:
+    match ex.errno: # A partir de Python 3.7
         case errno.EACCES:
-            print("No tienes permisos para abrir ese fichero")
+            print("No tienes permisos para abrir ese fichero.")
         case errno.ENOENT:
-            print("Ese arhivo no existe")
-        case _:   # default
+            print("Ese archivo o directorio no existe.")
+        case errno.ENOSPC:
+            print("No queda espacio en el dispositivo.")
+        case errno.EFBIG:
+            print("El archivo es demasiado grande para abrirlo.")
+        case errno.EMFILE:
+            print("Demasiados archivos abiertos.")
+        case errno.EEXIST:
+            print("El archivo ya existe de antes.")
+        case errno.EISDIR:
+            print("Es un directorio.")
+        case errno.EBADF:
+            print("Numero de archivo incorrecto.")
+        case _: # default
             print("Otro error")
 finally:
     if stream != "":

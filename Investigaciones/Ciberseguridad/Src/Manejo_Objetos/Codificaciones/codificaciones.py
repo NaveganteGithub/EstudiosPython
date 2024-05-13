@@ -181,6 +181,23 @@ class codificacion_datos():
 
         return texto_codificado
     
+    def codificar_a_alfablock3(self, texto = "hello"):
+        """
+        Esta es una extension de alfablock2 con la diferencia de 
+        que aqui se utiliza la tabla unicode y para cada caracter
+        de la tabla ascii se utiliza un bloque de codificacion
+        de 3 letras alfabeticas mayusculas
+        """
+        import abecedario_ascii
+
+        texto_codificado = ""
+        for letra in texto:
+            decimal = ord(letra)
+            texto_codificado += abecedario_ascii.diccionario_ascii[decimal]
+
+        del abecedario_ascii
+        return texto_codificado
+    
     def codificar_a_alfablock5(self, texto = "hello"):
         """
         Esta es una extension de alfablock2 con la diferencia de 
@@ -192,7 +209,8 @@ class codificacion_datos():
 
         texto_codificado = ""
         for letra in texto:
-            texto_codificado += abecedario_unicode.abecedario[letra]
+            decimal = ord(letra)
+            texto_codificado += abecedario_unicode.diccionario_unicode[decimal]
 
         del abecedario_unicode
         return texto_codificado
@@ -332,12 +350,37 @@ class decodificacion_datos():
 
         return texto_decodificado
     
+    def decodificar_alfablock3(self, codificacion: str) -> str:
+        import abecedario_ascii
+        
+        texto_decodificado = ""
+        lista_abecedario_letras_decimales = tuple(abecedario_ascii.diccionario_ascii.keys())
+        lista_abecedario_bloques = tuple(abecedario_ascii.diccionario_ascii.values())
+        del abecedario_ascii
+
+        def dividir_en_sublistas(cadena): # La subfuncion dividir_en_sublistas a sido generada con ChatGPT
+            # Caso base: si la cadena está vacía o tiene una sola letra, retornamos una lista vacía
+            if len(cadena) <= 1:
+                return []
+            # Caso recursivo: dividimos la cadena en dos partes y devolvemos una lista que contiene la primera letra y la segunda letra
+            # más una llamada recursiva con el resto de la cadena
+            return [list(cadena[:3])] + dividir_en_sublistas(cadena[3:])
+        
+        texto_codificado = dividir_en_sublistas(codificacion)
+
+        for bloque in texto_codificado:
+            bloque_actual = "".join(bloque)
+            posicion_bloque = lista_abecedario_bloques.index(bloque_actual)
+            texto_decodificado += chr(lista_abecedario_letras_decimales[posicion_bloque])
+
+        return texto_decodificado
+    
     def decodificar_alfablock5(self, codificacion: str) -> str:
         import abecedario_unicode
         
         texto_decodificado = ""
-        lista_letras_abecedario = tuple(abecedario_unicode.abecedario.keys())
-        lista_bloques_abecedario = tuple(abecedario_unicode.abecedario.values())
+        lista_abecedario_letras_decimales = tuple(abecedario_unicode.diccionario_unicode.keys())
+        lista_abecedario_bloques = tuple(abecedario_unicode.diccionario_unicode.values())
         del abecedario_unicode
 
         def dividir_en_sublistas(cadena): # La subfuncion dividir_en_sublistas a sido generada con ChatGPT
@@ -352,8 +395,8 @@ class decodificacion_datos():
 
         for bloque in texto_codificado:
             bloque_actual = "".join(bloque)
-            posicion_bloque = lista_bloques_abecedario.index(bloque_actual)
-            texto_decodificado += lista_letras_abecedario[posicion_bloque]
+            posicion_bloque = lista_abecedario_bloques.index(bloque_actual)
+            texto_decodificado += chr(lista_abecedario_letras_decimales[posicion_bloque])
 
         return texto_decodificado
 
@@ -372,6 +415,7 @@ if __name__ == "__main__":
     codificacion_base92 = codificaciones.codificar_base92(cadena)
     codificacion_alfablock2 = codificaciones.codificar_a_alfablock2(cadena)
     # codificacion_alfablock2 = codificaciones.codificar_a_alfablock2("Hola 1212$")
+    codificacion_alfablock3 = codificaciones.codificar_a_alfablock3(cadena)
     codificacion_alfablock5 = codificaciones.codificar_a_alfablock5(cadena)
     print("Codificacion")
     print("Binario -", codificacion_binario)
@@ -385,6 +429,7 @@ if __name__ == "__main__":
     print("Base85 -", codificacion_base85)
     print("Base92 -", codificacion_base92)
     print("Alfablock2 -", codificacion_alfablock2)
+    print("Alfablock3 -", codificacion_alfablock3)
     print("Alfablock5 -", codificacion_alfablock5)
     print()
 
@@ -400,6 +445,7 @@ if __name__ == "__main__":
     decodificacion_base85 = decodificaciones.decodificar_base85(codificacion_base85)
     decodificacion_base92 = decodificaciones.decodificar_base92(codificacion_base92)
     decodificacion_alfablock2 = decodificaciones.decodificar_alfablock2(codificacion_alfablock2)
+    decodificacion_alfablock3 = decodificaciones.decodificar_alfablock3(codificacion_alfablock3)
     decodificacion_alfablock5 = decodificaciones.decodificar_alfablock5(codificacion_alfablock5)
     print("Decodificacion")
     print("Binario -", decodificacion_binario)
@@ -413,6 +459,7 @@ if __name__ == "__main__":
     print("Base85 -", decodificacion_base85)
     print("Base92 -", decodificacion_base92)
     print("Alfablock2 -", decodificacion_alfablock2)
+    print("Alfablock3 -", decodificacion_alfablock3)
     print("Alfablock5 -", decodificacion_alfablock5)
     print()
 

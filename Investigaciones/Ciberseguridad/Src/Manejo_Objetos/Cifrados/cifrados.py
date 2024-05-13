@@ -1,5 +1,5 @@
 __autor__ = "Ismael Montoro Peñasco"
-__copyright__ = "Copyright 2024, Rick and Morty"
+__copyright__ = "Copyright 2024, CipherI"
 __credits__ = ["Ismael Montoro Peñasco"]
 
 __license__ = "MIT"

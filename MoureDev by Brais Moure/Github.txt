@@ -1,0 +1,2 @@
+https://github.com/mouredev/hello-sql/tree/main
+https://github.com/mouredev/Hello-Python/tree/main

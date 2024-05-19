@@ -1,3 +1,10 @@
+"""
+Polimorfismo del Griego Poli (Muchos) y Morfe (forma)
+
+Es la capacidad de un objeto (en este caso una clase) 
+de adoptar multiples formas.
+"""
+
 class Animal:
 
     def onomatopeya(self):

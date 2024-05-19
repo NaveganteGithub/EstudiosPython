@@ -36,11 +36,15 @@ class Producto:
 
     def get_contador(self):
         return self.__contador
+    
+    def get_contador_estatico():
+        return Producto.__contador
 
     def __str__(self):
         return f"ID: {Producto.__contador}, Descripcion: {self.descripcion}, Precio: {self.precio}"
 
-# print(Producto.__contador)
+# print(Producto.__contador) # Da error porque tiene el self y si convierte en un metodo de instancia
+print(Producto.get_contador_estatico())
 
 p1 = Producto("Pantalla", 129.50)
 print(p1)

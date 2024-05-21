@@ -1,3 +1,5 @@
+import string as s, random as r
+
 class Persona:
 
     def __init__(self, nombre, edad):
@@ -39,14 +41,28 @@ print(empleado_1.mostrar_info())
 
 print(issubclass(Empleado, Persona))
 
-print(Empleado.__bases__)
-
-print(Persona.__bases__)
+# Me devuelve la clase padre o base, en caso de tener varias base 
+# me listara todas las clases superiores.
+print("Atributo __bases__ de Empleado:", Empleado.__bases__)
+print("Atributo __bases__ de Persona:", Persona.__bases__)
+# __module__ sirve para comprobar a que modulo pertenene cada clase
+# en caso de que salga __main__ como resultado.
+print("Atributo __module__ de Empleado:", Empleado.__module__)
+print("Atributo __module__ de Persona:", Persona.__module__)
+print("Atributo __module__ de Template:", s.Template.__module__)
+print("Atributo __module__ de Random:", r.Random.__module__)
+# __name__ me sirve para comprobar el nombre de la clase
+plantilla = s.Template
+numero = r.Random
+print("Atributo __name__ de Template:", plantilla.__name__)
+print("Atributo __name__ de Random:", numero.__name__)
+print("Atributo __name__ de Empleado:", Empleado.__name__)
+print("Atributo __name__ de Persona:", Persona.__name__)
 
 print(dir(Persona))
 
 print(p1)
 print(p1.__str__())
 print(p1.__hash__())
-print(empleado_1.__str__())
-print(empleado_1.__doc__)
+print(empleado_1.__str__()) # Ver el string de la clase
+print(empleado_1.__doc__) # Ver la documentacion de la clase

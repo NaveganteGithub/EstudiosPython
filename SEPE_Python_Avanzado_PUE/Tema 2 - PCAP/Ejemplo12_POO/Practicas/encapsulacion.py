@@ -69,23 +69,41 @@ print(hoy.mostrarFecha())
 
 print(hoy._Fecha_Encapsulada__dia) # name mangling -> Acceder a la variable privada o metodo privado
 '''
-In name mangling process any identifier with two 
-leading underscore and one trailing underscore i
-s textually replaced with _classname__identifier 
-where classname is the name of the current class. 
+In name mangling process any identifier with two leading 
+underscore and one trailing underscore is textually 
+replaced with _classname__identifier where classname is 
+the name of the current class. 
 
-It means that any identifier of the form __geek (at least 
-two leading underscores or at most one trailing underscore) 
-is replaced with _classname__geek, where classname is the 
-current class name with leading underscore(s) stripped.
+It means that any identifier of the form __geek (at 
+least two leading underscores or at most one trailing 
+underscore) is replaced with _classname__geek, where 
+classname is the current class name with leading 
+underscore(s) stripped.
+
+En el proceso de alteración de nombres, cualquier 
+identificador con dos guiones bajos iniciales y uno 
+final se reemplaza textualmente con _classname__identifier 
+donde classname es el nombre de la clase actual.
+
+Significa que cualquier identificador de la forma __geek 
+(al menos dos guiones bajos iniciales o como máximo un 
+guión bajo final) se reemplaza con _classname__geek, 
+donde classname es el nombre de la clase actual sin 
+los guiones bajos iniciales.
 '''
 
 print(hoy.__dict__)
+
+"""En el mundo de la programación, la instrospección
+es la habilidad para determinar el tipo de un objeto
+en tiempo de ejecución.
+"""
 print(dir(hoy))
 print(dir(Fecha_Encapsulada))
 print(hasattr(hoy, "set_año"))
 print(hasattr(hoy, "__mes"))
 print(hasattr(hoy, "_Fecha_Encapsulada__mes"))
+
 print(getattr(hoy, "set_año"))
 print(Fecha_Encapsulada.__name__)
 print(type(hoy).__name__)
@@ -95,7 +113,6 @@ print(hash(hoy))
 print(isinstance(hoy, Fecha_Encapsulada))
 print(isinstance(hoy, (Fecha_Encapsulada, Fecha)))
 print(isinstance(hoy, Fecha))
-
 
 # print(getattr(hoy, __mes)) # NameError: name '__mes' is not defined
 print(setattr(hoy, "_Fecha_Encapsulada__mes", 8))

@@ -42,16 +42,16 @@ print(empleado_1.mostrar_info())
 print(issubclass(Empleado, Persona))
 
 # Me devuelve la clase padre o base, en caso de tener varias base 
-# me listara todas las clases superiores.
+# me listara todas las clases superiores. Palabra de referencia: HERENCIA
 print("Atributo __bases__ de Empleado:", Empleado.__bases__)
 print("Atributo __bases__ de Persona:", Persona.__bases__)
 # __module__ sirve para comprobar a que modulo pertenene cada clase
-# en caso de que salga __main__ como resultado.
+# en caso de que salga __main__ como resultado. Palabra de referencia: MODULO
 print("Atributo __module__ de Empleado:", Empleado.__module__)
 print("Atributo __module__ de Persona:", Persona.__module__)
 print("Atributo __module__ de Template:", s.Template.__module__)
 print("Atributo __module__ de Random:", r.Random.__module__)
-# __name__ me sirve para comprobar el nombre de la clase
+# __name__ me sirve para comprobar el nombre de la clase. Palabra de referencia: CLASE
 plantilla = s.Template
 numero = r.Random
 print("Atributo __name__ de Template:", plantilla.__name__)

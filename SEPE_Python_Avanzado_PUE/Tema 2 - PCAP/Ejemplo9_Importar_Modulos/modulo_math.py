@@ -67,3 +67,21 @@ print("Truncar 3.19:", trunc(3.19))  # 3
 print("Redondear a 2 decimales 5,552821:", round(5.552821, 2))
 
 print("Factorial de 5:", factorial(5))
+
+"""
+https://www.youtube.com/watch?v=vklKtK5oCfg 
+
+Distancia euclidiana multidimensional desde el origen a un punto.
+
+Aproximadamente equivalente a:
+    sqrt(sum(x**2 for x in coordinates))
+"""
+print(hypot(5, 7))
+print(hypot(2, 1))
+print(hypot(2, 2))
+print(hypot(5, 7, 2, 3))
+
+print("Raiz cuadrada de 25:", sqrt(4))
+print("Raiz cuadrada de 25:", sqrt(9))
+print("Raiz cuadrada de 25:", sqrt(25))
+print("Raiz cuadrada de 8:", sqrt(8))

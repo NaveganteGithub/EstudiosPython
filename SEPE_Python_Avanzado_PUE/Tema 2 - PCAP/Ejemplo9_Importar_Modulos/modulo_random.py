@@ -15,8 +15,12 @@ print(random.random())
 random.seed(3)
 print(random.random())  # si la semilla es la misma, el valor es igual
 
+for _ in range(4):
+    random.seed(10)
+    print(random.random())
+
 random.seed(10)
-for idx in range(4):
+for _ in range(4):
     print(random.random())
 
 random.seed()

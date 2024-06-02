@@ -26,6 +26,7 @@ class Producto:
         return f"ID: {Producto.__contador}, Descripcion: {self.descripcion}, Precio: {self.precio}"
     
 p1 = Producto("Pantalla", 129.50)
+print(p1.__hash__())
 print(id(p1))
 print(hex(id(p1)))
 print(p1.__repr__())

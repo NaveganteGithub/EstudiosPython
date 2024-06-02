@@ -1,3 +1,4 @@
+""" Si esccribimos aqui sobreescribimos el atributo __doc__ de Python"""
 import string as s, random as r
 
 class Persona:
@@ -66,3 +67,4 @@ print(p1.__str__())
 print(p1.__hash__())
 print(empleado_1.__str__()) # Ver el string de la clase
 print(empleado_1.__doc__) # Ver la documentacion de la clase
+print(__doc__)

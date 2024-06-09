@@ -1,0 +1,4 @@
+Hola buenas esto es una cadena que va a ser una lista de cadenas
+Hola buenas esto es una cadena
+Hola buenas
+Hola

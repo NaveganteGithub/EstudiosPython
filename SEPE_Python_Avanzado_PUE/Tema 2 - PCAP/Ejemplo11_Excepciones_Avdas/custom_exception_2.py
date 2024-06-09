@@ -21,7 +21,6 @@ if edad < 0:
     raise NegativoError("La edad no puede ser negativa")
 '''
 
-
 try:
     edad = int(input("Introduce tu edad: "))
     if edad < 0:
@@ -35,14 +34,3 @@ except NegativoError as ex:
     print("Traza", tb)
 else:
     print("Edad positiva")
-
-
-
-
-'''
-Traceback (most recent call last):
-  File "/Users/anaisabelvegascaceres/Desktop/python_avanzado_PUE_1_Abril/Ejemplo11_Excepciones_Avdas/custom_exception.py", line 12, in <module>
-    raise NegativoError
-__main__.NegativoError
-'''
-

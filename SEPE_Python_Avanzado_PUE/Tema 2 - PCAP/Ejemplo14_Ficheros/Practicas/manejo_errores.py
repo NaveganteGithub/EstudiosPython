@@ -3,7 +3,7 @@ import errno
 try:
     stream = ""
     stream = open("aaaa.txt", "rt")
-except IOError as ex:
+except OSError as ex: # IOError es un alias de OSError
     print(ex.errno)  # 2
     '''if ex.errno == errno.EACCES:
         print("No tienes permisos para abrir ese fichero")

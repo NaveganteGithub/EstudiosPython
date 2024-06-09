@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/58073162/difference-in-read-readline-and-readlines-in-python

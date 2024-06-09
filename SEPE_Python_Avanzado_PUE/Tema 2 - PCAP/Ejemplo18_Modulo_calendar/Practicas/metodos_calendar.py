@@ -7,6 +7,7 @@ def iterador_calendario(item_calendar):
         print(d, end=", ")
 
     print()
+    print()
 
 # Mostrar los numeros de los dias de la semana
 iterador_calendario(calendario.iterweekdays())

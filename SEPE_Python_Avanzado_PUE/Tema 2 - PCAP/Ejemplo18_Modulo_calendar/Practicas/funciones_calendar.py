@@ -15,9 +15,9 @@ print(calendar.month(2024, 4, w=4))
 print(calendar.month(2024, 4, w=4, l=2))
 print(calendar.month(2024, 4, w=4, l=2))
 
-print(calendar.prmonth(2024, 4))
-print(calendar.prmonth(2024, 4, w=4))
-print(calendar.prmonth(2024, 4, w=4, l=2))
+calendar.prmonth(2024, 4)
+calendar.prmonth(2024, 4, w=4)
+calendar.prmonth(2024, 4, w=4, l=2)
 
 # Mostrar el canlendario comenzando la semana en domingo, se puede poner el numero correspondiente al dia de la semana
 calendar.setfirstweekday(6)

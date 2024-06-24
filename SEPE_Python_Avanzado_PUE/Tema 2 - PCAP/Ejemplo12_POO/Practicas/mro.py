@@ -1,13 +1,12 @@
-'''
-    En herencia multiple podemos invocar el constructor con el nombre de la clase,
-    esta es una manera explícita de llamar al constructor padre digamos,
-    viene bien ya que es más directa y tienes un control más preciso digamos.
-    super() es más dinámico y sigue el MRO (Method Resolution Order) para determinar
-    el método que se va a llamar, es decir maneja automáticamente el orden de resolución de métodos.
+'''En herencia multiple podemos invocar el constructor con el nombre de la clase,
+esta es una manera explícita de llamar al constructor padre digamos,
+viene bien ya que es más directa y tienes un control más preciso digamos.
+super() es más dinámico y sigue el MRO (Method Resolution Order) para determinar
+el método que se va a llamar, es decir maneja automáticamente el orden de resolución de métodos.
 
-    En los lenguajes de programación orientada a objetos, el problema del diamante es una ambigüedad
-    que surge cuando dos clases B y C heredan de A, y la clase D hereda de B y C. Si un método en D
-    llama a un método definido en A, ¿por qué clase lo hereda, B o C?
+En los lenguajes de programación orientada a objetos, el problema del diamante es una ambigüedad
+que surge cuando dos clases B y C heredan de A, y la clase D hereda de B y C. Si un método en D
+llama a un método definido en A, ¿por qué clase lo hereda, B o C?
 '''
 
 '''

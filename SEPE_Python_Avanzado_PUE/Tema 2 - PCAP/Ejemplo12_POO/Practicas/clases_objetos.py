@@ -22,10 +22,14 @@ class Persona:
         return self.nombre.upper()
 
 # Crear objetos o instancias de Persona
-p1 = Persona() # Invoco el constructor por defecto
+p1 = Persona() # Invoco/Instancio el constructor por defecto
 print(p1)
 
-p2 = Persona("Juan", 37)
+"""Lo que hay dentro de la variable es el objeto ya instanciado,
+lo que hay en la asignacion del valor es la instancia
+"""
+# Objeto
+p2 = Persona("Juan", 37) # Instancia del objeto
 print(p2)
 
 p3 = Persona("Pepito")

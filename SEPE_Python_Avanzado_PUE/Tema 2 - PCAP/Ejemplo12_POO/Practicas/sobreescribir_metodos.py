@@ -1,4 +1,4 @@
-""" Si esccribimos aqui sobreescribimos el atributo __doc__ de Python"""
+""" Si escribimos aqui sobreescribimos el atributo __doc__ de Python"""
 import string as s, random as r
 
 class Persona:
@@ -39,6 +39,9 @@ print(p1.mostrar_info())
 
 empleado_1 = Empleado("Juan", 27, 57000)
 print(empleado_1.mostrar_info())
+
+print("isinstance a Persona", isinstance(p1, Persona))
+print("isinstance a Empleado", isinstance(p1, Empleado))
 
 print(issubclass(Empleado, Persona))
 

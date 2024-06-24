@@ -25,3 +25,7 @@ empleado_1 = Empleado("Juan", 27, 57000)
 print(empleado_1.mostrar_info())
 
 print(issubclass(Empleado, Persona))
+
+print(Persona.__subclasses__())
+print(Empleado.__subclasses__())
+print(Persona.__subclasses__()[0].__name__)

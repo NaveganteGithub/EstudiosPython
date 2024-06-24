@@ -12,7 +12,7 @@ class NegativoError(Exception):
         self.menj = mensaje
     
     def __str__(self) -> str:
-        return self.menj
+        return self.menj + ". Te recomiendo poner un valor igual o superior al minimo."
 
 '''
 edad = int(input("Introduce tu edad: "))

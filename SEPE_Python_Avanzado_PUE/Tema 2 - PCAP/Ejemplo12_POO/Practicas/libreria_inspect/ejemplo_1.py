@@ -1,18 +1,4 @@
-a = 254
-b = a
-c = 254
-print(id(a), id(b), id(c)) # 140737059305816 140737059305816 140737059305816
-
-m = 256
-n = m
-o = 256
-print(id(m), id(n), id(o)) # 140737062648216 140737062648216 140737062648216
-
-x = 257
-y = x
-z = 257
-print(id(x), id(y), id(z)) # 2982604549904 2982604549904 2982604549904
-
+import inspect
 
 class Producto:
 
@@ -31,7 +17,9 @@ class Producto:
         return f"ID: {Producto.__contador}, Descripcion: {self.descripcion}, Precio: {self.precio}"
     
 p1 = Producto("Pantalla", 129.50)
-print(p1.__hash__()) # 186413005483
-print(id(p1)) # 2982608087728
-print(hex(id(p1))) # 0x2b6714baab0
-print(p1.__repr__()) # <__main__.Producto object at 0x000002B6714BAAB0>
+
+atributos_clase = inspect.getmembers(Producto, lambda a: not inspect.isroutine(a))
+print ([a[0] for a in atributos_clase]) # ['_Producto__contador', '__class__', '__dict__', '__doc__', '__module__', '__weakref__']
+
+atributos_instancia = vars(p1)
+print(atributos_instancia.keys()) # dict_keys(['id', 'descripcion', 'precio']) 

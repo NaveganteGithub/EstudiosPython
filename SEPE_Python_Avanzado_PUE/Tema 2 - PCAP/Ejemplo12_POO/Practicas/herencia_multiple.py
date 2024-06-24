@@ -35,3 +35,5 @@ pv = ProductoVenta(45454645, 23.67)
 perro = Perro("Nano", 5, 45454645, 23.67, True, "M")
 
 print(perro)
+
+print(Perro.__bases__)

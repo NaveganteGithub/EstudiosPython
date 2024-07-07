@@ -6,6 +6,8 @@ import math
 # Sintaxis: modulo.recurso
 print("PI:", math.pi)
 
+import math as m, string as s
+
 # segunda forma
 from math import pi
 print("PI:", pi)

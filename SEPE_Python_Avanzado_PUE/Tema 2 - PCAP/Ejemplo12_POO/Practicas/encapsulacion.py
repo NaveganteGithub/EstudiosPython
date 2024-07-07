@@ -104,6 +104,9 @@ print(hasattr(hoy, "set_año"))
 print(hasattr(hoy, "__mes"))
 print(hasattr(hoy, "_Fecha_Encapsulada__mes"))
 
+setattr(hoy, "__prueba", 5)
+print(getattr(hoy, "__prueba"))
+
 print(getattr(hoy, "set_año"))
 print(Fecha_Encapsulada.__name__)
 print(type(hoy).__name__)
@@ -116,3 +119,4 @@ print(isinstance(hoy, Fecha))
 
 # print(getattr(hoy, __mes)) # NameError: name '__mes' is not defined
 print(setattr(hoy, "_Fecha_Encapsulada__mes", 8))
+print(getattr(hoy, "_Fecha_Encapsulada__mes"))

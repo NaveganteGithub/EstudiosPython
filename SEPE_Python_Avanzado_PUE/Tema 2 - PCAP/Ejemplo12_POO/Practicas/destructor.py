@@ -31,7 +31,7 @@ try:
     # Eliminar el objeto entero
     print(p1.__dict__) # {'titulo': 'Avatar 2', 'duracion': 140, 'lanzamiento': 2023}
     del p1
-    print(p1.__dict__) # Se ha borrado la pelicula Avatar 2
+    print(p1) # Se ha borrado la pelicula Avatar 2
 except:
     pass
 

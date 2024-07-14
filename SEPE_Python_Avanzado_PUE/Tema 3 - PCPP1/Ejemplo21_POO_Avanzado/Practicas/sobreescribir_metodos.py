@@ -83,6 +83,7 @@ class Producto:
         return self.precio * otra.precio
     
     def __div__(self, otra): # p3 / p4
+        print("----- ", self.precio / otra.precio)
         return self.precio / otra.precio
     
     def __floordiv__(self, otra): # p3 // p4
@@ -114,14 +115,38 @@ print("Son iguales?", p1.__eq__(p2))
 
 p3 = Producto(3, "Teclado", 37.95)
 p4 = Producto(4, "Raton", 19.80)
-
-print(p3 + p4)
-
-# Antes de sobreescribir el metodo: TypeError: unsupported operand type(s) for +: 'Producto' and 'Producto'
-# Despues de sobreescribir el metodo: 57.75
-
 # p1 y p2 al tener el mismo id, entiende que son iguales
 conjunto = {p1, p2, p3, p4, p1bis}
 print(*conjunto)
 for p in conjunto:
     print(p)
+
+
+print("Son iguales?", p1 == p2) 
+print("Son iguales?", p1.__eq__(p2))
+# Antes de sobreescribir el metodo: Da False por comparar dos instancias distintas
+# Despues de sobreescribir el metodo: Son iguales? True
+
+print("Son iguales?", p1 != p2) 
+print("Son iguales?", p1.__ne__(p2))
+
+print("Son iguales?", p1 > p2) 
+print("Son iguales?", p1.__ne__(p2))
+
+print("Son iguales?", p1 >= p2) 
+print("Son iguales?", p1.__ne__(p2))
+
+print("Son iguales?", p1 < p2) 
+print("Son iguales?", p1.__ne__(p2))
+
+print("Son iguales?", p1 <= p2) 
+print("Son iguales?", p1.__ne__(p2))
+
+print(p3 + p4)
+# Antes de sobreescribir el metodo: TypeError: unsupported operand type(s) for +: 'Producto' and 'Producto'
+# Despues de sobreescribir el metodo: 57.75
+print(p3 - p4)
+print(p3 * p4)
+print(p3 / p4)
+print(p3 // p4)
+print(p3 ** p4)

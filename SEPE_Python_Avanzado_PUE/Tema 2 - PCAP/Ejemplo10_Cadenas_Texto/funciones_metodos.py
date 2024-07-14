@@ -192,3 +192,10 @@ print(textoAcodificar.encode(encoding="ascii",errors="backslashreplace"))#b'Mi n
 cadena = "hola123"
 digitos = filter(str.isdigit, cadena)
 print(list(digitos))
+
+# Tablas de traduccion
+tabla_traduccion = str.maketrans("abcdefg", "stuvwxy")
+texto_original = "Buenas dias, tardes, o noches."
+texto_modificado = texto_original.translate(tabla_traduccion)
+
+print("Mi texto orignal", "'" + texto_original + "'", "a sido traducido a", "'" + texto_modificado + "'")

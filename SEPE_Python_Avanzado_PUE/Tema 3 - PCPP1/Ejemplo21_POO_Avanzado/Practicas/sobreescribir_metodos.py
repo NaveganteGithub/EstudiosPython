@@ -5,7 +5,6 @@ Created on Mon Apr 22 09:46:15 2024
 @author: Ismael Montoro Peñasco
 """
 
-
 class Producto:
     
     def __init__(self, identificator, descripcion, precio):
@@ -13,19 +12,15 @@ class Producto:
         self.descripcion = descripcion
         self.precio = precio
     
+    ##################### FUNCIONALIDADES #####################
+
     # Cuando mostremos el objeto, represente su estado (contenido, valores)    
     def __str__(self):
         return f"ID {self.id}, Descripcion: {self.descripcion}, Precio: {self.precio}"
     
-    # Retorna un valor booleano indicando si esta instancia es igual a la recibida como argumento
-    # self representa el objeto a comparar, el segundo parametro representa el comparador
-    def __eq__(self, otra): # p1 == p2
-        return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio
-    
-    # Retorna un numero que sera el resultado de apliar una suma
-    # self representa el objeto a comparar, el segundo parametro representa el comparador
-    def __add__(self, otra): # p3 + p4
-        return self.precio + otra.precio
+    # Cuando el objeto se elimine y lo mostremos, que se muestre "Clase eliminada"
+    def __del__(self):
+        return "Clase eliminada"
     
     # Retorna un valor numerico, imprendiscible para comparar elementos del conjunto
     def __hash__(self):
@@ -37,9 +32,87 @@ class Producto:
             
         return int(self.id + suma + self.precio)
     
+    ##################### BOOLEANOS #####################
+
+    # Retorna un valor booleano indicando si esta instancia es igual a la recibida como argumento
+    # self representa el objeto a comparar, el segundo parametro representa el comparador
+    def __eq__(self, otra): # p1 == p2
+        # return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio
+        return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio and dir(self) == dir(otra)
+    
+    # Retorna un valor booleano indicando si esta instancia no es igual a la recibida como argumento
+    # self representa el objeto a comparar, el segundo parametro representa el comparador
+    def __ne__(self, otra): # p1 != p2
+        return self.id != otra.id and self.descripcion != otra.descripcion and self.precio != otra.precio and dir(self) != dir(otra)
+    
+    # Retorna un valor booleano indicando si esta instancia tiene un valor mayor, o varios valores mayores, 
+    # a la instancia recibida como argumento
+    # self representa el objeto a comparar, el segundo parametro representa el comparador
+    def __gt__(self, otra): # p1 > p2
+        return self.id > otra.id and self.descripcion > otra.descripcion and self.precio > otra.precio and dir(self) > dir(otra)
+    
+    # Retorna un valor booleano indicando si esta instancia tiene un valor mayor o igual, 
+    # o varios valores mayores o iguales, a la instancia recibida como argumento
+    # self representa el objeto a comparar, el segundo parametro representa el comparador
+    def __ge__(self, otra): # p1 >= p2
+        return self.id >= otra.id and self.descripcion >= otra.descripcion and self.precio >= otra.precio and dir(self) >= dir(otra)
+    
+    # Retorna un valor booleano indicando si esta instancia tiene un valor menor, o varios 
+    # valores menores, a la instancia recibida como argumento
+    # self representa el objeto a comparar, el segundo parametro representa el comparador
+    def __lt__(self, otra): # p1 < p2
+        return self.id < otra.id and self.descripcion < otra.descripcion and self.precio < otra.precio and dir(self) < dir(otra)
+    
+    # Retorna un valor booleano indicando si esta instancia tiene un valor menor, o varios 
+    # valores menores a la instancia recibida como argumento
+    # self representa el objeto a comparar, el segundo parametro representa el comparador
+    def __le__(self, otra): # p1 <= p2
+        return self.id <= otra.id and self.descripcion <= otra.descripcion and self.precio <= otra.precio and dir(self) <= dir(otra)
+
+    ##################### CALCULOS #####################
+
+    # Retorna un numero que sera el resultado de aplicar una suma
+    # self representa el objeto a comparar, el segundo parametro representa el comparador
+    def __add__(self, otra): # p3 + p4
+        return self.precio + otra.precio
+    
+    def __sub__(self, otra): # p3 - p4
+        return self.precio - otra.precio
+    
+    def __mul__(self, otra): # p3 * p4
+        return self.precio * otra.precio
+    
+    def __div__(self, otra): # p3 / p4
+        return self.precio / otra.precio
+    
+    def __floordiv__(self, otra): # p3 // p4
+        return self.precio // otra.precio
+    
+    def __mod__(self, otra): # p3 % p4
+        return self.precio % otra.precio
+    
+    def __pow__(self, otra): # p3 ** p4
+        return self.precio ** otra.precio
+    
+    ##################### ASIGNACION #####################
+
+    def __iadd__(self, otra): # p3 += p4
+        return 
+    
+class Producto_Pirata():
+
+    def __init__(self, identificator, descripcion, precio):
+        self.id = identificator
+        self.descripcion = descripcion
+        self.precio = precio
+
+    def codigo_maligno(self):
+        print("Hackeado")
+    
 p1 = Producto(1, "Pantalla", 129.50)
 p2 = Producto(1, "Pantalla", 129.50)
 p1bis = Producto(1, "Pantallo", 129.50)
+pirata = Producto_Pirata(1, "Pantalla", 129.50)
 
 print(p1) 
 # Antes de sobreescribir el metodo: <__main__.Producto object at 0x00000216326A7C90>
@@ -47,8 +120,12 @@ print(p1)
 
 print("Son iguales?", p1 == p2) 
 print("Son iguales?", p1.__eq__(p2))
-# Antes de sobreescribir el metodo: Da False por compara dos instancias distintas
+# Antes de sobreescribir el metodo: Da False por comparar dos instancias distintas
 # Despues de sobreescribir el metodo: Son iguales? True
+print("Son iguales?", p1.__eq__(pirata))
+# Antes de sobreescribir el metodo: Da True por comparar las dos instancias
+# solamente por los atributos y no aplicando introspeccion
+# Despues de sobreescribir el metodo: Son iguales? False
 
 p3 = Producto(3, "Teclado", 37.95)
 p4 = Producto(4, "Raton", 19.80)

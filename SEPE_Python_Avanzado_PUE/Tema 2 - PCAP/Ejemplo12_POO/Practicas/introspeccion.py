@@ -18,6 +18,10 @@ class Producto:
     
 p1 = Producto("Pantalla", 129.50)
 
+print(p1.__dict__)
+print(dir(p1))
+print(p1.__dir__())
+
 atributos_clase = inspect.getmembers(Producto, lambda a: not inspect.isroutine(a))
 print ([a[0] for a in atributos_clase]) # ['_Producto__contador', '__class__', '__dict__', '__doc__', '__module__', '__weakref__']
 

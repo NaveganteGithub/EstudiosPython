@@ -121,3 +121,8 @@ nombres = ['Luis', 'Maria', 'Adolfo', 'Pedro']
 
 cadena = reduce(lambda cadena, nombre: cadena.upper() + " - " + nombre.upper(), nombres)
 print(cadena)
+
+##########################
+
+print((lambda x : x * x)(5))
+print((lambda x, y : x * y)(5, 10))

@@ -13,7 +13,9 @@ class Figura(abc.ABC):
         self.y = y
 
     # Marcar el metodo como abstracto
-    @abc.abstractclassmethod
+    # @abc.abstractclassmethod # OBSOLETO
+    @classmethod 
+    @abc.abstractmethod
     def calcular_area(self):
         pass
 
@@ -43,11 +45,12 @@ class Triangulo(Figura):
     def __str__(self):
         return super().__str__() + f", Base: {self.base}, Altura: {self.altura}"
 
+# Con @abc.abstractclassmethod # OBSOLETO
 # TypeError: Can't instantiate abstract class Figura with abstract method calcular_area
 # ''' Crear objetos y devolver el area y sus datos '''
-# figura = Figura(20,6)
-# print("Area de la figura:",figura.calcular_area())  # None
-# print(figura)
+figura = Figura(20,6)
+print("Area de la figura:",figura.calcular_area())  # None
+print(figura)
 
 circulo = Circulo(20,6, 50)
 print("Area del circulo:", round(circulo.calcular_area(), 2) )

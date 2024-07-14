@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Apr 22 09:46:15 2024
-
 @author: Ismael Montoro Peñasco
 """
 

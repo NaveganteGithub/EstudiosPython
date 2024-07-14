@@ -1,0 +1,12 @@
+## Copilot
+¡Claro! La diferencia entre __div__ y __truediv__ está relacionada con la división en Python. Permíteme explicarte:
+- __div__:
+    - Este método se utiliza cuando no está activada la opción __future__.division.
+    - Si solo uno de estos dos métodos (__div__ o __truediv__) está definido en un objeto, no admitirá la división en el contexto alternativo, y se generará un TypeError.
+    - En resumen, __div__ se utiliza para la división entera (floor division).
+- __truediv__:
+    - Este método se utiliza cuando sí está activada la opción __future__.division.
+    - Calcula la división real (true division) entre dos números.
+    - Si solo uno de estos dos métodos (__div__ o __truediv__) está definido en un objeto, no admitirá la división en el contexto alternativo, y se generará un TypeError.
+    - En resumen, __truediv__ realiza la división real (con decimales).
+En resumen, __div__ se utiliza para la división entera, mientras que __truediv__ se utiliza para la división real. Ambos métodos son parte de la sobrecarga de operadores en Python y permiten personalizar el comportamiento de los objetos al realizar operaciones matemáticas. ¡Espero que esta explicación te ayude! 😊

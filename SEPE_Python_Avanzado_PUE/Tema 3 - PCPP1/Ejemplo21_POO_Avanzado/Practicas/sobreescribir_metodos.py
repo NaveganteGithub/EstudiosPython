@@ -37,12 +37,12 @@ class Producto:
     # Retorna un valor booleano indicando si esta instancia es igual a la recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
     def __eq__(self, otra): # p1 == p2
-        # return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio
         return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio
     
     # Retorna un valor booleano indicando si esta instancia no es igual a la recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
     def __ne__(self, otra): # p1 != p2
+        # print(self.id != otra.id, self.descripcion != otra.descripcion, self.precio != otra.precio)
         return self.id != otra.id and self.descripcion != otra.descripcion and self.precio != otra.precio
     
     # Retorna un valor booleano indicando si esta instancia tiene un valor mayor, o varios valores mayores, 
@@ -82,8 +82,7 @@ class Producto:
     def __mul__(self, otra): # p3 * p4
         return self.precio * otra.precio
     
-    def __div__(self, otra): # p3 / p4
-        print("----- ", self.precio / otra.precio)
+    def __truediv__(self, otra): # p3 / p4
         return self.precio / otra.precio
     
     def __floordiv__(self, otra): # p3 // p4
@@ -98,7 +97,8 @@ class Producto:
     ##################### ASIGNACION #####################
 
     def __iadd__(self, otra): # p3 += p4
-        return 
+        self.precio = self.precio + otra.precio
+        return self.precio
     
 p1 = Producto(1, "Pantalla", 129.50)
 p2 = Producto(1, "Pantalla", 129.50)
@@ -121,26 +121,27 @@ print(*conjunto)
 for p in conjunto:
     print(p)
 
-
 print("Son iguales?", p1 == p2) 
 print("Son iguales?", p1.__eq__(p2))
 # Antes de sobreescribir el metodo: Da False por comparar dos instancias distintas
 # Despues de sobreescribir el metodo: Son iguales? True
 
-print("Son iguales?", p1 != p2) 
-print("Son iguales?", p1.__ne__(p2))
+print("Son diferentes?", p1 != p2) 
+print("Son diferentes?", p1.__ne__(p2))
+print("Son diferentes?", p1 != p1bis)
+print("Son diferentes?", p1 != p3)
 
-print("Son iguales?", p1 > p2) 
-print("Son iguales?", p1.__ne__(p2))
+print("La instancia es mayor?", p1 > p2) 
+print("La instancia es mayor?", p1.__ne__(p2))
 
-print("Son iguales?", p1 >= p2) 
-print("Son iguales?", p1.__ne__(p2))
+print("La instancia es mayor o igual?", p1 >= p2) 
+print("La instancia es mayor o igual?", p1.__ne__(p2))
 
-print("Son iguales?", p1 < p2) 
-print("Son iguales?", p1.__ne__(p2))
+print("La instancia es menor?", p1 < p2) 
+print("La instancia es menor?", p1.__ne__(p2))
 
-print("Son iguales?", p1 <= p2) 
-print("Son iguales?", p1.__ne__(p2))
+print("La instancia es menor o igual?", p1 <= p2) 
+print("La instancia es menor o igual?", p1.__ne__(p2))
 
 print(p3 + p4)
 # Antes de sobreescribir el metodo: TypeError: unsupported operand type(s) for +: 'Producto' and 'Producto'
@@ -150,3 +151,5 @@ print(p3 * p4)
 print(p3 / p4)
 print(p3 // p4)
 print(p3 ** p4)
+p3 += p4
+print(p3)

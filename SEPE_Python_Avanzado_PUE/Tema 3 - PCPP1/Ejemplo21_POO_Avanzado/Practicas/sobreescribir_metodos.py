@@ -38,36 +38,36 @@ class Producto:
     # self representa el objeto a comparar, el segundo parametro representa el comparador
     def __eq__(self, otra): # p1 == p2
         # return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio
-        return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio and dir(self) == dir(otra)
+        return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio
     
     # Retorna un valor booleano indicando si esta instancia no es igual a la recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
     def __ne__(self, otra): # p1 != p2
-        return self.id != otra.id and self.descripcion != otra.descripcion and self.precio != otra.precio and dir(self) != dir(otra)
+        return self.id != otra.id and self.descripcion != otra.descripcion and self.precio != otra.precio
     
     # Retorna un valor booleano indicando si esta instancia tiene un valor mayor, o varios valores mayores, 
     # a la instancia recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
     def __gt__(self, otra): # p1 > p2
-        return self.id > otra.id and self.descripcion > otra.descripcion and self.precio > otra.precio and dir(self) > dir(otra)
+        return self.id > otra.id and self.descripcion > otra.descripcion and self.precio > otra.precio
     
     # Retorna un valor booleano indicando si esta instancia tiene un valor mayor o igual, 
     # o varios valores mayores o iguales, a la instancia recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
     def __ge__(self, otra): # p1 >= p2
-        return self.id >= otra.id and self.descripcion >= otra.descripcion and self.precio >= otra.precio and dir(self) >= dir(otra)
+        return self.id >= otra.id and self.descripcion >= otra.descripcion and self.precio >= otra.precio
     
     # Retorna un valor booleano indicando si esta instancia tiene un valor menor, o varios 
     # valores menores, a la instancia recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
     def __lt__(self, otra): # p1 < p2
-        return self.id < otra.id and self.descripcion < otra.descripcion and self.precio < otra.precio and dir(self) < dir(otra)
+        return self.id < otra.id and self.descripcion < otra.descripcion and self.precio < otra.precio
     
     # Retorna un valor booleano indicando si esta instancia tiene un valor menor, o varios 
     # valores menores a la instancia recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
     def __le__(self, otra): # p1 <= p2
-        return self.id <= otra.id and self.descripcion <= otra.descripcion and self.precio <= otra.precio and dir(self) <= dir(otra)
+        return self.id <= otra.id and self.descripcion <= otra.descripcion and self.precio <= otra.precio
 
     ##################### CALCULOS #####################
 
@@ -99,20 +99,9 @@ class Producto:
     def __iadd__(self, otra): # p3 += p4
         return 
     
-class Producto_Pirata():
-
-    def __init__(self, identificator, descripcion, precio):
-        self.id = identificator
-        self.descripcion = descripcion
-        self.precio = precio
-
-    def codigo_maligno(self):
-        print("Hackeado")
-    
 p1 = Producto(1, "Pantalla", 129.50)
 p2 = Producto(1, "Pantalla", 129.50)
 p1bis = Producto(1, "Pantallo", 129.50)
-pirata = Producto_Pirata(1, "Pantalla", 129.50)
 
 print(p1) 
 # Antes de sobreescribir el metodo: <__main__.Producto object at 0x00000216326A7C90>
@@ -122,10 +111,6 @@ print("Son iguales?", p1 == p2)
 print("Son iguales?", p1.__eq__(p2))
 # Antes de sobreescribir el metodo: Da False por comparar dos instancias distintas
 # Despues de sobreescribir el metodo: Son iguales? True
-print("Son iguales?", p1.__eq__(pirata))
-# Antes de sobreescribir el metodo: Da True por comparar las dos instancias
-# solamente por los atributos y no aplicando introspeccion
-# Despues de sobreescribir el metodo: Son iguales? False
 
 p3 = Producto(3, "Teclado", 37.95)
 p4 = Producto(4, "Raton", 19.80)

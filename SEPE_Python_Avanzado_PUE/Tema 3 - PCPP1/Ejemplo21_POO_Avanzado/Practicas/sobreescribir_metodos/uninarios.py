@@ -14,7 +14,7 @@ class Producto:
     """
     def __pos__(self):
         print("Sobreescrito")
-        return self.id
+        return +self.id
 
     def __neg__(self):
         print("Sobreescrito")

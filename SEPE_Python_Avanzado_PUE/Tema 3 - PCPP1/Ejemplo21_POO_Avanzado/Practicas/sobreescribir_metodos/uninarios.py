@@ -33,6 +33,4 @@ print("Positivo", a)
 print("Negativo", b)
 print("Positivo", p3.__pos__())
 print("Negativo", p3.__neg__())
-print("Positivo", abs(a))
-print("Negativo", abs(b))
 

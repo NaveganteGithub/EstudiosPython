@@ -11,37 +11,43 @@ class Producto:
 
     # Retorna un valor booleano indicando si esta instancia es igual a la recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
-    def __eq__(self, otra): # p1 == p2
+    def __eq__(self, otra):  # p1 == p2
+        print("Sobreescrito")
         return self.id == otra.id and self.descripcion == otra.descripcion and self.precio == otra.precio
 
     # Retorna un valor booleano indicando si esta instancia no es igual a la recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
-    def __ne__(self, otra): # p1 != p2
+    def __ne__(self, otra):  # p1 != p2
+        print("Sobreescrito")
         # print(self.id != otra.id, self.descripcion != otra.descripcion, self.precio != otra.precio)
         return self.id != otra.id and self.descripcion != otra.descripcion and self.precio != otra.precio
 
     # Retorna un valor booleano indicando si esta instancia tiene un valor mayor, o varios valores mayores,
     # a la instancia recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
-    def __gt__(self, otra): # p1 > p2
+    def __gt__(self, otra):  # p1 > p2
+        print("Sobreescrito")
         return self.id > otra.id and self.descripcion > otra.descripcion and self.precio > otra.precio
 
     # Retorna un valor booleano indicando si esta instancia tiene un valor mayor o igual,
     # o varios valores mayores o iguales, a la instancia recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
-    def __ge__(self, otra): # p1 >= p2
+    def __ge__(self, otra):  # p1 >= p2
+        print("Sobreescrito")
         return self.id >= otra.id and self.descripcion >= otra.descripcion and self.precio >= otra.precio
 
     # Retorna un valor booleano indicando si esta instancia tiene un valor menor, o varios
     # valores menores, a la instancia recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
-    def __lt__(self, otra): # p1 < p2
+    def __lt__(self, otra):  # p1 < p2
+        print("Sobreescrito")
         return self.id < otra.id and self.descripcion < otra.descripcion and self.precio < otra.precio
 
     # Retorna un valor booleano indicando si esta instancia tiene un valor menor, o varios
     # valores menores a la instancia recibida como argumento
     # self representa el objeto a comparar, el segundo parametro representa el comparador
-    def __le__(self, otra): # p1 <= p2
+    def __le__(self, otra):  # p1 <= p2
+        print("Sobreescrito")
         return self.id <= otra.id and self.descripcion <= otra.descripcion and self.precio <= otra.precio
 
 

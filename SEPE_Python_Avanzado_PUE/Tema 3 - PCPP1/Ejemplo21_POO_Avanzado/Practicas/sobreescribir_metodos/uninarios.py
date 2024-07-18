@@ -14,11 +14,11 @@ class Producto:
     """
     def __pos__(self):
         print("Sobreescrito")
-        return self
+        return self.id
 
     def __neg__(self):
         print("Sobreescrito")
-        return -self
+        return -self.id
 
 
 p1 = Producto(1, "Pantalla", 129.50)
@@ -33,4 +33,6 @@ print("Positivo", a)
 print("Negativo", b)
 print("Positivo", p3.__pos__())
 print("Negativo", p3.__neg__())
+print("Positivo", abs(a))
+print("Negativo", abs(b))
 

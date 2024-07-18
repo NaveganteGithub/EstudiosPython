@@ -16,8 +16,8 @@ class Producto:
     def __round__(self, n, n2=None):
         print("Sobreescrito")
         if n is None:
-            return round(self.valor)
-        return round(self.valor, n)
+            return round(self.id)
+        return round(self.id, n)
 
 
 p1 = Producto(1, "Pantalla", -129.50)

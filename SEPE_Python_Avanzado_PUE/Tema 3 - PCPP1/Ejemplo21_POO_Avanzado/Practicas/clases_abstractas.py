@@ -46,17 +46,18 @@ class Triangulo(Figura):
         return super().__str__() + f", Base: {self.base}, Altura: {self.altura}"
 
 # Con @abc.abstractclassmethod # OBSOLETO
-# TypeError: Can't instantiate abstract class Figura with abstract method calcular_area
+# TypeError: Can't instantiate abstract class Figura without an implementation for abstract method 'calcular_area'
 # ''' Crear objetos y devolver el area y sus datos '''
-figura = Figura(20,6)
+"""figura = Figura(20,6)
 print("Area de la figura:",figura.calcular_area())  # None
 print(figura)
+"""
 
 circulo = Circulo(20,6, 50)
 print("Area del circulo:", round(circulo.calcular_area(), 2) )
 print(circulo)
 
-# TypeError: Can't instantiate abstract class Triangulo with abstract method calcular_area
-triangulo = Triangulo(20,6, 40, 25)
-print("Area del triangulo:", round(triangulo.calcular_area(), 2) )
+# TypeError: Can't instantiate abstract class Triangulo without an implementation for abstract method 'calcular_area'
+triangulo = Triangulo(20, 6, 40, 25)
+print("Area del triangulo:", round(triangulo.calcular_area(), 2))
 print(triangulo)

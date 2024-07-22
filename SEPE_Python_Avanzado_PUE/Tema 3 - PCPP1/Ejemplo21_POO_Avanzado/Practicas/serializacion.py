@@ -1,7 +1,7 @@
 import shelve
 
 extension = [".bak", ".dat", ".dir"]
-fichero = "SEPE_Python_Avanzado_PUE\\Tema 3 - PCPP1\\Ejemplo21_POO_Avanzado\\Practicas\\fichero" + extension
+fichero = "SEPE_Python_Avanzado_PUE\\Tema 3 - PCPP1\\Ejemplo21_POO_Avanzado\\Practicas\\fichero" + extension[1]
 stream = shelve.open(fichero, flag="n")
 """
 w -> dbm.error: db file doesn't exist; use 'c' or 'n' flag to create a new db ; No existe ese fichero

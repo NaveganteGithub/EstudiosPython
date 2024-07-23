@@ -1,9 +1,9 @@
 import tkinter as tk
 
-# crear una nueva ventana
+# Crear una nueva ventana
 
 ventana = tk.Tk()
 
-# mostrar la ventana
+# Activar la ventana
 
 ventana.mainloop()

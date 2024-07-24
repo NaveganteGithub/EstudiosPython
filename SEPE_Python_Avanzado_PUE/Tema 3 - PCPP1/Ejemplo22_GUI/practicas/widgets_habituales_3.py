@@ -15,9 +15,9 @@ tamaño = '500x800'
 ventana.geometry(tamaño)'''
 
 # Definir la posicion de la ventana
-tamaño = '500x800' # Ancho por Alto
-posicion = '500+200' # Posicion X mas la posicion Y
-forma = tamaño + "+" + posicion
+tamano = '500x800'  # Ancho por Alto
+posicion = '500+200'  # Posicion X mas la posicion Y
+forma = tamano + "+" + posicion
 ventana.geometry(forma)
 
 # Agregar boton a la ventana
@@ -64,6 +64,24 @@ etiqueta_frame.place(x=50, y=50)
 caja_texto_frame = tk.Entry(frame_1, width=20)
 caja_texto_frame.place(x=180, y=50)
 
+# Agregar boton con comando a la ventana
+
+def cerrar_ventana():
+    ventana.destroy()
+
+def abrir_ventana():
+    ventana_2 = tk.Toplevel(ventana)
+    ventana_2.mainloop()
+
+# boton = tk.Button(ventana, text="cerrar", command=cerrar_ventana) # Opcion 1
+# boton = tk.Button(ventana, text="cerrar", command=ventana.destroy) # Opcion 2
+boton = tk.Button(ventana, text="cerrar")
+boton.bind("<Button-1>", lambda e: ventana.destroy())
+boton.pack()
+boton = tk.Button(ventana, text="abrir", command=abrir_ventana)
+boton.bind("<Button-2>")
+boton.pack()
+
 # Crear un Checkbutton
 
 acepto = tk.Checkbutton(ventana, text="Acepto condiciones")
@@ -91,7 +109,7 @@ from tkinter import ttk
 
 colores_2 = ['--Selecciona--', 'Azul', 'Rosa', 'Amarillo', 'Verde']
 combo = ttk.Combobox(ventana, values=colores_2, state="readonly")
-combo.current(0) # Selecciona el valor por defecto
+combo.current(0)  # Selecciona el valor por defecto
 combo.place(x=10, y=400)
 
 # Crear un OptionMenu

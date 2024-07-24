@@ -1,27 +1,21 @@
 import tkinter as tk
 
-def cerrar_ventana():
-    ventana.destroy()
 
 ventana = tk.Tk()
 
 ventana.title("Ejemplo de los metodos messagebox")
+# Podemos posicionar la ventana entre las pantallas
+# ventana.geometry('400x600+-200+200')
+# ventana.geometry('400x600+1900+200')
 ventana.geometry('400x600+500+200')
 
 ventana.tk.call("wm", "iconphoto", ventana, tk.PhotoImage(file='logo/man.png'))
 
-ventana.minsize(width="500", height="300")
-ventana.maxsize(width="1280", height="720")
+# ventana.minsize(width="500", height="300")
+# ventana.maxsize(width="1280", height="720")
+ventana.minsize(width=500, height=300)  # Permite declarar el tamaño minimo de la ventana
+ventana.maxsize(width=1280, height=720)  # Permite declarar el tamaño maximo de la ventana
 
-ventana.resizable(width=False, height=False)
-
-# boton = tk.Button(ventana, text="cerrar", command=cerrar_ventana) # Opcion 1
-# boton = tk.Button(ventana, text="cerrar", command=ventana.destroy) # Opcion 2
-boton = tk.Button(ventana, text="cerrar")
-boton.bind("<Button-1>", lambda e: ventana.destroy())
-boton.pack()
-
-
-
+ventana.resizable(width=False, height=False)  # Permite declarar si altura o anchura de la ventana es redimensionable
 
 ventana.mainloop()

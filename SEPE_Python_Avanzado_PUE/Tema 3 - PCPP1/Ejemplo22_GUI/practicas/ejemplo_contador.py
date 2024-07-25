@@ -15,6 +15,7 @@ def decrementar():
     contador -= 1
     valor_contador.set(contador)
 
+
 contador = 0
 
 valor_contador = tk.StringVar(value=contador)

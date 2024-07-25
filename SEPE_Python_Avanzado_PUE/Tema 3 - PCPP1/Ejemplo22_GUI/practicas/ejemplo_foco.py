@@ -14,6 +14,8 @@ ventana.title("Ejemplo de Foco")
 ventana.geometry("300x300")
 
 boton_1 = tk.Button(ventana, text="Boton 1")
+# Pulsando Tab (Tecla de Tabulacion) puedes cambiar el Foco,
+# es decir, el boton seleccionado
 boton_1.bind("<FocusIn>", func=lambda e: print("Tengo el foco"))
 boton_1.bind("<FocusOut>", func=lambda e: print("Pierdo el foco"))
 boton_1.pack()

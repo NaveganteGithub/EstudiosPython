@@ -64,24 +64,6 @@ etiqueta_frame.place(x=50, y=50)
 caja_texto_frame = tk.Entry(frame_1, width=20)
 caja_texto_frame.place(x=180, y=50)
 
-# Agregar boton con comando a la ventana
-
-def cerrar_ventana():
-    ventana.destroy()
-
-def abrir_ventana():
-    ventana_2 = tk.Toplevel(ventana)
-    ventana_2.mainloop()
-
-# boton = tk.Button(ventana, text="cerrar", command=cerrar_ventana) # Opcion 1
-# boton = tk.Button(ventana, text="cerrar", command=ventana.destroy) # Opcion 2
-boton = tk.Button(ventana, text="cerrar")
-boton.bind("<Button-1>", lambda e: ventana.destroy())
-boton.pack()
-boton = tk.Button(ventana, text="abrir", command=abrir_ventana)
-boton.bind("<Button-2>")
-boton.pack()
-
 # Crear un Checkbutton
 
 acepto = tk.Checkbutton(ventana, text="Acepto condiciones")

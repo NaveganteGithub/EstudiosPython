@@ -93,7 +93,7 @@ resultado = 0
 result_impresion = tk.StringVar(value=resultado)
 panel = tk.Label(ventana, background="black",
                  textvariable=result_impresion,
-                 font=('Helvetica', 30) ,
+                 font=('Helvetica', 30),
                  foreground="white")
 panel.place(x=27, y=70)
 

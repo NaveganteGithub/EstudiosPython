@@ -9,7 +9,7 @@ barra_menu = tk.Menu(ventana)
 ventana.config(menu=barra_menu)
 
 # Crear los menus
-menu_file = tk.Menu(barra_menu, tearoff=0) # tearoff permite quitar las lineas que se generan en la primera posicion
+menu_file = tk.Menu(barra_menu, tearoff=0)  # tearoff permite quitar las lineas que se generan en la primera posicion
 barra_menu.add_cascade(label="File", menu=menu_file)
 
 menu_edit = tk.Menu(barra_menu, tearoff=0)

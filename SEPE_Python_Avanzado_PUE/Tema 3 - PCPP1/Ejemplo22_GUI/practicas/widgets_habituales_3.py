@@ -70,7 +70,6 @@ acepto = tk.Checkbutton(ventana, text="Acepto condiciones")
 acepto.place(x=200, y=200)
 
 # Crear un Radiobutton
-
 genero_str = tk.StringVar()
 genero_hombre = tk.Radiobutton(ventana, text="Hombre", variable=genero_str, value="H")
 genero_mujer = tk.Radiobutton(ventana, text="Mujer", variable=genero_str, value="M")
@@ -78,7 +77,6 @@ genero_hombre.place(x=100, y=280)
 genero_mujer.place(x=100, y=300)
 
 # Crear un Listbox
-
 colores = ['Azul', 'Rosa', 'Amarillo', 'Verde']
 color = tk.Listbox(ventana, selectmode="multiple")
 for item in colores:

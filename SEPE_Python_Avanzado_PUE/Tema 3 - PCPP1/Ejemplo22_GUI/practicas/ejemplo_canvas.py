@@ -31,7 +31,7 @@ canvas.create_line(10, 50, 300, 50, dash=(4, 5), arrow=tk.LAST, width=5, fill="b
 canvas.create_line(10, 60, 300, 60, dash=(1, 5), arrow=tk.LAST, width=5, fill="blue")
 canvas.create_line(10, 70, 300, 70, dash=(6, 2, 2, 2), arrow=tk.LAST, width=5, fill="blue")
 canvas.create_line(10, 80, 300, 80, dash=(6, 2, 9, 18), arrow=tk.LAST, width=5, fill="blue")
-canvas.create_line(10, 100, 300, 80, dash=(1, 3, 9), arrow=tk.LAST, width=5, fill="blue")
+canvas.create_line(10, 100, 300, 100, dash=(3, 6, 1, 5), arrow=tk.LAST, width=5, fill="blue")
 
 # Creamos un rectangulo
 # canvas.create_rectangle(50,50,200,300, outline="yellow", width=5, fill="green")

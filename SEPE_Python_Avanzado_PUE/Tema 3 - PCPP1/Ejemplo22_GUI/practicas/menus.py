@@ -15,14 +15,16 @@ barra_menu.add_cascade(label="File", menu=menu_file)
 menu_edit = tk.Menu(barra_menu, tearoff=0)
 barra_menu.add_cascade(label="Edit", menu=menu_edit)
 
-# Crear las opciones del menu File
 
+# Crear las opciones del menu File
 def opcion(event=None):
     print("Has pulsado opcion", event)
+
 
 def abrir():
     fichero = file_dialog.askopenfilename(title="Abrir fichero")
     print(fichero)
+
 
 menu_new_proyect = tk.Menu(menu_file)
 

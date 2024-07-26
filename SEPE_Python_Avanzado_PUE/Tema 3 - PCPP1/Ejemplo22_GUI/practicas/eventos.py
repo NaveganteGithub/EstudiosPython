@@ -54,7 +54,6 @@ def abrir_ventana():
 boton = tk.Button(ventana, text="Abrir", command=abrir_ventana)
 boton.pack()
 
-
 # Eventos para perifericos
 
 def coordinate(event):

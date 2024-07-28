@@ -74,7 +74,7 @@ class mi_decorador:
     def __call__(self, *argumentos):  # Aqui recibimos los argumentos de la funcion contar
         print("Hemos recibido:", argumentos)
         '''
-        Tengo que ejecutar la funcion que he recibida en init, 
+        Tengo que ejecutar la funcion que he recibido en init, 
         con los argumentos recibidos en call
         '''
         self.funcion(*argumentos) 

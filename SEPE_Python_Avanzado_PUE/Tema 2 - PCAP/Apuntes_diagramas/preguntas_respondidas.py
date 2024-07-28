@@ -138,7 +138,7 @@ print(resultados)
 print("Ejercicio 6.a.")
 lectura = None
 try:
-   lectura = open("SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Examen/conversiones.csv", "rt", encoding="utf-8")
+   lectura = open("SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Apuntes_diagramas/conversiones.csv", "rt", encoding="utf-8")
    resultado = len(lectura.readline())
    print(resultado)
 except:
@@ -149,7 +149,7 @@ finally:
 print("Ejercicio 6.b.")
 cadenas = "Hola buenas esto es una cadena que va a ser una lista de cadenas".split()
 try:
-   escribir = open("SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Examen/saludo.txt", "wt", encoding="utf-8")
+   escribir = open("SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Apuntes_diagramas/saludo.txt", "wt", encoding="utf-8")
    escribir.writelines(cadenas)
 except:
    pass

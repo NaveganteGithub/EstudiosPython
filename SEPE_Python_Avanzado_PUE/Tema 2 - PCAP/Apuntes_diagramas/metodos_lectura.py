@@ -1,4 +1,4 @@
-ruta_fichero = "SEPE_Python_Avanzado_PUE\\Tema 2 - PCAP\\Examen\\saludo2.txt"
+ruta_fichero = "SEPE_Python_Avanzado_PUE\\Tema 2 - PCAP\\Apuntes_diagramas\\saludo2.txt"
 
 with open(ruta_fichero, "r", encoding="utf-8") as fichero:
     resultado_read = fichero.read()

@@ -6,7 +6,6 @@ ventana.title("Ejemplo de los metodo messagebox")
 ventana.geometry('300x300')
 
 
-
 def boton_info():
     respuesta = messagebox.showinfo("Titulo", "Mensaje de informacion")
     print(respuesta)
@@ -56,9 +55,5 @@ boton_error.pack()
 
 boton_error = tk.Button(ventana, text='showwarning', command=boton_show_warning)
 boton_error.pack()
-
-
-
-
 
 ventana.mainloop()

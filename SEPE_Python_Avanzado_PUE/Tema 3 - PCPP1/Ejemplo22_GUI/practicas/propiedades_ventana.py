@@ -23,4 +23,6 @@ ventana.resizable(width=False, height=False)  # Permite declarar si altura o anc
 boton = tk.Button(ventana, text="Prueba", width=50, height=10)
 boton.place(x=0, y=0)
 
+# ventana.overrideredirect(True) # Elimina la barra de titulo de la ventana
+
 ventana.mainloop()

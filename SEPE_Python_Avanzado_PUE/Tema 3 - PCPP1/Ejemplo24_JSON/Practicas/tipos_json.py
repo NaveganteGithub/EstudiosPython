@@ -35,3 +35,6 @@ aplicaciones web que usan AJAX. - Pedro Ángel Viruega Muñoz
 
 # boleanos
 {"cansados": true, "ganas_fiesta": false}
+
+# Nulos
+{"energia": null}

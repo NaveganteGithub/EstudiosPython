@@ -5,8 +5,8 @@ cansado = True
 print(json.dumps(cansado))  # true
 
 # probar a traducir None, ['a','b','c']
-print(json.dumps(None)) # null
-print(json.dumps(['a','b','c']))  # ["a", "b", "c"]
+print(json.dumps(None))  # null
+print(json.dumps(['a', 'b', 'c']))  # ["a", "b", "c"]
 
 # loads() -> coge un string de JSON y lo transforma en dato Python
 texto_n = '1234.56'
@@ -32,6 +32,7 @@ class Persona:
         self.edad = edad
 
     # metodo estatico
+    @staticmethod
     def encode(objeto):
         if isinstance(objeto, Persona):
             return objeto.__dict__
@@ -47,6 +48,7 @@ class Persona:
             print("No es instancia de Persona")
     '''
 
+    @staticmethod
     def decode(objeto):
         print(objeto)
         print("Nombre:", objeto['nombre'])
@@ -55,6 +57,7 @@ class Persona:
 
     def __str__(self):
         return f"Nombre:{self.nombre}, Edad:{self.edad}"
+
 
 persona = Persona("Juan", 27)
 #print(json.dumps(persona)) # TypeError: Object of type Persona is not JSON serializable
@@ -75,14 +78,3 @@ print(persona_json2)
 new_persona = json.loads(persona_json2, object_hook=Persona.decode)
 print(new_persona)
 print(type(new_persona))
-
-
-
-
-
-
-
-
-
-
-

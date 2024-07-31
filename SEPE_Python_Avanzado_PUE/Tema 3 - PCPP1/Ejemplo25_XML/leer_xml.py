@@ -15,3 +15,9 @@ for empleado in empleados.findall('empleado'):
             print(propiedad.tag, ":", propiedad.text, propiedad.attrib['moneda'])
         else:
             print(propiedad.tag, ":", propiedad.text)
+
+
+empleado = empleados.find('empleado')
+print("Mi empleado unico", empleado.text)
+print("Mi empleado unico", empleado.find('id').text)
+

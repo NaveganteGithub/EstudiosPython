@@ -29,7 +29,7 @@ class Producto:
 
     # Cuando mostremos el objeto, mostrara la informacion y/o
     # los datos de la clase en formato mas crudo, como los valores
-    # de clase en una tu tupla
+    # de clase en una tupla
     def __repr__(self):
         return f"{self.id}; {self.descripcion}; {self.precio}"
 

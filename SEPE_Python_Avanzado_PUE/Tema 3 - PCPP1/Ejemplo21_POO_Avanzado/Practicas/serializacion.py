@@ -1,13 +1,12 @@
 import shelve
 
-extension = [".bak", ".dat", ".dir"]
-fichero = "SEPE_Python_Avanzado_PUE\\Tema 3 - PCPP1\\Ejemplo21_POO_Avanzado\\Practicas\\fichero" + extension[1]
+fichero = "SEPE_Python_Avanzado_PUE\\Tema 3 - PCPP1\\Ejemplo21_POO_Avanzado\\Practicas\\fichero"
 stream = shelve.open(fichero, flag="n")
 """
 w -> dbm.error: db file doesn't exist; use 'c' or 'n' flag to create a new db ; No existe ese fichero
 r -> dbm.error: db file doesn't exist; use 'c' or 'n' flag to create a new db ; No existe ese fichero
-c -> si existe lo abre en lectura/escritura y sino lo crea, es la opcion por defecto de flag
-n -> siempre lo crea nuevo y lo abre en modo lectura/escritura.
+c -> si existe lo abre en lectura/escritura y sino lo crea, es la opcion por defecto de flag. c de create
+n -> siempre lo crea nuevo y lo abre en modo lectura/escritura. n de new
 """
 
 stream['Juan'] = {'Matematicas': 7.5, "Lengua": 4.2}

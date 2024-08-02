@@ -22,15 +22,15 @@ mi_socket.connect( (dominio, 80) ) # Ponemos directamente el nombre de dominio, 
 # 4º linea: El metodo obliga a dejar espacios en blanco \r\n
 
 # \r es un salto de linea en Windows
-mi_socket.send(b"GET / HTTP/1.1\r\nHost: " + # Indicaremos el tipo de peticion para el protocolo indicado
+mi_socket.send(b"GET / HTTP/1.1\r\nHost: " +  # Indicaremos el tipo de peticion para el protocolo indicado
                bytes(dominio, "utf8") + #  Indicaremos el host al que vamos a conectarnos
                b"\r\nConnection: close \r\n\r\n"
                )
 
 # Recibir la respuestas
-respuestas = mi_socket.recv(20000 # indicamos el tamaño del buffer
+respuestas = mi_socket.recv(20000  # indicamos el tamaño del buffer
                             )
-# Antes de cerrar hayq avisar de los motivos del cierre de la conexion
+# Antes de cerrar hay que avisar de los motivos del cierre de la conexion
 mi_socket.shutdown(socket.SHUT_RDWR)
 
 # Cierre definitivo del socket

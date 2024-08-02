@@ -51,7 +51,7 @@ class ABCMeta(type):
 
 
 class Sequence(metaclass=ABCMeta):
-    __subclass__ = {list, tuple, dict, set, Producto}
+    __subclass__ = {list, tuple, dict, set, str, Producto}
 
 
 class AppendableSequence(Sequence):
@@ -59,10 +59,19 @@ class AppendableSequence(Sequence):
 
 
 p1 = Producto(1, "Pantalla", 129.50)
+print("-" * 5)
 print(issubclass(Producto, Sequence))
 print(isinstance(p1, Sequence))
+
+print("-" * 5)
 print(isinstance([], Sequence))
 print(isinstance(list(), Sequence))
+print(isinstance("fsdfdsfsd", Sequence))
+print(isinstance(34654645, Sequence))
+
+print("-" * 5)
 print(isinstance(p1, AppendableSequence))
+
+print("-" * 5)
 print(isinstance([], AppendableSequence))
 print(isinstance(list(), AppendableSequence))

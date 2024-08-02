@@ -11,6 +11,21 @@ class Producto:
             self.cont += 1
         return self.cont
 
+    def __iter__(self):
+        print(self.__dict__)
+        # return iter(self.__dict__)
+        return iter(self.__dict__.values())
+
+    def __contains__(self, item):
+        verdadero = f"Productos contiene {item}"
+        falso = f"Productos no contiene {item}"
+        if item in self.__dict__:
+            print(verdadero)
+            return verdadero
+        else:
+            print(falso)
+            return falso
+
     def __getitem__(self, item):
         valor = list(self.__dict__.values())
         return valor[item]
@@ -26,20 +41,6 @@ class Producto:
         exec(f"del self.{key}")
         print(f"Variable {key} eliminada")
 
-    def __iter__(self):
-        print(self.__dict__)
-        # return iter(self.__dict__)
-        return iter(self.__dict__.values())
-
-    def __contains__(self, item):
-        verdadero = f"Productos contiene {item}"
-        falso = f"Productos no contiene {item}"
-        if item in self.__dict__:
-            print(verdadero)
-            return verdadero
-        else:
-            print(falso)
-            return falso
 
 class Producto2:
 
@@ -85,4 +86,3 @@ print('descripcion' in p1)
 print('id' in p1)
 'descripcion' in p1
 'id' in p1
-

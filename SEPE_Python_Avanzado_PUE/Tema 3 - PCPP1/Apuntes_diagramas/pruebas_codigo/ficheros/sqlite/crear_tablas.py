@@ -10,8 +10,8 @@ sql = ("CREATE TABLE IF NOT EXISTS tabla1 ("
 
 sql2 = ("CREATE TABLE IF NOT EXISTS tabla2 ("
         "dni text primary key,"
-        "español integer,"
         "nacionalidad integer,"
+        "imagen blob,"
         "persona integer,"
         "foreign key (persona) references tabla1(id)"
         ")")

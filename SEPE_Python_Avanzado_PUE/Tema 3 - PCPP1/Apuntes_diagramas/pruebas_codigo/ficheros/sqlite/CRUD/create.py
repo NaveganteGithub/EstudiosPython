@@ -10,6 +10,8 @@ conexion = db.connect("../conexion.db")
 # Podemos realizar insercciones directas
 conexion.execute("insert into tabla1 values (1, 'David', 2000.50)")
 
+# Podemos especificar parametros dentro de una consulta SQL
+
 with open("../recursos/hack.jpg", "rb") as archivo:
     fichero = archivo.read()
     bytes_fichero = bytearray(fichero)
@@ -29,6 +31,23 @@ datos = ([3, "Maria", float("inf")],
          )
 
 conexion.executemany("insert into tabla1 values (?, ?, ?)", datos)
+
+datos = (['43243243A', 'Española', bytes_fichero, 4],
+         ['65468412D', 'Española', bytes_fichero, 5],
+         ['56489498F', 'Española', bytes_fichero, 6]
+         )
+
+conexion.executemany("insert into tabla2 values (?, ?, ?, ?)", datos)
+
+# Podemos realizar scripting SQL
+
+script_sql = """
+insert into tabla1(id, nombre) values (8, "Elena");
+insert into tabla1(id, nombre) values (9, "Rocio");
+insert into tabla1(id, nombre) values (10, "Bruno");
+"""
+
+conexion.executescript(script_sql)
 
 conexion.commit()
 conexion.close()

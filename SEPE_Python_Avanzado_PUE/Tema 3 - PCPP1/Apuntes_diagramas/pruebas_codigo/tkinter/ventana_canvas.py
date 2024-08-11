@@ -25,4 +25,9 @@ contenedor_dibujos.create_arc(50, 140, 150, 280, width=5, fill="red")
 mi_imagen = tkinter.PhotoImage(file="./logo/man.png")
 contenedor_dibujos.create_image(350, 520, image=mi_imagen)
 
+# dash: lineas punteadas dash=(distancia de las lineas, espacio entre linea y linea)
+# arrow: flecha para la linea, opciones FIRST y LAST
+# contenedor_dibujos.create_line(50, 150, 250, 50, dash=(5, 3), arrow=tkinter.LAST)
+# contenedor_dibujos.create_line(70, 170, 270, 70, dash=(5, 1), arrow=tkinter.LAST)
+
 ventana.mainloop()

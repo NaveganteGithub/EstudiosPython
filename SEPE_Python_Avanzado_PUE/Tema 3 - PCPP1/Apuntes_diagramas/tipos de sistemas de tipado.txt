@@ -1,0 +1,33 @@
+
+Tipado dinamico: comprueba los tipos de datos (e.j variables) durante la ejecucion de un programa.
+Python, Javascript, PHP, Perl, Ruby
+
+Codigo Python
+```
+## Asignamos a una variable un string
+a = "hello"
+print(type(a))
+
+## Asignamos a una variable un entero
+a = 5
+print(type(a))
+```
+
+Tipado estatico: comprueba los tipos de datos (e.j variables) durante la compilacion del programa,
+por lo tanto el tipo de dato se conoce durante la compilacion del programa.
+Java, C, C++, Scala, Haskell
+
+Codigo Java
+```
+String a;
+a = "Java es bueno";
+```
+
+Tipado pato o Duck Typing: no se comprueba los tipos de datos, lo que si se comprueba es si dentro
+de una clase existe un metodo o un atributo.
+
+Lema: “If it looks like a duck, swims like a duck, and quack like a duck, then it probably is a duck”
+      “Si tiene apariencia de un pato, nada como un pato, y cuaquea como un pato, entonces probablemente es un pato”
+
+https://www.geeksforgeeks.org/type-systemsdynamic-typing-static-typing-duck-typing/
+https://www.geeksforgeeks.org/duck-typing-in-python/

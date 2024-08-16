@@ -11,14 +11,13 @@ mi_socket = socket.socket(socket.AF_INET, # Lanzar peticiones a traves de intern
 # Conectar al servidor
 
 dominio = "www.python.org"
-mi_socket.connect( (dominio, 80) )  # Ponemos directamente el nombre de dominio,
-                                    # y hay que meterlo todo en una tupla
+mi_socket.connect( (dominio, 80) )  # Ponemos directamente el nombre de dominio, y hay meter los valores en una tupla
 
 # Enviar la peticion
 
 # 1º linea: GET (metodo utilizado) / (indicamos la raiz del server)
 #           HTTP:/1.1 Protocolo utilizado \r\n saltos de linea obligatorios
-# 2º linea: Host: www.pues.es con juego de caracteres UTF-8  \r\n saltos de linea obligatorios
+# 2º linea: Host: www.pue.es con juego de caracteres UTF-8  \r\n saltos de linea obligatorios
 # 3º linea: Connection: close (cerrar la conexion) \ r\n obligado al final de cada linea
 # 4º linea: El metodo obliga a dejar espacios en blanco \r\n
 

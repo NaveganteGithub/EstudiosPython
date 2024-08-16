@@ -19,8 +19,13 @@ class Nacimiento:
         return Nacimiento(dia, mes, tiempo)
 
 
+# Si te fijas ambos tienen algo en comun,
+# y es que se acceden de la misma manera:
+#
+# Clase.metodo(p1, p2)
 fecha = Nacimiento(20, 5, 2024)
 print(Nacimiento.fecha_str())
 
 fecha_2 = Nacimiento.fecha_obj(10, 2, 2024)
 print(fecha_2.mes)
+print(Nacimiento.mes)

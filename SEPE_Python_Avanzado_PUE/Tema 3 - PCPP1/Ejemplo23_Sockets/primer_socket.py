@@ -2,16 +2,16 @@ import socket
 
 # Crear el socket
 
-mi_socket = socket.socket(socket.AF_INET, # Lanzar peticiones a traves de internet
-              socket.SOCK_STREAM # Recibiremos respuestas de internet
-              )
+mi_socket = socket.socket(socket.AF_INET,  # Lanzar peticiones a traves de internet
+                          socket.SOCK_STREAM  # Recibiremos respuestas de internet
+                          )
 # socket.SOCK_SEQPACKET # Recibiremos o lanzaremos paquetes
 # socket.SOCK_RAW  # Recibiremos o lanzaremos la informacion en crudo
 
 # Conectar al servidor
 
 dominio = "www.python.org"
-mi_socket.connect( (dominio, 80) ) # Ponemos directamente el nombre de dominio, y hay que meterlo todo en una tupla
+mi_socket.connect((dominio, 80))  # Ponemos directamente el nombre de dominio, y hay meter los valores en una tupla
 
 # Enviar la peticion
 
@@ -23,7 +23,7 @@ mi_socket.connect( (dominio, 80) ) # Ponemos directamente el nombre de dominio, 
 
 # \r es un salto de linea en Windows
 mi_socket.send(b"GET / HTTP/1.1\r\nHost: " +  # Indicaremos el tipo de peticion para el protocolo indicado
-               bytes(dominio, "utf8") + #  Indicaremos el host al que vamos a conectarnos
+               bytes(dominio, "utf8") +  # Indicaremos el host al que vamos a conectarnos
                b"\r\nConnection: close \r\n\r\n"
                )
 

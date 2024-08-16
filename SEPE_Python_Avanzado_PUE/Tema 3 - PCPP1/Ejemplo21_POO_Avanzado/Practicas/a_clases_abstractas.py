@@ -5,7 +5,9 @@ Created on Mon Apr 22 12:33:16 2024
 @author: Ismael Montoro Peñasco
 """
 
-import math, abc
+import abc
+import math
+
 
 class Figura(abc.ABC):
     def __init__(self, x, y):

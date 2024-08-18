@@ -5,7 +5,77 @@ Para crear el servidor
 2.- Instalar json-server en una terminal con permisos de administrador:
             npm i -g json-server
 
-3.- Crear el archivo alumnos.json
+3.- Crear el archivo alumnos.json.
+
+Estructura de ejemplo:
+{
+  "alumnos": [ <-- 1º Agrupar objetos en un array con su identificador
+    {
+      "id": "1",                        <--- 3º Poner identificador
+      "nombre": "Juan",                 <--- 2º Agrupar datos en objetos
+      "apellido": "Lopez",
+      "nota": 7.5,
+      "repetidor": false
+    },
+    {
+      "id": "2",
+      "nombre": "Maria",
+      "apellido": "Gutierrez",
+      "nota": 6.3,
+      "repetidor": true
+    },
+    {
+      "id": "3",
+      "nombre": "Pedro",
+      "apellido": "Garcia",
+      "nota": 4.5,
+      "repetidor": true
+    }
+  ]
+}
+
+Ejemplo 1:
+{
+  "empleados": [
+    {
+      "id": "00001",
+      "datos": {
+        "Nombre": "Jose Miguel",
+        "Salario": 2000.5,
+        "Empleo": "Scrum Manager"
+      }
+    },
+    {
+      "id": "00002",
+      "datos": {
+        "Nombre": "Miguel Angel",
+        "Salario": 1200.1,
+        "Empleo": "Develop"
+      }
+    },
+    {
+      "id": "00003",
+      "datos": {
+        "Nombre": "Daniela Castro",
+        "Salario": 1200.1,
+        "Empleo": "Develop"
+      }
+     }
+    }
+  ],
+  "puestos": [
+    {
+      "id": "84ec",
+      "Nombre": "Scrum Manager",
+      "Descripcion": "Encargado del asignamiento de tareas, organización del proyecto y del equipo."
+    },
+    {
+      "id": "bb3c",
+      "Nombre": "Develop",
+      "Descripcion": "Desarrollador encargado de mantener el proyecto."
+    }
+  ]
+}
 
 4.- En la terminal nos hemos posicionado donde tenemos ese archivo alumnos.json
             cd .\PycharmProjects\Ejemplo26_HTTP\

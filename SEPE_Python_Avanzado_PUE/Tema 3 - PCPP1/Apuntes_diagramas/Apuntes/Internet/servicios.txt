@@ -1,15 +1,13 @@
-Servicios orientados a la conexión
+Servicios Orientados a la Conexión: son servicios que conectan dos extremos de una red, a traves
+de conexiones dedicadas y fiables, este tipo de servicios requieren que se establezca una conexion
+de sesion entre emisor y receptor.
 
-Los servicios orientados a la conexión son un servicio de red que utiliza una conexión dedicada
-para enlazar dos extremos con el fin de que los datos se entreguen en el orden correcto y de forma
-fiable. Este tipo de servicio se utiliza normalmente para aplicaciones que requieren un alto grado de
-fiabilidad, como la voz o la videoconferencia1. A diferencia de su servicio opuesto, sin conexión, el
-servicio orientado a la conexión requiere que se establezca una conexión de sesión entre el remitente
-y el receptor, análoga a una llamada telefónica.
+El servicio sin conexion: son servicios que se interconectan entre nodos y envian datos entre
+los nodos y se transfieren los paquetes de manera independiente.
 
-Servicios sin conexión
+Hay que tener en cuenta que esta clase de servicios no son fiables porque los datos no se transfieren
+en orden en muchas ocasiones e incluso puede que las transferencias de informacion no se completen.
 
-Un servicio sin conexión es un concepto en las comunicaciones de datos que se utiliza para transferir datos en
-la capa de transporte (capa 4) del modelo OSI. En este tipo de servicio, los datos se envían de un nodo a otro
-sin asegurarse primero de que el destino esté disponible y listo para recibir los datos. Cada paquete de datos
-se transfiere de forma independiente y no se garantiza que llegue en orden o incluso en absoluto.
+Como datos adicionales este tipo de conexiones
+    1. No verifican que el nodo vecino este conectado o no a la red
+    2. Este tipo de conexiones trabajan en la capa 4 del modelo OSI (transporte)

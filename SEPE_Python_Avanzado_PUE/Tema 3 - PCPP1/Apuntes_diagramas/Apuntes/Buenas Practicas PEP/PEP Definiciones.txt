@@ -11,6 +11,10 @@ Ejemplos de PEP
 
 PEP1
 PEP8
-PEP20 - Zen de Python
-PEP257
-PEP484
+PEP20 - Zen de Python es una filosofia que nos permite diseñar "codigo limpio" o "codigo elegante"
+PEP257 - Permite estandarizar la estructura de los docstrings, con las mejores convenciones y practicas a seguir
+PEP484 - Especifica que es el Type hinting que es un mecanismo que permite documentar el codigo sin comentarios
+                |        |
+                v        v
+def hello(name: str) -> str:
+    return "Hello"

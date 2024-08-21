@@ -1,0 +1,16 @@
+PEP o Python Enhacenment Proposals (Propuestas de mejora de Python) son un conjunto de directrices y mejores practicas.
+
+Existen tres tipos de PEP:
+
+    - Standards Track que describen nuevas caracterisicas del lenguaje
+    - PEP informativos, que proporcionan directrices e información
+    - PEP de Proceso que proporcionan procesos que podemos seguir, proponer cambios,
+      dar recomendaciones, dar procedimientos
+
+Ejemplos de PEP
+
+PEP1
+PEP8
+PEP20 - Zen de Python
+PEP257
+PEP484

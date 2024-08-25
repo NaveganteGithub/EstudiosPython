@@ -1,7 +1,8 @@
 REST o Representation State Transfer es un estilo de arquitectura cliente-servidor dedicado a sistemas distribuidos.
 
-Las API RESTful Web Service, son APIs web que utilizan protocolo HTTP e implementan los principios
-REST como una URI con la que podemos acceder al servicio o un formato de mensajes como JSON o XML.
+Las API RESTful Web Service, son APIs web que son implementadas bajo los principios REST, por ejemplo todas las
+peticiones se hacen a traves de una URI con la que podemos acceder al servicio o un formato de mensajes
+como JSON o XML.
 
 Las operaciones que se sueles usar son:
 

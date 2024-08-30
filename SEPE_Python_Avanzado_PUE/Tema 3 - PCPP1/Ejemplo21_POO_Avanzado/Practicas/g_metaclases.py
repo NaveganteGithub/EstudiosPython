@@ -40,7 +40,7 @@ class Metaclase(type):
     # __new__ sirve para indicar que se lleve a cabo
     # la construccion del objeto, se ejecuta antes
     # que __init__, este metodo sirve para ejecutar
-    def __new__(self, nombre_clase, superclases, atributos):
+    def __new__(cls, nombre_clase, superclases, atributos):
         print("Nombre", nombre_clase, "Clases superiores", superclases, "Atributos", atributos, sep="; ")
         # Al final del metodo devolveremos el contructor type para devolver la clase creada
         return type(nombre_clase, superclases, atributos)
@@ -55,6 +55,9 @@ class Metaclase(type):
 # Nombre; MiClase; Clases superiores; (); Atributos; {'__module__': '__main__',
 # '__qualname__': 'MiClase', '__annotations__': {'nombre': <class 'str'>, 'apellido': <class 'str'>},
 # 'nombre': 'David', 'apellido': 'Montoya', 'imprimir': <function MiClase.imprimir at 0x000002AF0C57B9C0>}
+#
+# Puedes comprobarlo si ejecutas la declaracion
+# de la Metaclase y la clase MiClase
 class MiClase(metaclass=Metaclase):
 
     nombre: str = "David"
@@ -67,6 +70,32 @@ class MiClase(metaclass=Metaclase):
 mi_instancia = MiClase()
 
 mi_instancia.imprimir()
+
+
+
+class Metaclase2(type):
+
+    def __new__(cls, nombre_clase, superclases, atributos):
+
+        diccionario={}
+        for element, valor in atributos.items():
+            diccionario[element] = valor
+
+        diccionario["otroAtributo"] = "Hola"
+
+        print(diccionario)
+
+        return type(nombre_clase, superclases, diccionario)
+
+class MiClase2(metaclass=Metaclase2):
+
+    nombre: str = "David"
+    apellido: str = "Montoya"
+
+    def imprimir(self):
+        print(self.nombre, self.apellido)
+
+mi_instancia = MiClase2()
 
 # https://www.youtube.com/watch?v=nQBAGph1eCM
 # https://www.youtube.com/watch?v=4rarIb1Mhz4

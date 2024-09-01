@@ -1,0 +1,5 @@
+La sintaxis de azucar es un es un tipo de sintaxis el cual
+se hace que los lenguajes de programacion sean mas faciles
+de leer y escribir, usando un lenguaje cercano al lenguaje
+natural.
+https://laxfed.dev/python-syntactic-sugar-in-python-85c976e706ff?gi=2ae2836101d0

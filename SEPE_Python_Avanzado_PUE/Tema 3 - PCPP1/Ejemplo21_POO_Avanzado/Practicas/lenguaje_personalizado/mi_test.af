@@ -1,0 +1,11 @@
+estoy_conectado = ALIVE
+
+check estoy_conectado:
+    say("Conectado!")
+decline:
+    say("NO Conectado...")
+
+each i in numbers(5):
+    say(i)
+
+print(DEAD == ALIVE)

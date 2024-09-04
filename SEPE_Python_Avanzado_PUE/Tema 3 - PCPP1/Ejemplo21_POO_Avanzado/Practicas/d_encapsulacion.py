@@ -27,6 +27,11 @@ class FechaEncapsulada:
         else:
             print("Dia no es valido")
 
+    @mi_dia.deleter
+    def mi_dia(self):
+        print(f"Eliminando {self.__dia}")
+        del self.__dia
+
     @property    
     def mi_Mes(self):
         return self.__mes
@@ -38,7 +43,11 @@ class FechaEncapsulada:
             self.__mes = mes
         else:
             print("Mes no es valido")
-    
+
+    @mi_Mes.deleter
+    def mi_Mes(self):
+        del self.__mes
+
     @property
     def mi_Anyo(self):
         return self.__anyo
@@ -50,6 +59,10 @@ class FechaEncapsulada:
             self.__anyo = anyo
         else:
             print("Anyo no es valido")
+
+    @mi_Anyo.deleter
+    def mi_Anyo(self):
+        del self.__anyo
 
     def __str__(self):
         return f"{self.__dia}/{self.__mes}/{self.__anyo}"
@@ -75,3 +88,5 @@ print(fecha_erronea.mi_dia)  # 0
 
 setattr(fecha_erronea, "_FechaEncapsulada__dia", 55555)
 print(getattr(fecha_erronea, "_FechaEncapsulada__dia"))  # 55555
+
+del fecha_erronea.mi_dia

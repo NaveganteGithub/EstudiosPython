@@ -5,20 +5,29 @@
 
 class File:
 
-    def __init__(self, name):
-        self.name = name
+    def __init__(self, archivo, modo):
+        self.archivo = archivo
+        self.modo = modo
+        self.stream = None
 
-    # Se ejecutara cuando haya una operacion de entrada
+    # Se ejecutara cuando vaya a empezar el bloque del administrador de contexto
     def __enter__(self):
-        print(f'Opening {self.name}')
+        print(f'Abriendo {self.archivo}')
+        self.stream = open(self.archivo, self.modo)
+        return self.stream
 
-        return self
-
-    # Se ejecutara cuando haya una operacion de salida
+    # Se ejecutara cuando vaya a terminar el bloque del administrador de contexto
     def __exit__(self, exc_type, exc_val, exc_tb):
-        print(f'Closing {self.name}')
+        print(exc_type, exc_val, exc_tb)
+        print(f'Cerrando {self.archivo}')
+        self.stream.close()
+        return f"Final {self.archivo}"
 
-with File("j_administradores_contexto.py") as file:
+# Administrador de contexto
+with File("j_administradores_contexto.py", "r") as file: # __enter__
     print(file.name)
+    print(file)
+    print(file.read())
 
-print('Done!')
+# __exit__
+print(file.closed) # Devuelve True si se cierra correctamente

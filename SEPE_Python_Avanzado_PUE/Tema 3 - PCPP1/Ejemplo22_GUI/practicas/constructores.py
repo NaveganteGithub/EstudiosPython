@@ -1,5 +1,7 @@
 import tkinter
 
+
+# https://www.geeksforgeeks.org/how-to-set-border-of-tkinter-label-widget/
 ventana = tkinter.Tk()
 
 ventana.geometry("750x250+50+50")
@@ -13,7 +15,9 @@ texto = tkinter.Entry(ventana,
                       border="2", # Grosor de borde interior
                       borderwidth="5",  # Grosor de borde exterior
                       width=100,  # Ancho de la caja de texto
-                      # relief="solid" # Define el tipo de relieve (borde) que va tener la caja de texto
+                      # relief="solid", # Define el tipo de relieve (borde) que va tener la caja de texto
+                      justify="center",  # Formateara el texto para centrarlo
+
                       )
 texto.pack(side=tkinter.RIGHT)
 

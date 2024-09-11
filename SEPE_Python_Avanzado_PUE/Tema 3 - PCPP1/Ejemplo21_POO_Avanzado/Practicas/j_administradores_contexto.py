@@ -31,3 +31,7 @@ with File("j_administradores_contexto.py", "r") as file: # __enter__
 
 # __exit__
 print(file.closed) # Devuelve True si se cierra correctamente
+print(dir(file))
+# Ten en cuenta que el atributo closed aparece
+# porque estamos manejando un recurso que tiene
+# el metodo close()

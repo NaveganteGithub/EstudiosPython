@@ -4,28 +4,36 @@ el PEP
 
 Pedro Ángel Viruega Muñoz - Traduccion del modulo this al Español
 """
-    1. •Bonito es mejor que feo.
-    2. •Explícito es mejor que implícito.
-    3. •Simple es mejor que complejo.
-    4. •Complejo es mejor que complicado.
-    5. •Plano es mejor que anidado.
-    6. •Esparcido es mejor que denso.
-    7. •La legibilidad cuenta.
-    8. •Los casos especiales no son lo suficientemente especiales 
-        como para romper reglas.
-    9. •Pero la practicidad vence a la pureza.
-    10. •Los errores nunca deberían pasar silenciosamente.
-     
-    11. •A no ser que haya un silencio explícito.
-    12. •En caso de ambigüedad, evita la tentación de adivinar.
-    13. •Debe haber una —y preferiblemente solo una— forma obvia de hacerlo.
-    14. •Aunque esa forma no parezca obvia desde el primer momento a no ser que seas holandés 
+    1. Bonito es mejor que feo.
+    2. Explícito es mejor que implícito.
+    ----------------------------------------------------
+    3. Simple es mejor que complejo.
+    4. Complejo es mejor que complicado.
+    ----------------------------------------------------
+    5. Plano es mejor que anidado.
+    6. Esparcido es mejor que denso.
+    ----------------------------------------------------
+    7. La legibilidad cuenta.
+    8. Los casos especiales no son lo suficientemente especiales
+       como para romper reglas.
+    9. Pero la practicidad vence a la pureza.
+    ----------------------------------------------------
+    10. Los errores nunca deberían pasar silenciosamente.
+    11. A no ser que haya un silencio explícito.
+    ----------------------------------------------------
+    12. En caso de ambigüedad, evita la tentación de adivinar.
+    ----------------------------------------------------
+    13. Debe haber una —y preferiblemente solo una— forma obvia de hacerlo.
+    14. Aunque esa forma no parezca obvia desde el primer momento a no ser que seas holandés
         [hace referencia a que Guido es holandés].
-    15. •Ahora es mejor que nunca.
-    16. •Pero, muchas veces, nunca es mejor que ahora mismo.
-    17. •Si la implementación es complicada de explicar, es una mala idea.
-    18. •Si la implementación es fácil de explicar, es una buena idea.
-    19. •Los espacios de nombres son una buena idea -, ¡Hagamos más de esos!
+    ----------------------------------------------------
+    15. Ahora es mejor que nunca.
+    16. Pero, muchas veces, nunca es mejor que ahora mismo.
+    ----------------------------------------------------
+    17. Si la implementación es complicada de explicar, es una mala idea.
+    18. Si la implementación es fácil de explicar, es una buena idea.
+    ----------------------------------------------------
+    19. Los espacios de nombres son una buena idea -, ¡Hagamos más de esos!
 """
 
 Pedro Ángel Viruega Muñoz

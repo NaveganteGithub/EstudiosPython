@@ -16,20 +16,24 @@ class Atributos:
         Atributos.precio = precio
 
     def __getattr__(self, item):
-        return "El atributo no existe"
+        return f"El atributo {item} no existe"
 
     def __getattribute__(self, item):
         valor = super().__getattribute__(item)
         return item, valor
 
     def __setattr__(self, item, data):
-        return item, data
+        exec(f"Atributos.{item} = {data}")
 
     def __delattr__(self, item):
-        return "Atributo eliminado"
+        exec(f"del Atributos.{item}")
+        print("Atributo eliminado")
 
 
 mi_atributo = Atributos("Manzana", 2.10)
 
 print(getattr(mi_atributo, "producto"))
 print(getattr(mi_atributo, "id"))
+setattr(mi_atributo, "precio", 5.20)
+print(getattr(mi_atributo, "precio"))
+delattr(mi_atributo, "producto")

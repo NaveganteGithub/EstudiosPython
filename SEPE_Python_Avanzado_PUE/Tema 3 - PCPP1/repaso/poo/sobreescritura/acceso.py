@@ -20,7 +20,7 @@ class MiClase:
         return self.coordenadas * 2
 
     def __setitem__(self, key, value):
-        exec(f"self.{key} = {value * 2}")
+        exec(f"{self}.{key} = {value * 2}")
 
     def __delitem__(self, key):
         exec(f"del self.{key}")

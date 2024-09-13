@@ -1,0 +1,5 @@
+2024-09-12 17:45:48,326: Gravedad INFO Mensaje Hola Nombre del registro Niveles de logging
+2024-09-12 17:45:48,326: Gravedad DEBUG Mensaje Traza 2321313 Nombre del registro Niveles de logging
+2024-09-12 17:45:48,327: Gravedad WARNING Mensaje Peligro Nombre del registro Niveles de logging
+2024-09-12 17:45:48,327: Gravedad ERROR Mensaje ERROR Nombre del registro Niveles de logging
+2024-09-12 17:45:48,327: Gravedad CRITICAL Mensaje ADVERTENCIA Nombre del registro Niveles de logging

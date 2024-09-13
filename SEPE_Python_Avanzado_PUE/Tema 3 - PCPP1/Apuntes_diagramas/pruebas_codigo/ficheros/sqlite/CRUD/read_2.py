@@ -115,6 +115,24 @@ print(procesado)
 # ('Alejandro', 1000.12, '56489498F', 'Española', 6), ('Jesus', inf, None, None, None),
 # ('Elena', None, None, None, None), ('Rocio', None, None, None, None), ('Bruno', None, None, None, None)]
 
+# Me dara todos los datos de la tabla1 sin ningun dato de la tabla2
+resultado = mi_cursor.execute(
+    "select " + columnas + " from tabla1 left join tabla2 on tabla1.id = tabla2.persona where tabla2.persona IS NULL")
+procesado = resultado.fetchall()
+print(procesado)
+
+# Me dara todos los datos de la tabla2 sin ningun dato de la tabla1
+resultado = mi_cursor.execute(
+    "select " + columnas + " from tabla1 right join tabla2 on tabla1.id = tabla2.persona where tabla1.id IS NULL")
+procesado = resultado.fetchall()
+print(procesado)
+
+# Me dara todos los datos de la tabla1 y tabla2 pero sin los datos que tengan ambas tablas en comun
+resultado = mi_cursor.execute(
+    "select " + columnas + " from tabla1 full join tabla2 on tabla1.id = tabla2.persona where tabla1.id IS NULL")
+procesado = resultado.fetchall()
+print(procesado)
+
 # Alias
 resultado_alias = mi_cursor.execute("select t.dni from tabla2 as t where t.dni like '%D%'")
 procesado_alias = resultado_alias.fetchall()

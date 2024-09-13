@@ -78,7 +78,7 @@ Ejemplo 1:
 }
 
 4.- En la terminal nos hemos posicionado donde tenemos ese archivo alumnos.json
-            cd .\PycharmProjects\Ejemplo26_HTTP\
+            cd '.\PycharmProjects\EstudiosPython\SEPE_Python_Avanzado_PUE\Tema 3 - PCPP1\Ejemplo26_HTTP\Practicas'
 
 5.-  Publicar el archivo en el servidor:
             json-server --watch alumnos.json

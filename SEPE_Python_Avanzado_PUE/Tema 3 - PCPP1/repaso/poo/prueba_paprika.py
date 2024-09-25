@@ -6,7 +6,10 @@ from paprika import singleton, equals_and_hashcode, to_string
 # Salida:
 # ImportError: cannot import name 'data' from partially initialized module
 # 'paprika' (most likely due to a circular import)
-# (C:\Users\ismae\PycharmProjects\EstudiosPython\SEPE_Python_Avanzado_PUE\Tema 3 - PCPP1\repaso\poo\prueba_paprika.py)
+# (...EstudiosPython\SEPE_Python_Avanzado_PUE\Tema 3 - PCPP1\repaso\poo\prueba_paprika.py)
+#
+# Es un ImportError de tipo Importacion Circular, sale cuando intentas importar
+# un modulo de python con el mismo nombre que el modulo que se esta programando
 
 @equals_and_hashcode
 @to_string

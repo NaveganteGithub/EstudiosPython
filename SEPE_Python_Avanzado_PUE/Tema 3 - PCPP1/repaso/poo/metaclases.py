@@ -1,4 +1,7 @@
 
+# Una metaclase es un objeto que nos permite definir
+# el como estarán conformadas las clases en Python
+
 class MiClase:
 
     def __init__(self, x):
@@ -6,8 +9,8 @@ class MiClase:
 
 clase = MiClase(5)
 
-print(type(clase))
-print(type(MiClase))
+print(type(clase)) # Nos devuelve el tipo de clase que conforma la instancia
+print(type(MiClase)) # Nos devuelve la clase Padre de MiClase que es type (que es la metaclase)
 
 
 def saludo():

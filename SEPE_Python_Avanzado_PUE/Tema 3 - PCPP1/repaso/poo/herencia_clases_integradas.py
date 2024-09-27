@@ -20,7 +20,14 @@ texto.imprimir()
 print(texto.formato(":"))
 
 
-class NumeroPersonalizado(dict):
+class ListaPersonalizada(list):
 
-    def calculo(self, mi_numero):
-        pass
+    def agregar_elevado_2(self, numero):
+        self.append(numero ** 2)
+
+    def imprimir(self):
+        print(self)
+
+lista = ListaPersonalizada([2, 5, 6, 8])
+lista.agregar_elevado_2(5)
+lista.imprimir()

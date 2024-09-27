@@ -1,6 +1,3 @@
-"""from adodbapi.examples.xls_read import driver
-from os import statvfs_result
-"""
 
 class MiClase:
 

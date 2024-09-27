@@ -15,6 +15,7 @@ class MiClase:
 
     def __del__(self):
         print("Adios a " + self.__class__.__name__)
+        del self
 
     def __dir__(self):
         return dir(MiClase)
@@ -48,3 +49,4 @@ print(dir(clase))
 print(bool(clase))
 print(format(clase, "Hori: coorX; Verti: coorY; Profu: coorZ"))
 del clase
+print(clase)

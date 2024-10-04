@@ -43,4 +43,4 @@ while True:
     informacion = bytes("Hola, bienvenido al servidor", "utf-8")
     socket_cliente.send(informacion)
     socket_cliente.shutdown(socket.SHUT_RDWR)
-    socket_cliente.close()
+    socket_cliente.close()  # Tambien

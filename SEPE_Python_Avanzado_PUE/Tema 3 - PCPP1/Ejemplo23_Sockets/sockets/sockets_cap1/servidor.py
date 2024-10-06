@@ -19,13 +19,18 @@ mi_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 En el primer parametro pondriamos la ip de la maquina, pero para no tener 
 que estar cambiandola cada rato lo mejor es utilizar gethostname 
 
-En el segundo parametro pondriamos el puerto de la maquina, no
+En el segundo parametro pondriamos el puerto que usara la maquina, recuerda no usar ningun 
+puerto que ya este usando la maquina, pues sino te dara excepcion.
+
+Recomiendo usar puertos dentro de este rango, 49152 – 65535
+
+https://es.wikipedia.org/wiki/Anexo:Puertos_de_red#Puertos_ef%C3%ADmeros
 """
 
 datos_red = tuple([socket.gethostname(), # IP
                    1234 # PUERTO
                    ])
-mi_socket.bind(datos_red) # Declramos que este socket es de un servidor
+mi_socket.bind(datos_red) # Declaramos que este socket es de un servidor
 
 # Haremos que el servidor escuche, en este caso estamos creando una "cola" para recibir 5 peticiones al mismo tiempo
 # para este servidor, 5 peticiones por cada cola, ahora si quisieramos que el servidor pudiera recibir muchas peticiones
@@ -42,5 +47,7 @@ while True:
     """
     informacion = bytes("Hola, bienvenido al servidor", "utf-8")
     socket_cliente.send(informacion)
+    # A nivel muy basico, para transmitir el mensaje completo al cliente
+    # hay que cerrar el servidor
     socket_cliente.shutdown(socket.SHUT_RDWR)
-    socket_cliente.close()  # Tambien
+    socket_cliente.close()

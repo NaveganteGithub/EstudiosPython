@@ -1,0 +1,1 @@
+{"enteros": {"Decimales": [123, -123], "Binarios": 42, "Octales": 53807, "Hexadecimales": 1123388756}, "decimales": {"Flotantes": [0.04, -0.4], "Cientificos": [Infinity, Infinity]}, "cadenas": ["Hola", "Adios"], "booleanos": [true, false], "Nulos": null}

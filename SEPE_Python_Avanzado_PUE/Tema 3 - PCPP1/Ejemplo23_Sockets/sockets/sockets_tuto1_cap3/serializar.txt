@@ -1,0 +1,1 @@
+Es el proceso por el cual pasamos un objeto a una serie de unos y ceros

@@ -1,0 +1,27 @@
+import tkinter
+
+ventana = tkinter.Tk()
+ventana.geometry("450x450+50+0")
+
+etiqueta1 = tkinter.Label(ventana, text="Etiqueta 1")
+etiqueta1.grid(row=0, column=0)
+etiqueta2 = tkinter.Label(ventana, text="Etiqueta 2")
+etiqueta2.grid(row=0, column=1)
+etiqueta3 = tkinter.Label(ventana, text="Etiqueta 3")
+etiqueta3.grid(row=0, column=2)
+etiqueta4 = tkinter.Label(ventana, text="Etiqueta 4")
+etiqueta4.grid(row=1, column=0)
+etiqueta5 = tkinter.Label(ventana, text="Etiqueta 5")
+etiqueta5.grid(row=1, column=1)
+etiqueta6 = tkinter.Label(ventana, text="Etiqueta 6")
+etiqueta6.grid(row=1, column=2)
+etiqueta7 = tkinter.Label(ventana, text="Etiqueta 7")
+etiqueta7.grid(row=2, column=0)
+etiqueta8 = tkinter.Label(ventana, text="Etiqueta 8")
+etiqueta8.grid(row=2, column=1)
+etiqueta9 = tkinter.Label(ventana, text="Etiqueta 9")
+etiqueta9.grid(row=2, column=2)
+etiqueta10 = tkinter.Label(ventana, text="Etiqueta 10")
+etiqueta10.grid(row=3, column=0, columnspan=3)
+
+ventana.mainloop()

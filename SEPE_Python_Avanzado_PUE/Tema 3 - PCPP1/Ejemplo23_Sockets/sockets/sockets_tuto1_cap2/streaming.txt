@@ -1,0 +1,20 @@
+Buffer: es una zona de memoria para almacenar datos de manera temporal.
+
+Encabezado: es una herramienta que nos permite sacar informacion de nuestro mensaje, como por ejemplo, su tamaño, etc...
+
+    Los encabezados tienen la siguiente estructura
+
+    {BEGIN o comienzo}
+    {END MSG o final de mensaje}
+
+    Tambien existen encabezados de longitud fija
+
+Stream: es un modo de envio de datos, en el cual los datos se transfieren de un nodo a otro, en un flujo de datos continuo
+
+A nivel muy basico nosotros para transmitir un mensaje completo del servidor al cliente podemos usar close() para cerrar
+el socket y transmitir el mensaje completo, pero esto es deficiente, porque si queremos crear un flujo de datos continuo
+necesitamos tener el socket abierto sin cerrar, porque si cerramos el socket tenemos que volverlo abrir de nuevo.
+
+Recordemos que si definimos un tamaño de buffer fijo en nuestro socket cliente, al final puede darse el caso de que no
+podamos procesar todos los mensajes debido a que habra algunos mensajes mas grandes que nuestro buffer.
+

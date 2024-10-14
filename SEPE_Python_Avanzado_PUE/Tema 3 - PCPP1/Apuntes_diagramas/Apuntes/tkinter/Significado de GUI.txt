@@ -1,0 +1,2 @@
+GUI o Graphical User Interface es un software que se encarga de hacer de intermediario entre el usuario y la maquina,
+utilizando imagenes y objetos graficos para representar la informacion y acciones disponibles.

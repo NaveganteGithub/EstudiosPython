@@ -1,0 +1,10 @@
+python.exe -m pip install --upgrade pip
+
+pip install hashbase pillow
+pip install crc32c
+pip install gostcrypto
+pip install pyaes
+pip install rsa
+pip install pymd6
+pip install py3-base92
+pip install selenium

@@ -1,0 +1,92 @@
+{
+  "empleados": [
+    {
+      "id": "00001",
+      "datos": {
+        "Nombre": "Jose Miguel",
+        "Salario": 2000.5,
+        "Empleo": "Scrum Manager"
+      }
+    },
+    {
+      "id": "00002",
+      "datos": {
+        "Nombre": "Miguel Angel",
+        "Salario": 1200.1,
+        "Empleo": "Develop"
+      }
+    },
+    {
+      "id": "00003",
+      "datos": {
+        "Nombre": "Daniela Castro",
+        "Salario": 1200.1,
+        "Empleo": "Develop"
+      }
+    },
+    {
+      "id": "00004",
+      "datos": {
+        "Nombre": "Lucia Parra",
+        "Salario": 1400,
+        "Empleo": "RR.HH"
+      }
+    },
+    {
+      "id": "00005",
+      "datos": {
+        "Nombre": "Pedro Salazar",
+        "Salario": 1302.1,
+        "Empleo": "System Engineer"
+      }
+    },
+    {
+      "id": "00006",
+      "datos": {
+        "Nombre": "Victor Sanchez",
+        "Salario": 5000.5,
+        "Empleo": "CEO"
+      }
+    },
+    {
+      "id": "00007",
+      "datos": {
+        "Nombre": "Isaias Gutierrez",
+        "Salario": 2500.23,
+        "Empleo": "System Engineer"
+      }
+    }
+  ],
+  "puestos": [
+    {
+      "id": "d7c6",
+      "Nombre": "CEO",
+      "Descripcion": "Director ejecutivo encargado de estar dirigindo a la empresa."
+    },
+    {
+      "id": "7245",
+      "Nombre": "CTO",
+      "Descripcion": "Director encargado de supervisar y revisar todo lo que concierne a la tecnologia y sus avances."
+    },
+    {
+      "id": "25f0",
+      "Nombre": "System Engineer",
+      "Descripcion": "Desarrollor encargado de la supervision y desarrollo de infraestructuras tecnologicas."
+    },
+    {
+      "id": "84ec",
+      "Nombre": "Scrum Manager",
+      "Descripcion": "Encargado del asignamiento de tareas, organización del proyecto y del equipo."
+    },
+    {
+      "id": "bb3c",
+      "Nombre": "Develop",
+      "Descripcion": "Desarrollador encargado de mantener el proyecto."
+    },
+    {
+      "id": "492f",
+      "Nombre": "Mantenimiento",
+      "Descripcion": "Encargado del manteniento de la oficina"
+    }
+  ]
+}

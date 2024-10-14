@@ -1,0 +1,51 @@
+0º Instalamos MySQL
+
+1º Si tienes que mariadb instalado junto con mysql primero cierra 
+   todos los puertos y procesos que tengan que ver con mysql o mariadb.
+
+2º Buscamos y ejecutamos el programa "MySQL 8.4 Configurator".
+
+3º Seguimos los pasos de la aplicacion para activar y configurar el servidor.
+    
+    3.1 La primera vez te pedira que crees la contraseña del root, 
+        mi recomendacion es escribirla en un bloc de notas para 
+        despues copiarla y pegarla en el campo.
+    
+4º Comprobar que podemos conectarnos con el cliente de MySQL "MySQL 8.4 Command Line Client"
+
+5º Realizar la conexion con Python.
+
+    5.1 Crearemos una base de datos para hacer la prueba, 
+        asi que iniciaremos sesión
+
+        mysql> create database tienda;
+        Query OK, 1 row affected (0.01 sec)
+
+        mysql> use tienda;
+        Database changed
+        mysql> show tables;
+        Empty set (0.02 sec)
+
+        mysql> create table PRODUCTOS (
+            -> Id integer primary key,
+            -> descripcion text,
+            -> precio double
+            -> );
+        Query OK, 0 rows affected, 1 warning (0.03 sec)
+
+        mysql> insert into PRODUCTOS values (1, "Pantalla", 80.50);
+        Query OK, 1 row affected (0.01 sec)
+
+        mysql> insert into PRODUCTOS values (2, "Impresora", 40.15);
+        Query OK, 1 row affected (0.01 sec)
+
+        mysql> insert into PRODUCTOS values (3, "Raton", 15.14);
+        Query OK, 1 row affected (0.00 sec)
+
+    5.2 Instalar el driver. Tendras que intentar instalar el driver 
+        varias veces y apagar el PC para que la instalacion se aplique
+        correctamente.
+
+        pip install mysql-connector-python
+
+6º Para desactivar MySQL tienes que desactivar el proceso en segundo plano.

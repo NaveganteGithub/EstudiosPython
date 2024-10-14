@@ -1,0 +1,3 @@
+<empleados>
+
+<empleado id="00001"><nombre>Andrea</nombre><trabajo>Directora</trabajo><salario divisa="euros">2000</salario></empleado><empleado id="00002"><nombre>Daniel</nombre><trabajo>Gerente</trabajo><salario divisa="dolar">2500</salario></empleado><empleado id="00003"><nombre>Alvaro</nombre><trabajo>Limpiador</trabajo><salario divisa="euros">1000</salario></empleado></empleados>

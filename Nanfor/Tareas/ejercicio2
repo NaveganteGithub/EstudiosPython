@@ -1,0 +1,1 @@
+select t.Name from Playlist pl, PlaylistTrack plt, Track t where pl.PlaylistId = plt.PlaylistId and plt.TrackId = t.TrackId and pl.Name like "Classical";

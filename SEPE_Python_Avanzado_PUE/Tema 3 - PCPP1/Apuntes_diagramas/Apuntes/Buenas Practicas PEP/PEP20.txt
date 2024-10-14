@@ -1,0 +1,52 @@
+Usando el "import this" en la terminal de Python te 
+aparecera un texto que es el prefario de lo que es 
+el PEP
+
+Pedro Ángel Viruega Muñoz - Traduccion del modulo this al Español
+"""
+    1. Bonito es mejor que feo.
+    2. Explícito es mejor que implícito.
+    ----------------------------------------------------
+    3. Simple es mejor que complejo.
+    4. Complejo es mejor que complicado.
+    ----------------------------------------------------
+    5. Plano es mejor que anidado.
+    6. Esparcido es mejor que denso.
+    ----------------------------------------------------
+    7. La legibilidad cuenta.
+    8. Los casos especiales no son lo suficientemente especiales
+       como para romper reglas.
+    9. Pero la practicidad vence a la pureza.
+    ----------------------------------------------------
+    10. Los errores nunca deberían pasar silenciosamente.
+    11. A no ser que haya un silencio explícito.
+    ----------------------------------------------------
+    12. En caso de ambigüedad, evita la tentación de adivinar.
+    ----------------------------------------------------
+    13. Debe haber una —y preferiblemente solo una— forma obvia de hacerlo.
+    14. Aunque esa forma no parezca obvia desde el primer momento a no ser que seas holandés
+        [hace referencia a que Guido es holandés].
+    ----------------------------------------------------
+    15. Ahora es mejor que nunca.
+    16. Pero, muchas veces, nunca es mejor que ahora mismo.
+    ----------------------------------------------------
+    17. Si la implementación es complicada de explicar, es una mala idea.
+    18. Si la implementación es fácil de explicar, es una buena idea.
+    ----------------------------------------------------
+    19. Los espacios de nombres son una buena idea -, ¡Hagamos más de esos!
+"""
+
+Pedro Ángel Viruega Muñoz
+La longitud de línea máxima es de 79 caracteres para el código y de 72 caracteres para 
+los comentarios y la documentación. Esto favorece que los editores de texto con límite 
+de ancho de línea de 80 caracteres muestren el código correctamente y sin necesidad de 
+utilizar saltos de línea, ayudando también a poder abrir varios archivos en la misma 
+ventana con facilidad. Para equipos de desarrollo que realmente quieran utilizar una 
+longitud mayor de línea y estén de acuerdo con aumentar el número de caracteres por 
+línea, se permite llegar hasta un límite de 99 caracteres para el código, quedando 
+el límite para comentarios y textos de documentación en el mismo que antes: 72 caracteres.
+
+Cuando la longitud de una línea sea mayor que la cantidad máxima predefinida, se utilizará
+el carácter "'" para hacer un salto de línea y hacer que el texto continúe en la siguiente.
+
+https://peps.python.org/pep-0020/

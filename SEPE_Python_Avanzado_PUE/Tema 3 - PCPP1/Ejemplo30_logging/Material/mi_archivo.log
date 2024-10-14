@@ -1,0 +1,5 @@
+[2024-05-02 10:17:51,689] CRITICAL - Mensaje critico
+[2024-05-02 10:17:51,689] ERROR - Mensaje error
+[2024-05-02 10:17:51,689] WARNING - Mensaje de aviso
+[2024-05-02 10:17:51,690] INFO - Mensaje de informacion
+[2024-05-02 10:17:51,692] DEBUG - Mensaje de debug

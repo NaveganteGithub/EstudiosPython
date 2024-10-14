@@ -1,0 +1,4 @@
+Primero se crea el servidor y luego se crea cliente
+
+Ten en cuenta que puedes manejar el tamaño buffer para poder definir el tamaño de los mensajes a procesar
+cuanto mas grande sea el tamaño del buffer podras manejar mensajes de mayor tamaño.

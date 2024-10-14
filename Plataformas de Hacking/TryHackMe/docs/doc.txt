@@ -1,0 +1,2 @@
+pip install pip-licenses cython scapy keyboard paramiko
+pip uninstall pycparser

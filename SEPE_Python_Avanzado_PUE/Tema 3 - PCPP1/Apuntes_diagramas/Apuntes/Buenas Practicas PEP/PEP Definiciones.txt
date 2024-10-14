@@ -1,0 +1,31 @@
+PEP o Python Enhacenment Proposals (Propuestas de mejora de Python) son un conjunto de directrices y mejores prácticas.
+
+Existen tres tipos de PEP:
+
+    _ Standards Track que describen nuevas caracterisicas del lenguaje
+    - PEP informativos, que proporcionan directrices e información
+    - PEP de Proceso que proporcionan procesos que podemos seguir, proponer cambios,
+      dar recomendaciones, dar procedimientos
+
+Ejemplos de PEP
+
+PEP1 - Es la primera version del PEP
+PEP8 - Documento que da convenciones de codificación que ayudan a hacer que él codigo se haga más consistente,
+legible y eficiente.
+
+    Herramientas:
+
+        pycodestyle: es una herramienta que permite comprobar si un codigo python cumple con las convenciones de PEP8.
+
+        autopep8: es una herramienta que permite formatear automaticamente tu codigo python.
+
+        PEP 8 online: que es un verificador online de PEP8, creado por Valentin Bryukhanov.
+
+PEP20 - Zen de Python es una filosofia que nos permite diseñar "codigo limpio" o "codigo elegante", es decir, codigo
+mucho más eficiente, a la hora de leer y escribir.
+PEP257 - Permite estandarizar la estructura de los docstrings, con las mejores convenciones y practicas a seguir.
+PEP484 - Especifica que es el Type hinting que es un mecanismo que permite documentar el codigo sin comentarios.
+                |        |
+                v        v
+def hello(name: str) -> str:
+    return "Hello"

@@ -1,0 +1,132 @@
+Para crear el servidor
+1.- Descargar node e instalarlo:
+            https://nodejs.org/en/download
+
+2.- Instalar json-server en una terminal con permisos de administrador:
+            npm i -g json-server
+
+3.- Crear el archivo alumnos.json.
+
+Estructura de ejemplo:
+{
+  "alumnos": [ <-- 1º Agrupar objetos en un array con su identificador
+    {
+      "id": "1",                        <--- 3º Poner identificador
+      "nombre": "Juan",                 <--- 2º Agrupar datos en objetos
+      "apellido": "Lopez",
+      "nota": 7.5,
+      "repetidor": false
+    },
+    {
+      "id": "2",
+      "nombre": "Maria",
+      "apellido": "Gutierrez",
+      "nota": 6.3,
+      "repetidor": true
+    },
+    {
+      "id": "3",
+      "nombre": "Pedro",
+      "apellido": "Garcia",
+      "nota": 4.5,
+      "repetidor": true
+    }
+  ]
+}
+
+Ejemplo 1:
+{
+  "empleados": [
+    {
+      "id": "00001",
+      "datos": {
+        "Nombre": "Jose Miguel",
+        "Salario": 2000.5,
+        "Empleo": "Scrum Manager"
+      }
+    },
+    {
+      "id": "00002",
+      "datos": {
+        "Nombre": "Miguel Angel",
+        "Salario": 1200.1,
+        "Empleo": "Develop"
+      }
+    },
+    {
+      "id": "00003",
+      "datos": {
+        "Nombre": "Daniela Castro",
+        "Salario": 1200.1,
+        "Empleo": "Develop"
+      }
+     }
+    }
+  ],
+  "puestos": [
+    {
+      "id": "84ec",
+      "Nombre": "Scrum Manager",
+      "Descripcion": "Encargado del asignamiento de tareas, organización del proyecto y del equipo."
+    },
+    {
+      "id": "bb3c",
+      "Nombre": "Develop",
+      "Descripcion": "Desarrollador encargado de mantener el proyecto."
+    }
+  ]
+}
+
+4.- En la terminal nos hemos posicionado donde tenemos ese archivo alumnos.json
+            cd '.\PycharmProjects\EstudiosPython\SEPE_Python_Avanzado_PUE\Tema 3 - PCPP1\Ejemplo26_HTTP\Practicas'
+
+5.-  Publicar el archivo en el servidor:
+            json-server --watch alumnos.json
+
+                --watch/-w can be omitted, JSON Server 1+ watches for file changes by default
+                JSON Server started on PORT :3000
+                Press CTRL-C to stop
+                Watching alumnos.json...
+
+                ♡⸜(˶˃ ᵕ ˂˶)⸝♡
+
+                Index:
+                http://localhost:3000/
+
+                Static files:
+                Serving ./public directory if it exists
+
+                Endpoints:
+                http://localhost:3000/alumnos
+
+EJEMPLO EN MI TERMINAL
+
+PS C:\Users\ismae> npm i -g json-server
+
+added 54 packages in 4s
+
+15 packages are looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New minor version of npm available! 10.5.0 -> 10.6.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.6.0
+npm notice Run npm install -g npm@10.6.0 to update!
+npm notice
+PS C:\Users\ismae> cd .\PycharmProjects\Ejemplo26_HTTP\
+PS C:\Users\ismae\PycharmProjects\Ejemplo26_HTTP> json-server --watch alumnos.json
+--watch/-w can be omitted, JSON Server 1+ watches for file changes by default
+JSON Server started on PORT :3000
+Press CTRL-C to stop
+Watching alumnos.json...
+
+♡⸜(˶˃ ᵕ ˂˶)⸝♡
+
+Index:
+http://localhost:3000/
+
+Static files:
+Serving ./public directory if it exists
+
+Endpoints:
+http://localhost:3000/alumnos
+

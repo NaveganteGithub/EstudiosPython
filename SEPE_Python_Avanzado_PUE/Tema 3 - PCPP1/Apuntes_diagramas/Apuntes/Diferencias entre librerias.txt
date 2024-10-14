@@ -1,0 +1,7 @@
+shelve es una libreria que sirve para serializar objetos.
+
+pickle sirve para manejar archivo binarios y añadir persistencia a los objetos.
+
+logging es para crear un archivo de trazas para asi ver la ejecucion del programa.
+
+configparser para crear archivos de configuracion.

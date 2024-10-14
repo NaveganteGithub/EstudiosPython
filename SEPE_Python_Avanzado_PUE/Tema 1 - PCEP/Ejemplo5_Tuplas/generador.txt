@@ -1,0 +1,18 @@
+Un generador en Python es una forma eficiente de generar una secuencia de valores de manera perezosa (lazy), es decir, los valores se van generando solo cuando se solicitan y no se almacenan en memoria en su totalidad.
+
+La comprensión de tuplas que has visto en clase puede estar involucrando generadores si utiliza la sintaxis (expresion for elemento in iterable), donde expresion es una operación o cálculo que se realiza para cada elemento en el iterable. En este caso, el generador se encarga de producir los valores uno a uno, a medida que se necesitan.
+
+Por ejemplo, si tienes una comprensión de tuplas como esta:
+
+
+tupla = tuple(valor * 2 for valor in lista)
+
+
+Estás creando un generador que multiplica cada valor en la lista por 2 y luego forma una tupla con esos valores. El generador no produce todos los valores de una vez, sino que los genera uno por uno, lo que puede ser más eficiente en términos de memoria y tiempo de ejecución.
+
+En resumen, un generador en Python es una forma de producir valores de manera perezosa y eficiente, útil especialmente cuando necesitas trabajar con secuencias grandes o infinitas de datos.
+
+
+
+
+

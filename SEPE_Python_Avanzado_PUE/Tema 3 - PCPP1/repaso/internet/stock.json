@@ -1,0 +1,24 @@
+{
+  "comida" : {
+    "carne": ["Chuletas", "Pollo", "Mortalela"],
+    "verdura": ["Lechuga", "Alcachofas", "Pepinos"],
+    "pescado": ["Emperador", "Salmon", "Merluza"],
+    "marisco": ["Cril", "Cangrejo", "Almejas"]
+  },
+  "material": {
+    "escolar": ["Cuadernos", "Libros", "Boligrafos"],
+    "limpieza": ["Lejia", "Friegasuelos"],
+    "deportivo": ["Combas", "Balones"]
+  },
+  "cantidades": {
+    "Cuadernos": 256,
+    "Friegasuelos": 104,
+    "Boligrafos": 15e6563,
+    "Combas": 120,
+    "Balones": 54,
+    "Emperador": 9e999,
+    "Alcachofas": 1200.30,
+    "Chuletas": 1500.50,
+    "Merluza": 1420.15
+  }
+}

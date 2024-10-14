@@ -1,0 +1,40 @@
+Definiciones
+
+Herencia: es un enfoque de programacion donde nosotros podemos crear clases en base a otras clases, por ejemplo,
+una Persona, puede ser un Papa, una Mama o un Hijo, por lo tanto si creamos una clase Persona, los metodos y
+atributos de esa clase se pueden Heredar a otras clases como a la clase Papa. En modelado de objetos esto se
+interpreta como un "is a" o "es un" en español, por ejemplo, un Papa es una Persona, una Mama es una persona,
+un Hijo es una Persona.
+
+Composicion: es un enfoque alternativo a la herencia, cuya principal filosofia es la construccion de clases complejas
+unificando clases sencillas. Podemos crear una clase Direccion, y otra clase que se llama Persona, la clase Direccion
+va tener datos como la calle, el numero, el piso, la letra, el portal, etc, y la clase Persona va a tener, el nombre,
+el apellido, la edad, y una instancia de la clase Direccion. En modelado de objetos esto se interpreta como un "has a"
+o "tiene un" en español, por ejemplo, una Persona tiene una Direccion, una Empresa tiene una Direccion.
+
+Ventajas
+
+º Herencia
+    - Sencilla de implementar.
+    - Se define la herencia antes de ejecutar el programa, por lo que sabemos que se va ejecutar y como se va ejecutar.
+
+º Composicion
+    - Permite organizar las clases de tal manera que esten mas centradas o encapsuladas, lo que permite generar objetos
+    de menor tamaño o de menor cantidad de codigo y que no hagan tantas tareas.
+    - La composicion se puede definir mientras se ejecuta el programa mediante referencias a otros objetos desde
+    un objeto, no se rompe el principio de encapsulacion debido a que los objetos referenciados se acceden por su
+    interfaz.
+
+Desventajas
+
+º Herencia
+    - Puede dar lugar a una redundancia en el codigo.
+    - No se heredan los constructores de la superclases (o clases padre).
+    - Dependiendo del lenguaje los metodos y atributos con modificadores acceso restrinjido no se heredan.
+    - Una vez se ejecuta el programa no se puede cambiar el objeto que hereda a la subclase.
+
+https://www.arquitecturajava.com/java-composicion-y-la-reutilizacion-del-codigo/
+https://www.arquitecturajava.com/java-herencia-y-sus-limitaciones/
+https://graion.gitbook.io/fundamentos-de-programacion-orientada-objetos/herencia_y_composicion#composicion
+https://www.delftstack.com/es/howto/python/python-multiple-decorators/
+https://jugnicaragua.org/composicion-sobre-la-herencia/

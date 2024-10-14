@@ -1,0 +1,18 @@
+<empleados>
+	<empleado>
+		<id>00132</id>
+		<nombre>Antonio Lopez</nombre>
+		
+		<email>antonio@gmail.com</email>
+		<dpto>Ventas</dpto>
+		<sueldo moneda="euros">45000</sueldo>
+	<Genero>Hombre</Genero></empleado>
+	<empleado>
+		<id>00133</id>
+		<nombre>Luis Sanchez</nombre>
+		
+		<email>luis@yahoo.es</email>
+		<dpto>Compras</dpto>
+		<sueldo moneda="dolares">60000</sueldo>
+	<Genero>Hombre</Genero></empleado>
+<empleado><sueldo saldo="neto">2100</sueldo><Genero>Hombre</Genero></empleado></empleados>

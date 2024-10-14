@@ -1,0 +1,32 @@
+Una lista puede tener valores repetidos
+Una lista es mutable, es decir, puede ser modificarse 
+los datos que tiene dentro, e incluso ordenarlos, tu
+podrias agregar valores nuevos, además de poder eliminar 
+valores existentes
+Una lista tiene los valores indexados
+Una lista tiene bastantes operadores y funciones
+Una lista tiene los valores ordenados
+
+Una tupla es inmutable es decir, sus valores no 
+se puede modificar, y no se puede cambiar el 
+orden de sus valores, además de no poder agregar
+valores nuevos, además de no poder eliminar 
+valores existentes
+Una tupla puede tener valores duplicados
+Una tupla tiene los valores indexados
+Una tupla tiene pocas operaciones y funciones
+Una tupla tiene los valores ordenados
+
+Un conjunto o set tiene valores inordenados
+Un conjunto o set tiene sus valores sin indexar
+Un conjunto o set no es del todo inmutable, 
+es decir, no se le puede cambiar u ordenar 
+sus datos, se le puede agregar nuevos datos 
+o objetos
+Un conjunto o set no puede tener datos duplicados
+
+Un diccionario tiene valores inordenados 
+Un diccionario tiene sus valores sin indexar
+Un diccionario no tiene datos duplicados
+Un diccionario puede modificarse sus datos
+

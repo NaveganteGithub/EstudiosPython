@@ -1,9 +1,12 @@
+import random
+
 
 class Acceso:
 
     def __init__(self, nombre, edad):
         self.mi_nombre = nombre
         self.mi_edad = edad
+        self.codigo = list(str(random.randint(1000, 10000)))
 
     def __getitem__(self, item):
         print(f"{item} a sido pedido")
@@ -23,6 +26,9 @@ class Acceso:
     def __len__(self):
         return len(self.mi_nombre)
 
+    def __iter__(self):
+        return iter(self.codigo)
+
     def __contains__(self, item):
         print(f"Analizando {item}")
         return item in self.mi_nombre
@@ -36,5 +42,10 @@ print(clase["mi_nombre"])
 print(len(clase))
 
 print("a" in clase)
+
+for l in clase:
+    print(l, end="")
+
+print()
 
 del clase["mi_nombre"]

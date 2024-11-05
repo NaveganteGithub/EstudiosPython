@@ -9,9 +9,11 @@ def factorial(factorial_actual=1, numero_siguiente=1, numero_recursiones=1):
         numero_siguiente += 1
         numero_recursiones -= 1
         factorial_actual *= numero_siguiente
-        print(factorial_actual)
+        # print(factorial_actual)
         # Aqui retornamos el valor de la propia funcion, esto es Recursion
-        return factorial(factorial_actual=factorial_actual, numero_siguiente=numero_siguiente, numero_recursiones=numero_recursiones)
+        resultado = factorial(factorial_actual=factorial_actual, numero_siguiente=numero_siguiente,
+                  numero_recursiones=numero_recursiones)
+        return factorial_actual, resultado
 
 print(factorial(numero_recursiones=7))
 

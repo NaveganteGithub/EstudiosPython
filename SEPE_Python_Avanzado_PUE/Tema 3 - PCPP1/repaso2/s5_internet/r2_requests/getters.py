@@ -20,6 +20,9 @@ consulta1 = {"_sort": "nota"} # Ordenar en orden ascendete o en alfabetico
 consulta2 = {"_sort": "-nota"} # Ordenar en orden descendente
 consulta3 = {"repetidor": 0}
 consulta4 = {"nota_lt": 7}
+consulta5 = {"nota_le": 7}
+consulta6 = {"nota_gt": 7}
+consulta7 = {"nota_ge": 7}
 
 try:
     respuesta = r.get(URL, params=consulta4)

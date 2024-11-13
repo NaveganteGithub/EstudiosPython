@@ -79,7 +79,7 @@ else:
 
 # Consultar todos los alumnos por el id
 try:
-    respuesta = requests.get("http://localhost:3000/alumnos/3", params={"nota_lt": 5})
+    respuesta = requests.get("http://localhost:3000/alumnos/3")
 except requests.RequestException:
     print("Ha ocurrido un error")
 else:

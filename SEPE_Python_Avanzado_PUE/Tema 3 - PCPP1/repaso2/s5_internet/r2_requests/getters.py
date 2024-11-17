@@ -19,13 +19,13 @@ except r.RequestException:
 consulta1 = {"_sort": "nota"} # Ordenar en orden ascendete o en alfabetico
 consulta2 = {"_sort": "-nota"} # Ordenar en orden descendente
 consulta3 = {"repetidor": 0}
-consulta4 = {"nota_lt": 7}
-consulta5 = {"nota_le": 7}
-consulta6 = {"nota_gt": 7}
-consulta7 = {"nota_ge": 7}
+consulta4 = {"nota": 5} # equals
+consulta5 = {"nota_ne": 7}
+consulta6 = {"nota_lt": 7}
+consulta7 = {"nota_gt": 7}
 
 try:
-    respuesta = r.get(URL, params=consulta4)
+    respuesta = r.get(URL, params=consulta7)
     print(respuesta.json())
 except r.RequestException:
     print("Conexion rechazada")

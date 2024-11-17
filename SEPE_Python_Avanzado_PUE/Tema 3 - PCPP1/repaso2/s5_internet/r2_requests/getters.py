@@ -10,6 +10,12 @@ except r.RequestException:
     print("Conexion rechazada")
 
 try:
+    respuesta = r.get(URL + "/5")
+    print(respuesta.json())
+except r.RequestException:
+    print("Conexion rechazada")
+
+try:
     respuesta = r.get(URL + "?" + "_sort=nota")
     print(respuesta.json())
 except r.RequestException:

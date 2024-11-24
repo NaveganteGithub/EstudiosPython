@@ -1,13 +1,13 @@
-Servicios Orientados a la Conexión: son servicios que conectan dos extremos de una red, a traves
-de conexiones dedicadas y fiables, este tipo de servicios requieren que se establezca una conexion
-de sesion entre emisor y receptor. En ingles connection-oriented
+Servicios Orientados a la Conexión (connection-oriented): son servicios que conectan dos extremos
+de una red, a traves de conexiones dedicadas y fiables, este tipo de servicios requieren que se
+establezca una conexion de sesion entre emisor y receptor.
 
-El servicio sin conexion: son servicios que se interconectan entre nodos y envian datos entre
-los nodos y se transfieren los paquetes de manera independiente. En ingles connectionless communication
+Servicios sin Conexion (connectionless communication): son servicios que se interconectan entre
+nodos y envian datos entre los nodos y los paquetes se transfieren de manera independiente.
 
-Hay que tener en cuenta que esta clase de servicios no son fiables porque los datos no se transfieren
-en orden en muchas ocasiones e incluso puede que las transferencias de informacion no se completen.
-
-Como datos adicionales este tipo de conexiones
-    1. No verifican que el nodo vecino este conectado o no a la red
-    2. Este tipo de conexiones trabajan en la capa 4 del modelo OSI (transporte)
+Como datos adicionales de los Servicios sin Conexion:
+    1. No verifican que el nodo vecino este conectado o no a la red.
+    2. Este tipo de conexiones trabajan en la capa 4 del modelo OSI (transporte).
+    3. Esta clase de servicios no son fiables porque los datos no se transfieren
+       en orden en muchas ocasiones e incluso puede que las transferencias de
+       informacion no se completen.

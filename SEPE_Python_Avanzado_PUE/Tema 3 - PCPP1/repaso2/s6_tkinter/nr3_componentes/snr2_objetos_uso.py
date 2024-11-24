@@ -30,7 +30,7 @@ labelframe.pack()
 
 
 
-
+# PhotoImage por si mismo no hace nada, necesita de otro componente para poder insertar la imagen.
 foto = tk.PhotoImage(file=".\\..\\logo\\man.png")
 etiqueta2 = tk.Label(ventana, image=foto)
 etiqueta2.pack()

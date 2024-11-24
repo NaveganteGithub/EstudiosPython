@@ -1,0 +1,3 @@
+https://www.youtube.com/watch?v=mop6g-c5HEY
+
+https://github.com/clear-code-projects/tkinter-complete/blob/main/1%20widgets/1_11_tabs.py

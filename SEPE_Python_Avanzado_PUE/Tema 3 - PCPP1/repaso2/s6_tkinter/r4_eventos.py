@@ -2,6 +2,7 @@ import tkinter as tk
 
 
 ventana = tk.Tk()
+ventana.geometry("480x250+0+0")
 
 # Evento por comando
 def my_command():
@@ -25,7 +26,7 @@ def mi_evento(evento = None):
         exit("Evento no reconocido")
 
     print(type(evento), evento.__dict__, evento.type)
-    
+
     match evento.num:
         case 1:
             print("Boton izquierdo pulsado")
@@ -82,5 +83,14 @@ cuadro = tk.Frame(ventana, height=50, width=50, background="green")
 cuadro.bind("<Double 1>", decision)
 cuadro.place(x=10, y=157)
 
-ventana.mainloop()
+# Focos
 
+def accion_foco(evento = None):
+    print(evento)
+
+cuadro = tk.Entry(ventana)
+cuadro.bind("<FocusIn>", accion_foco)
+cuadro.bind("<FocusOut>", accion_foco)
+cuadro.place(x=10, y=220)
+
+ventana.mainloop()

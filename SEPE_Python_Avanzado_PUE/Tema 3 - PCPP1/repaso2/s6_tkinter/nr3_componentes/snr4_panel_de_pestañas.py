@@ -14,6 +14,7 @@ etiqueta.pack()
 boton.pack()
 
 pestana2 = ttk.Frame()
+
 etiqueta = ttk.Label(pestana2, text="Etiqueta dentro de la pestaña 2")
 etiqueta.pack()
 

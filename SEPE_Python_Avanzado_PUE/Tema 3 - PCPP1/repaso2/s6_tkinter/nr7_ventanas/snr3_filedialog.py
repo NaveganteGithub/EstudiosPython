@@ -13,23 +13,23 @@ def archivos():
 
 def path():
     ruta = filedialog.askopenfilename(title="Abrir archivo")
-    print(ruta)
+    print(ruta)  # Ruta en String
 
 def paths():
     ruta = filedialog.askopenfilenames(title="Abrir archivos")
-    print(ruta)
+    print(ruta)  # Lista de String con rutas
 
 def salvar_archivo():
     ruta = filedialog.asksaveasfile(title="Guardar archivo")
-    print(ruta)
+    print(ruta)  # Objeto Output
 
 def salvar_nombre():
     ruta = filedialog.asksaveasfilename(title="Guardar archivo")
-    print(ruta)
+    print(ruta)  # Ruta en String
 
 def directorio():
     ruta = filedialog.askdirectory(title="Apuntar directorio")
-    print(ruta)
+    print(ruta)  # Ruta en String del directorio
 
 boton = ttk.Button(ventana, text="Abrir archivo", command=archivo)
 boton.pack()

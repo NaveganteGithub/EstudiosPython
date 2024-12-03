@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog
+from tkinter import filedialog, ttk
 
 def open_file():
     ruta = filedialog.askopenfile(title="Abrir archivo", mode="r")
@@ -26,6 +26,15 @@ opciones_file.add_command(label="Project")
 
 opciones_edit.add_command(label="Find")
 opciones_edit.add_command(label="Replace")
+
+
+contenedor_menu_desplgable = ttk.Menubutton(ventana, text="Menu")
+contenedor_menu_desplgable.pack()
+
+menu_desplegable = tk.Menu(contenedor_menu_desplgable, tearoff=0)
+menu_desplegable.add_command(label="Abrir")
+
+contenedor_menu_desplgable.configure(menu=menu_desplegable)
 
 
 ventana.mainloop()

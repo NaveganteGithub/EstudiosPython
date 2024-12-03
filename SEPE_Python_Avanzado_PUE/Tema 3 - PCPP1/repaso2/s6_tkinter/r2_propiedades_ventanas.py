@@ -8,8 +8,10 @@ ventana.geometry("1280x720+50+7")
 # https://www.geeksforgeeks.org/iconphoto-method-in-tkinter-python/
 foto = tk.PhotoImage(file=".\\logo\\man.png")
 # El primer parametro se debe a que este metodo utilizara un metodo call u otro,
-# si ponemos True utilizara el metodo call por DEFECTO
-ventana.iconphoto(False, foto)
+# si ponemos True utilizará el metodo call por DEFECTO
+# ventana.iconphoto(False, foto)
+
+ventana.iconbitmap(".\\logo\\man.ico")
 
 ventana.maxsize(width=1280, height=720)
 ventana.minsize(width=500, height=500)

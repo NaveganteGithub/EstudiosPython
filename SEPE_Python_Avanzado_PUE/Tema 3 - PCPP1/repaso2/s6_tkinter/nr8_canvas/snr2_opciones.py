@@ -28,11 +28,16 @@ lienzo.create_line(10, 440, 120, 440, 120, 400, joinstyle=tk.MITER, width=4)
 
 # La linea es curva
 lienzo.create_line(10, 500, 120, 500, 120, 480, smooth=True)
-lienzo.create_line(10, 570, 120, 570, 120, 520, smooth=True, splinesteps=5) # Número de angulos de la curva
+lienzo.create_line(10, 570, 120, 570, 120, 520, smooth=True, splinesteps=5) # Número de ángulos de la curva
 
 # Cuando pones el curso encima del dibujo cambia ...
-lienzo.create_line(140, 90, 250, 90, 250, 10, width=3, activewidth=5)  # de tamaño
-lienzo.create_line(140, 170, 250, 170, 250, 100, fill="red", activefill="blue")  # el color
-lienzo.create_line(140, 250, 250, 250, 250, 180, dash=(2,5), activedash=(5,2))  # el punteo
+lienzo.create_line(140, 10, 250, 10, width=3, activewidth=5)  # de tamaño
+lienzo.create_line(140, 20, 250, 20, fill="red", activefill="blue")  # el color
+lienzo.create_line(140, 30, 250, 30, dash=(2,5), activedash=(5,2))  # el punteo
+
+# Cuando ponemos el estado disabled el dibujo cambia ...
+lienzo.create_line(140, 70, 250, 70, width=3, disabledwidth=8, state="disabled")  # de tamaño
+lienzo.create_line(140, 90, 250, 90, fill="yellow", disabledfill="purple", state="disabled")  # el color
+lienzo.create_line(140, 100, 250, 100, dash=(3,1), disableddash=(2,8), state="disabled")  # el punteo
 
 ventana.mainloop()

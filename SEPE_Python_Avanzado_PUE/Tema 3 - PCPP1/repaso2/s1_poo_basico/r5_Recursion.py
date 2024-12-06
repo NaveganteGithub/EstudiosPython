@@ -1,5 +1,5 @@
 
-# La recursion son llamadas que la propia funcion se hace a si misma
+# La recursion son llamadas que la propia función se hace a sí misma
 
 def factorial(factorial_actual=1, numero_siguiente=1, numero_recursiones=1):
 

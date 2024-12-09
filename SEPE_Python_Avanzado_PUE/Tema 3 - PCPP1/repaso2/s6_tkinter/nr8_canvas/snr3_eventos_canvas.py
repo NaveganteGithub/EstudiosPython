@@ -1,5 +1,7 @@
 import tkinter as tk
 
+# Ejemplo de Microsoft Copilot
+
 def toggle_state(event):
     if canvas.itemcget(line, "state") == "disabled":
         canvas.itemconfig(line, state="normal")

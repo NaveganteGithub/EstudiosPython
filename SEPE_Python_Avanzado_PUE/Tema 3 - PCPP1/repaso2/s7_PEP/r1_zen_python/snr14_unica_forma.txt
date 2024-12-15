@@ -1,0 +1,5 @@
+# There should be one-- and preferably only one --obvious way to do it.
+# -- Debería a ver una -- y preferiblemente solo una -- forma obvia de hacerlo
+
+# Although that way may not be obvious at first unless you're Dutch.
+# -- Aunque esa forma no sea tan obvia, a no ser que tu seas holandes

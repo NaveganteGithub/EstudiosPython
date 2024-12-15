@@ -1,0 +1,4 @@
+# Although practicality beats purity. -- Pero la practicidad gana a la pureza.
+
+Si el beneficio de tu implementación superan los efectos adversos que surgen al aplicar la implementación,
+entonces tienes permiso para hacer tu implementación.

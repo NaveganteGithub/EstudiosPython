@@ -1,4 +1,4 @@
-# Beautiful is better than ugly. - Bonito es mejor que feo.
+# Beautiful is better than ugly. -- Bonito es mejor que feo.
 
 ## Feo
 factora = float(input("¿Cual es el parametro a?"))

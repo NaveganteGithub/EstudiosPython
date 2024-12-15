@@ -1,4 +1,4 @@
-# Explicit is better than implicit. - Explicito mejor que implícito
+# Explicit is better than implicit. -- Explicito mejor que implícito
 
 ## Implícito
 from datetime import *

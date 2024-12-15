@@ -1,4 +1,4 @@
-# Simple is better than complex. - Simple mejor que complejo
+# Simple is better than complex. -- Simple mejor que complejo
 
 ## Complejo
 import heapq

@@ -1,0 +1,2 @@
+Lineas maximas para el codigo: 79 caracteres
+Lineas maximas para los docstrings: 72 caracteres

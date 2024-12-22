@@ -14,6 +14,7 @@ peras_vendidas = 3
 
 oferta = 2
 
+## Bueno
 frutas_disponibles = ((manzanas - manzanas_vendidas)
                       + platano
                       + (peras - peras_vendidas)
@@ -23,3 +24,7 @@ frutas_disponibles = ((manzanas - manzanas_vendidas)
                       + racimos_uvas
                       * oferta)
 
+## Malo
+
+frutas_disponibles = ((manzanas - manzanas_vendidas) + platano + (peras - peras_vendidas) + naranjas + albaricoque
+                      + coco + racimos_uvas * oferta)

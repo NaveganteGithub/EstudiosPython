@@ -28,13 +28,13 @@ opciones_edit.add_command(label="Find")
 opciones_edit.add_command(label="Replace")
 
 
-contenedor_menu_desplgable = ttk.Menubutton(ventana, text="Menu")
-contenedor_menu_desplgable.pack()
+contenedor_menu_desplegable = ttk.Menubutton(ventana, text="Menu")
+contenedor_menu_desplegable.pack()
 
-menu_desplegable = tk.Menu(contenedor_menu_desplgable, tearoff=0)
+menu_desplegable = tk.Menu(contenedor_menu_desplegable, tearoff=0)
 menu_desplegable.add_command(label="Abrir")
 
-contenedor_menu_desplgable.configure(menu=menu_desplegable)
+contenedor_menu_desplegable.configure(menu=menu_desplegable)
 
 
 ventana.mainloop()

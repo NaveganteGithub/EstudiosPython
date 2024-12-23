@@ -41,3 +41,20 @@ def mi_funcion_3(*numeros):
     print(numeros)
 
 mi_funcion_3(7,5,8,9,2,1,4)
+
+
+class DecoradorKwargs:
+
+    def __init__(self, funcion):
+        self.mi_funcion = funcion
+
+    def __call__(self, **numeros):
+        resultado = {day: num * 2 for day, num in numeros.items()}
+        self.mi_funcion(**resultado)
+
+
+@DecoradorKwargs
+def mi_funcion_4(**numeros):
+    print(numeros)
+
+mi_funcion_4(domingo=4,lunes=8,martes=9,miercoles=2,jueves=5,viernes=1,sabado=7)

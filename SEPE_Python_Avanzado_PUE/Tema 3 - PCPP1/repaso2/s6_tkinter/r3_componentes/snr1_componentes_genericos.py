@@ -12,5 +12,9 @@ caja = tk.Entry(ventana)
 caja.pack()
 
 radio = tk.Radiobutton(ventana)
+radio.pack()
+
+check = tk.Checkbutton(ventana)
+check.pack()
 
 ventana.mainloop()

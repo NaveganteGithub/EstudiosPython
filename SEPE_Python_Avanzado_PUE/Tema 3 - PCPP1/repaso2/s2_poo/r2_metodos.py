@@ -7,7 +7,7 @@ class MisMetodos:
 
     @classmethod
     def empaquetar(cls, *args):
-        longitud = len(args)//2
+        longitud = len(args) // 2
         lista1 = args[:longitud]
         lista2 = args[longitud:]
         return MisMetodos(lista1, lista2)

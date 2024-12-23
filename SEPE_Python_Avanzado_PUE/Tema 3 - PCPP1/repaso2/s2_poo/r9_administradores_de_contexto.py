@@ -25,5 +25,6 @@ class Contexto:
 
 contexto = Contexto(5)
 with contexto as context:
-    print(context // "2")
+    print(context // 2)
+    # print(context // "2")
 

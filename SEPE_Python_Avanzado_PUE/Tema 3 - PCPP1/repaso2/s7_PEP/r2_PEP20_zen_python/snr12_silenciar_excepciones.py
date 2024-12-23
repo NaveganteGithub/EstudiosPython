@@ -2,5 +2,5 @@
 
 try:
     print(7 / 0)
-except:
+except ArithmeticError:
     pass

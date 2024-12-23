@@ -10,7 +10,7 @@ class Acido(Sabor):
     def imprimir(self):
         print(f"Sabor Acido")
 
-class Dulce (Acido):
+class Dulce(Acido):
 
     def imprimir(self):
         print(f"Sabor Dulce")

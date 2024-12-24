@@ -1,56 +1,7 @@
 # Lista de Archivos
-pendiente.txt
-SEPE_Python_Avanzado_PUE/Tema 1 - PCEP/Image20240415091126.png
-SEPE_Python_Avanzado_PUE/Tema 1 - PCEP/Image20240415091123.png
-SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Herramientas/*.zip
-SEPE_Python_Avanzado_PUE/*/*.pdf
-SEPE_Python_Avanzado_PUE/*.pdf
-MoureDev by Brais Moure/*/*/*.pdf
-Investigaciones/Ciberseguridad/Src/*/pd.py
 
 # Lista de Directorios
 .idea
-EstudiosdeIA/docs
-Ideas/
-Nanfor/
-MoureDev by Brais Moure/Python desde 0 - Python Intermedio
-MoureDev by Brais Moure/Backend desde 0 - Python Avanzado
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/.ipynb_checkpoints
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/etc
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/Lib
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/Include
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/Scripts
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/share
-SEPE_Python_Avanzado_PUE/Tema 2 - PCAP/Ejemplo*/Documentos/.ipynb_checkpoints
-Investigaciones/Automatización
-Investigaciones/BBDD
-Investigaciones/Desarrollo Web
-Investigaciones/Interfaces Graficas
-Investigaciones/Matematicas
-Investigaciones/Python
-Investigaciones/Moduladores de Voz/Include
-Investigaciones/Moduladores de Voz/Lib
-Investigaciones/Moduladores de Voz/Scripts
-Investigaciones/Moduladores de Voz/share
-Investigaciones/Ciberseguridad/Include
-Investigaciones/Ciberseguridad/Lib
-Investigaciones/Ciberseguridad/Scripts
-Investigaciones/Transcripciones de Audio/Include
-Investigaciones/Transcripciones de Audio/Lib
-Investigaciones/Transcripciones de Audio/Scripts
-Investigaciones/Microservicios
-Investigaciones/Conversores
-EjerciciosGoodJob/Documentos Jupyter/Edicion
-SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Scripts
-SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Lib
-SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Ejemplo2*/Include
-Plataformas de Hacking/TryHackMe/Include
-Plataformas de Hacking/TryHackMe/Lib
-Plataformas de Hacking/TryHackMe/Scripts
-Plataformas de Hacking/TryHackMe/share
-Plataformas de Hacking/TryHackMe/Src/tools/secLists
-Plataformas de Hacking/Hack The Box
-/SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Apuntes_diagramas/pruebas_codigo/poo/salidas/
 
 # Lista de extensiones
 *.exe
@@ -61,7 +12,3 @@ Plataformas de Hacking/Hack The Box
 *.cfg
 *.msi
 *.ini
-/SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Apuntes_diagramas/pruebas_codigo/tkinter/logo/fsdfsdf
-/SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Apuntes_diagramas/pruebas_codigo/ficheros/xml/empleados.xml
-/SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Apuntes_diagramas/pendiente
-/SEPE_Python_Avanzado_PUE/Tema 3 - PCPP1/Apuntes_diagramas/notas

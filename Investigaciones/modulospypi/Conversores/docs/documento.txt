@@ -1,0 +1,9 @@
+python -m venv Conversores
+
+pip install fpdf2 jpg2pdf odfdo pypdf odsgenerator
+
+https://pypi.org/project/fpdf2/
+https://pypi.org/project/jpg2pdf/
+https://pypi.org/project/odfdo/
+    Documentacion: https://github.com/jdum/odfdo/tree/master/recipes
+https://pypi.org/project/odsgenerator/

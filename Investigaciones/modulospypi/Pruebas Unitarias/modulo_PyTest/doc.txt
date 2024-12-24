@@ -1,0 +1,11 @@
+1º Instalar PyTest con
+    pip install pytest
+    pytest --version
+
+2º Crea tu codigo, ejemplo el archivo Persona.py
+
+3º Crea el codigo de testeo, ejemplo el archivo prueba_pytest.py, utilizando una clase
+y una funcion que contenga assert
+
+4º Ejecuta el comando dentro de una terminal
+    pytest prueba_pytest.py

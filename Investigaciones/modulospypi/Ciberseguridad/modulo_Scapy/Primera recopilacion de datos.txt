@@ -1,0 +1,256 @@
+Scapy es una libreria de python interactiva que permite manipular paquetes.
+Es muy util para generar herramientas de penetracion muy especificas que no
+se pueden encontrar en el mercado.
+
+Con Scapy podemos decodificar, falsificar y capturar paquetes, además de 
+enviar paquetes sobre la capa fisica, coincidir peticiones y respuestas, etc...
+todo ello en multiples protocolos.
+
+Scapy puede manejar un buen catalogo de protocolos.
+
+Si aprendes a manejar esta herramienta puedes sustituir herramientas como:
+    - nmap (85% de ella no toda)
+    - hping
+    - arpspoof
+    - arp-sk
+    - arping
+    - tcpdump
+    - ethereal
+    - p0f
+
+Tambien puede realizar tareas como: como enviar tramas no validas, inyectar 
+tramas propias 802.11, combinar técnicas de VLAN hopping + ARP cache poisoning,
+VOIP decoding on WEB encrypted channel, etc... 
+
+Web Oficial: https://scapy.net/
+Fuente: https://www.youtube.com/watch?v=xAw_utxtc0g
+
+############### Instalacion ###############
+
+Instalas scapy con sus dependencias
+
+    Dependencias del sistema para Scapy:
+    Windows - https://npcap.com/#download
+    
+    Scapy y las dependencias de Python
+        pip install ipython PyX scapy
+
+############### Uso ###############
+
+Para usar scapy desde la terminal escribiendo 
+el comando scapy. Se te abrira una shell de scapy 
+en la que podemos ejecutar comandos
+
+    ls() - es un funcion para listar todos los protocolos
+    que podemos manejar con scapy, hay 300 protocolos que
+    scapy puede soportar, desde la capa aplicacion, hasta
+    la capa fisica.
+
+        ls(TCP) - si especificas el protocolo TCP se listara
+        todos los parametros perteneciente al protocolo TCP
+        
+        ls(IP) - si especificas el protocolo IP se listara
+        todos los parametros perteneciente al protocolo IP
+
+    lsc() - permite listar las funciones de scapy
+
+    help() - permite pedir la ayuda de una funcion de scapy
+    que se especifique entre parentesis
+
+Para crear paquetes en Scapy, llamamos a un protocolo que vamos 
+ajustar con parametros espeficos. A la hora de crear los paquetes 
+de varias capas tenemos que especificar los paquetes (o protocolos) 
+desde la capa fisica (abajo), es decir, la uno, hasta la capa del 
+protocolo del paquete  que estamos creando (arriba) dividiendolas
+con el simbolo "/".
+
+Como Scapy esta hecho en Python, podemos usar instrucciones de Python
+para especificar como se construyen paquetes
+
+    Creamos un paquete llamado "packet" podemos ponerle el nombre que 
+    queramos, en el que especificamos el protocolo de IP, y dentro del 
+    protocolo IP especificamos el destino con el parametro dst (o destiny), 
+    despues especificamos el protocolo TCP en el cual en parametro dport 
+    indicamos el puerto por el que escucha la maquina de destino, y la 
+    cadena "Hola" que es el contenido del paquete
+
+    Crear un paquete en una sola linea de codigo python
+
+        >> packet=IP(dst="172.67.27.10")/TCP(dport=443)/"Hola"
+
+    Crear un paquete en varias partes de codigo python
+
+        >> parte_1=IP(dst="172.67.27.10")
+        >> parte_2=TCP(dport=443)
+        >> parte_3="Hola"
+        >> packet=parte_1/parte_2/parte_3
+
+        Si necesitas ver todos los parametros del paquete IP 
+        puedes verlos a traves ls(IP)
+
+        Si necesitas ver las configuraciones hechas a nuestro
+        paquete o ver si el paquete se ha creado correctamente
+        necesitas usar el comando 
+            
+            ls(<nombre_del_paquete>)
+
+            Ejemplo:
+                ls(packet)
+
+        Este comando arrojara un resultado como este
+
+        version    : BitField  (4 bits)                  = 4               ('4')
+        ihl        : BitField  (4 bits)                  = None            ('None')
+        tos        : XByteField                          = 0               ('0')
+        len        : ShortField                          = None            ('None')
+        id         : ShortField                          = 1               ('1')
+        flags      : FlagsField                          = <Flag 0 ()>     ('<Flag 0 ()>')
+        frag       : BitField  (13 bits)                 = 0               ('0')
+        ttl        : ByteField                           = 64              ('64')
+        proto      : ByteEnumField                       = 6               ('0')
+        chksum     : XShortField                         = None            ('None')
+        src        : SourceIPField                       = '192.168.1.34'  ('None')
+        dst        : DestIPField                         = '172.67.27.10'  ('None')
+        options    : PacketListField                     = []              ('[]')
+        --
+        sport      : ShortEnumField                      = 20              ('20')
+        dport      : ShortEnumField                      = 443             ('80')
+        seq        : IntField                            = 0               ('0')
+        ack        : IntField                            = 0               ('0')
+        dataofs    : BitField  (4 bits)                  = None            ('None')
+        reserved   : BitField  (3 bits)                  = 0               ('0')
+        flags      : FlagsField                          = <Flag 2 (S)>    ('<Flag 2 (S)>')
+        window     : ShortField                          = 8192            ('8192')
+        chksum     : XShortField                         = None            ('None')
+        urgptr     : ShortField                          = 0               ('0')
+        options    : TCPOptionsField                     = []              ("b''")
+        --
+        load       : StrField                            = b'Hola'         ("b''")
+
+        El paquete divide las capas con el simbolo --
+            - Las filas desde la fila de "version" hasta -- tienen 
+            que ver con el paquete IP
+            - Las filas desde "sport" hasta -- tienen que ver con 
+            el paquete IP
+            - La fila de load, tiene que ver con el PAYLOAD
+        
+        Es decir, un paquete esta dividido por protocolos, y estos protocolos
+        tienen valores (la tercera columna) con sus claves (primera columna)
+
+    Una vez creado el paquete podemos realizarle inspecciones profundas
+
+        Si escribimos el nombre del paquete en la terminal nos ofrecera
+        todos los datos que tiene.
+
+        >> packet
+
+        <IP  frag=0 proto=tcp dst=172.67.27.10 |<TCP  dport=https |<Raw  load='Hola' |>>>
+
+        >> packet.summary()
+
+        'IP / TCP 192.168.1.34:ftp_data > 172.67.27.10:https S / Raw'
+
+        >>> packet.show()
+        ###[ IP ]###
+          version   = 4
+          ihl       = None
+          tos       = 0x0
+          len       = None
+          id        = 1
+          flags     =
+          frag      = 0
+          ttl       = 64
+          proto     = tcp
+          chksum    = None
+          src       = 192.168.1.34
+          dst       = 172.67.27.10
+          \options   \
+        ###[ TCP ]###
+             sport     = ftp_data
+             dport     = https
+             seq       = 0
+             ack       = 0
+             dataofs   = None
+             reserved  = 0
+             flags     = S
+             window    = 8192
+             chksum    = None
+             urgptr    = 0
+             options   = ''
+        ###[ Raw ]###
+                load      = 'Hola'
+
+    Si tenemos el paquete creado, podemos ver sus campos y 
+    asignarle nuevos valores a cada campo
+
+        Si escribimos el paquete.nombre_del_campo podemos 
+        realizar una inspeccion al valor de dicho campo
+
+            >> packet.sport
+            20
+
+                El campo sport permite manejar los campos de control
+                como SYN o ACK
+
+                Nota: el valor 20 corresponde al valor de un campo llamado
+                sport, este fue listado con ls()
+
+            Esta manera de acceder a los campos esta bien, pero,
+            tiene un inconveniente, y es que si accedemos a un
+            campo de este paquete de esta manera, y hay dos protocolos
+            que tengan un campo con el mismo nombre, pues Scapy mostrara
+            el campo de la capa mas baja, es decir, la primera 
+            coincidencia, ejemplo:
+
+                >> packet.flags
+                <Flag 0 ()>
+                
+                >> packet[TCP].flags
+                <Flag 2 (S)>
+
+                El resultado es diferente porque el primero saca
+                las flags del primer protocolo que encuentre
+
+            Puedes imprimir el resultado de una manera mas legible
+            para el humano
+
+                >> packet.sprintf("%TCP.flags%")
+        
+        Como hemos mencionado antes, podemos cambiar los valores de un protocolo
+        de un paquete
+
+            >> packet.sport=80
+            
+            >> packet[TCP].flags="SA"
+
+            >> packet
+            <IP  frag=0 proto=tcp dst=172.67.27.10 |<TCP  sport=http dport=https flags=SA |<Raw  load='Hola' |>>>
+
+            >> packet=IP(dst="172.67.27.10")/TCP(dport=22)/"Hola"
+            
+            >> packet
+            <IP  frag=0 proto=tcp dst=172.67.27.10 |<TCP  dport=ssh |<Raw  load='Hola' |>>>
+
+        Podemos investigar datos como los bits de una flag,
+        o la carga de un paquete (el contenido del paquete)
+
+            >> packet.flags
+            <Flag 0 ()>
+            
+            >> packet.payload
+            <TCP  dport=ssh |<Raw  load='Hola' |>>
+
+        Podemos modificar los payloads
+
+            >> packet.payload.flags
+            <Flag 2 (S)>
+
+            >> packet.payload.flags="SA"
+
+            >> packet.payload.flags
+            <Flag 18 (SA)>
+
+            >> packet.payload.payload
+            <Raw  load='Hola' |>
+
+            

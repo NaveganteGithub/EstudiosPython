@@ -1,0 +1,5 @@
+pip install PySide6
+pip install PyQt5
+
+https://pypi.org/project/PySide6/
+https://pypi.org/project/PyQt5/

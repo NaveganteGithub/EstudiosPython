@@ -1,0 +1,10 @@
+Podemos usar json-server para abrir un archivo xml utilizando el siguiente "hack"
+
+1º Abres un archivo json, por ejemplo alumnos.
+
+    json-server --watch alumnos.json
+
+2º Si tienes en el mismo directorio donde esta el archivo json el directorio public,
+puedes acceder al contenido de dentro, pasandole directamente la URL. Ejemplo:
+
+    http://localhost:3000/empleados.xml

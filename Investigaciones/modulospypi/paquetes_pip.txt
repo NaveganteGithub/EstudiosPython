@@ -1,0 +1,1 @@
+pip install scapy paramiko cryptography django flask ipython numpy pandas matplotlib jupyter pip-licenses pyfiglet pytest openpyxl PyX requests

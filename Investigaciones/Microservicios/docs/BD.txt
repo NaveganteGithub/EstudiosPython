@@ -1,0 +1,47 @@
+Abstraccion por clasificacion
+
+    Movimientos -> Nombre, Tipos, Clase_Daño, Potencia, Precision, Descripcion, Traducciones, Es_Movimiento_Z
+                    Clase_Daño = {Fisico, Especial, Estado}
+                    Es_Movimiento_Z = {Si, No}
+    Habilidades -> Nombre, Descripcion, Traducciones, Probabilidad_Uso
+    Pokedex -> Id, Nombre, Tipos, Descripcion, Es_una_Megaevolucion, Es_un_Gigamax, Imagenes_2D, Imagenes_3D, Animaciones, Traducciones
+                Base_Hp, Base_Attack, Base_Defense, Base_Atk_Special, Base_Def_Special, Base_Speed, 
+                Favorable_Hp, Favorable_Attack, Favorable_Defense, Favorable_Atk_Special, Favorable_Def_Special, Favorable_Speed, 
+                Unfavorable_Hp, Unfavorable_Attack, Unfavorable_Defense, Unfavorable_Atk_Special, 
+                Unfavorable_Def_Special, Unfavorable_Speed
+                    Es_una_Megaevolucion = {Si, No}
+                    Es_un_Gigamax = {Si, No}
+    Objectos -> Nombre, Descripcion, Imagen, Tipo
+        Tipo = {Obj_Clave, Baya, Megapiedra, Cristal_Z, Combate, Generico}
+
+Abstraccion por agregacion
+
+    Movimiento <- Nombre, Tipos, Clase_Daño, Potencia, Precision, Descripcion, Traducciones, Es_Movimiento_Z
+    Habilidad <- Nombre, Descripcion, Traducciones, Probabilidad_Uso
+    Pokemon <- Id, Nombre, Tipos, Descripcion, Es_una_Megaevolucion, Es_un_Gigamax, Imagenes_2D, Imagenes_3D, Animaciones, Traducciones
+                Base_Hp, Base_Attack, Base_Defense, Base_Atk_Special, Base_Def_Special, Base_Speed, 
+                Favorable_Hp, Favorable_Attack, Favorable_Defense, Favorable_Atk_Special, Favorable_Def_Special, Favorable_Speed, 
+                Unfavorable_Hp, Unfavorable_Attack, Unfavorable_Defense, Unfavorable_Atk_Special, 
+                Unfavorable_Def_Special, Unfavorable_Speed
+    Objecto <- Nombre, Descripcion, Imagen, Tipo
+
+Clave candidata
+
+    Movimiento: Nombre, Potencia, Precision, Descripcion
+    Habilidad: Nombre, Descripcion
+    Pokemon: Id, Nombre, Descripcion
+    Objecto: Nombre, Descripcion
+
+Clase primaria
+
+    Movimiento: Nombre
+    Habilidad: Nombre
+    Pokemon: Id
+    Objecto: Nombre
+
+Relaciones
+
+    Pokemon 1..n - 1..n Habilidad -> Listado_Habilidades
+    Pokemon 1..n - 1..n Movimientos -> Listado_Movimientos
+    Pokemon 1..n - 1..n Movimientos - 1..1 Habilidad - 1..1 Objecto -> Estrategia
+

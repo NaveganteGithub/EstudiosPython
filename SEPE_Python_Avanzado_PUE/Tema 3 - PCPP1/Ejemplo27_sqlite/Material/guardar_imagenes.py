@@ -1,5 +1,3 @@
-import sqlite3
-
 import tkinter as tk
 import sqlite3
 from PIL import Image, ImageTk

@@ -1,0 +1,3 @@
+https://medium.com/@sinturana250/django-post-put-get-delete-requests-example-rest-apis-chapter-19-c449b6260b2a
+
+https://www.youtube.com/watch?v=SKOVdy5fGMM&list=PLqu7Q-jp3eAPhrfYbS-RcTNZn7L2LMzpp&index=1&t=40s

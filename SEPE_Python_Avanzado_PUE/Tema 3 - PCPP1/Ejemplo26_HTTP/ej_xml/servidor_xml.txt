@@ -1,0 +1,31 @@
+Puedes crear un servidor http basico para practicar los GETS con el modulo http.server de Python
+
+1º Creas una carpeta public
+
+2º Creas el archivo xml dentro de esa carpeta
+
+3º Abres una terminal
+
+4º Te vas al directorio public que has creado
+
+  cd '.\SEPE_Python_Avanzado_PUE\Tema 3 - PCPP1\Ejemplo26_HTTP\Practicas\public\'
+
+5º Arrancas el servidor
+
+  - En Windows:
+    - Python 2.7: python -m SimpleHTTPServer [puerto]
+    - Python 3: python -m http.server [puerto]
+  - En linux:
+    - Python 2.7: python -m SimpleHTTPServer [puerto]
+    - Python 3: python3 -m http.server [puerto]
+
+Ejemplo: python -m http.server 3000
+
+6º Accedes a la URL desde el navegador para probar que funciona
+
+http://localhost:[puerto]/[archivo]
+
+Ejemplo: http://localhost:3000/empleados.xml
+
+Fuentes:
+https://pythones.net/crear-servidor-python-http/

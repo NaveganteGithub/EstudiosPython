@@ -29,3 +29,7 @@ if __name__ == '__main__':
     proceso3.start()
 
     proceso3.join()   # Proceso principal en modo espera hasta que el proceso3 termine
+
+    # No tienes pórque limitarte a hacer que el proceso padre espere a
+    # que terminen los subprocesos, dependiendo de los subprocesos que
+    # hayas programado puedes agregar más join

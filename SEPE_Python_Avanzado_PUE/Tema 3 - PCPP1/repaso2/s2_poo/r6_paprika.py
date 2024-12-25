@@ -1,5 +1,7 @@
 from paprika import singleton, to_string, data, equals_and_hashcode
 
+# La libreria paprika nos permite reducir el código repetitivo hasta cierto punto.
+
 """@singleton
 @to_string
 @equals_and_hashcode"""

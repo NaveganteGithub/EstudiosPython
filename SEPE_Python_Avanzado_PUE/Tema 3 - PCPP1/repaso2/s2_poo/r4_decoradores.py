@@ -1,4 +1,7 @@
+# Un decorador es un patron de diseño estructural que permite agregar
+# funcionalidades adicionales a los objetos encapsuladores.
 
+# Decorador simple
 def mi_decorador(funcion):
     print(5 + 2)
     return funcion
@@ -10,6 +13,7 @@ def mi_funcion():
 mi_funcion()
 
 
+# Decorador con parámetros
 def mi_decorador_2(a, b):
 
     print(a + b)
@@ -26,6 +30,7 @@ def mi_funcion_2():
 mi_funcion_2()
 
 
+# Decorador de clase (versión args)
 class Decorador:
 
     def __init__(self, funcion):
@@ -43,6 +48,7 @@ def mi_funcion_3(*numeros):
 mi_funcion_3(7,5,8,9,2,1,4)
 
 
+# Decorador de clase (versión kwargs)
 class DecoradorKwargs:
 
     def __init__(self, funcion):

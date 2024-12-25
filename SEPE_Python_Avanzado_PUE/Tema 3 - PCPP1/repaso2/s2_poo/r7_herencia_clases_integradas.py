@@ -1,4 +1,6 @@
-
+# En Python podemos crear clases que hereden
+# recursos de clases existentes de la propia
+# API
 
 class Textos(str):
 

@@ -1,8 +1,12 @@
 import shelve
 
+# La serialización es el proceso de transformar un objeto en una cadena binaria
+# La deserialización es el proceso de transformar una cadena binaria en un objeto
+
+# Permisos de la libreria shelve
 # r - READ
 # w - WRITE
-# c - CREATING (DEFAULT) - Utiliza la existente, sino existe la crea
+# c - CREATING (DEFAULT) - Utiliza la existente, si no existe la creá
 # n - NEW - Siempre crea la base de datos vacia
 
 fichero = shelve.open("./mis_datos", "n")

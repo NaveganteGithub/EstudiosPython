@@ -1,7 +1,10 @@
 import abc
 
+# Las clases abstractas son plantillas (blueprints) que nos permiten
+# definir una estructura inicial para las clases
+
 # Ojo cuidado, ABC no es una metaclase es una clase
-class Interfaz(abc.ABC):
+class ClasesAbstractas(abc.ABC):
 
     @classmethod
     @abc.abstractmethod
@@ -9,7 +12,7 @@ class Interfaz(abc.ABC):
         pass
 
 
-class MiClase(Interfaz):
+class MiClase(ClasesAbstractas):
 
     def __init__(self, amor, pasion):
         self.mi_amor = amor

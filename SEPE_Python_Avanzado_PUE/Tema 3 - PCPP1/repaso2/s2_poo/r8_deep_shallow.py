@@ -9,7 +9,9 @@ lista.append("111111111")
 print(lista, copia)
 print()
 
-# Shallow Copy
+# Shallow Copy: acción de copiar un objeto sin tener hacer réplica
+# de los objetos de dentro, solo los datos primitivos y una
+# referencia de memoria de los objetos que tenga objeto.
 
 lista = [1,5,9,7,8,9,2,3,6,5,8,963,4]
 
@@ -24,7 +26,7 @@ lista.append("111111111")
 print(lista, copia_1, copia_2, copia_3, copia_4, sep="\n")
 print()
 
-# Deep Copy
+# Deep Copy: acción de copiar un objeto junto con los objetos que posea.
 
 lista = [1,5,[9,7,8,9],2,[3,6,5,8],963,4]
 copia_superficial = copy.copy(lista)

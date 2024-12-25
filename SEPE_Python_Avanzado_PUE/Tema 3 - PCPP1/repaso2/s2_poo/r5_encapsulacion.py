@@ -1,3 +1,5 @@
+# La encapsulación es la capacidad de envolver
+# los datos de los objetos para protegerlos
 
 class Persona:
 
@@ -12,7 +14,9 @@ class Persona:
 
     @property
     def mi_nombre(self):
-        return self.nombre_persona
+        if "self.nombre_persona" in dir(Persona):
+            print("Devolviendo", self.nombre_persona)
+            return self.nombre_persona
 
     @mi_nombre.setter
     def mi_nombre(self, nuevo_nombre):
@@ -64,6 +68,9 @@ del clase.mi_nombre
 del clase.mi_edad
 del clase.mi_altura
 
+# Al intentar ejecutar mi_nombre después de eliminar el atributo nombre_persona sin crear medidas preventivas
+# saca el siguiente mensaje.
+# AttributeError: 'Persona' object has no attribute 'nombre_persona'
 print(clase.mi_nombre)
 print(clase.mi_edad)
 print(clase.mi_altura)

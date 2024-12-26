@@ -1,5 +1,7 @@
 import enum
 
+# Los enumeradores son nombres simbólicos que conducen a un valor
+
 class MiEnumerador(enum.Enum):
 
     enumerador1 = 3,2,"buenas"

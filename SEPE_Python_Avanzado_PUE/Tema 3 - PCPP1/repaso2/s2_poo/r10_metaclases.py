@@ -17,6 +17,8 @@ print(type(MiClase))  # <class 'type'>
 mi_clase = type("Clase", (MiClase,), {"texto": "Hola", "numero": 65456})
 print(mi_clase.texto)
 
+# SEGUNDA FORMA
+
 class Fruta:
 
     nombre: str
@@ -25,8 +27,6 @@ class Fruta:
     def __init__(self, nomb, cant):
         Fruta.nombre = nomb
         Fruta.cantidad = cant
-
-# SEGUNDA FORMA
 
 def saludar(nombre):
     return "Buenas tardes " + nombre

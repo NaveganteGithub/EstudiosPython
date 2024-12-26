@@ -1,5 +1,4 @@
-
-# EXPLICACION
+# Las Metaclases son objetos que nos permiten definir la estructura de una Clase
 
 class MiClase:
 
@@ -13,7 +12,8 @@ print(type(MiClase))  # <class 'type'>
 
 # PRIMERA FORMA
 
-# Crear instancia de una clase llamada mi clase
+# Crear instancia de una clase llamada mi clase.
+# type("Nombre de clase", ("Clases que va a heredar"), {"Atributo1": "Valor1", "Atributo2": "Valor2"})
 mi_clase = type("Clase", (MiClase,), {"texto": "Hola", "numero": 65456})
 print(mi_clase.texto)
 

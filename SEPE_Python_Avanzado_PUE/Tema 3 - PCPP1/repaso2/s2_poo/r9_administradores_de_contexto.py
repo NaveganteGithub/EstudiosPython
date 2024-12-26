@@ -4,10 +4,12 @@ class Contexto:
     def __init__(self, num):
         self.numero = num
 
+    # Manejo la entrada al bloque del context manager
     def __enter__(self):
         print("Exponente", self.numero ** 2)
         return self.numero ** 2
 
+    # Manejo la salida al bloque del context manager
     def __exit__(self, exc_type, exc_val, exc_tb):
 
         if exc_type is not None:
@@ -23,8 +25,11 @@ class Contexto:
         print("Division", self.numero // other.numero)
         return self.numero // other.numero
 
+
 contexto = Contexto(5)
+
+# Los context manager: son estructuras que nos permiten manejar recursos
+# abriendo recursos al principio del bloque y cerrarlos al salir del bloque
 with contexto as context:
     print(context // 2)
     # print(context // "2")
-

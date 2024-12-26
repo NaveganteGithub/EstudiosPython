@@ -22,6 +22,7 @@ class Hijo(Padre):
         super().__init__(nomb, ed, gen, inteli, fuer)
         self.espiritu = espi
 
+    # Sobreescritura de un método de la clase Padre.
     def informacion(self):
         return self.nombre, self.edad, self.espiritu
 

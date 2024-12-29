@@ -2,17 +2,17 @@ import logging as logi
 
 # NIVELES
 
-niveles_mensaje = [logi.INFO, logi.DEBUG, logi.WARNING, logi.ERROR, logi.CRITICAL]
+niveles_mensaje = [logi.DEBUG, logi.INFO, logi.WARNING, logi.ERROR, logi.CRITICAL]
 
 for nivel in niveles_mensaje:
     print(nivel)
 
-# METODOS MENSAJE
+# MÉTODOS MENSAJE
 
 logger = logi.getLogger("NombreDelLog")
 
+logger.debug("Mensaje para depurar código")
 logger.info("Mensaje informativo")
-logger.debug("Mensaje para depurar codigo")
 logger.warning("Mensaje de advertencia")
 logger.error("Mensaje de error")
 logger.critical("Mensaje de peligro")
@@ -22,14 +22,14 @@ Mensaje de error
 Mensaje de peligro
 """
 
-logger.log(niveles_mensaje[0], "Mensaje log orientado a la informacion")
+logger.log(niveles_mensaje[0], "Mensaje log orientado a la información")
 logger.log(niveles_mensaje[2], "Mensaje log para advertir") # Mensaje log para advertir
 
 # Especificar nivel
 
 logger.setLevel(niveles_mensaje[0])
+logger.debug("Mensaje para depurar código")
 logger.info("Mensaje informativo")
-logger.debug("Mensaje para depurar codigo")
 logger.warning("Mensaje de advertencia")
 logger.error("Mensaje de error")
 logger.critical("Mensaje de peligro")

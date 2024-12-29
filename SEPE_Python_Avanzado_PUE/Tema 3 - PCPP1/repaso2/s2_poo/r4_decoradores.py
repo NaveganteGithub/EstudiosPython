@@ -45,7 +45,8 @@ class Decorador:
 def mi_funcion_3(*numeros):
     print(numeros)
 
-mi_funcion_3(7,5,8,9,2,1,4)
+
+mi_funcion_3(7, 5, 8, 9, 2, 1, 4)
 
 
 # Decorador de clase (versión kwargs)
@@ -63,4 +64,5 @@ class DecoradorKwargs:
 def mi_funcion_4(**numeros):
     print(numeros)
 
-mi_funcion_4(domingo=4,lunes=8,martes=9,miercoles=2,jueves=5,viernes=1,sabado=7)
+
+mi_funcion_4(domingo=4, lunes=8, martes=9, miercoles=2, jueves=5, viernes=1, sabado=7)

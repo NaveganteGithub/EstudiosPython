@@ -17,6 +17,7 @@ lienzo.create_line(10, 90, 120, 90, arrow=tk.FIRST, arrowshape=(10,  # Ancho del
                                                                30,  # Estrecho de la flecha
                                                                20))  # Ancho de la flecha
 
+# Definimos la punta de la linea
 lienzo.create_line(10, 180, 120, 180, capstyle=tk.BUTT, width=7)  # Estilo de punta cuadrada
 lienzo.create_line(10, 200, 120, 200, capstyle=tk.ROUND, width=7)  # Estilo de punta triangular
 lienzo.create_line(10, 220, 120, 220, capstyle=tk.PROJECTING, width=7)

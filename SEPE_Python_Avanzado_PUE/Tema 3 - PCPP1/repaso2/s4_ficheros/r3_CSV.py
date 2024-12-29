@@ -8,6 +8,7 @@ with open("archivo.csv", "wt", encoding="utf-8") as archivo:
                            [3, "Samuel", 45460],
                            [4, "Alber", 1542.30]])
 
+
 with open("archivo.csv", "rt", encoding="utf-8") as archivo:
     fichero_csv = csv.reader(archivo, delimiter=":", lineterminator="\n")
 
@@ -31,6 +32,7 @@ with open("archivo.csv", "rt", encoding="utf-8") as archivo:
 
 
     print(fichero_csv.line_num)
+
 
 with open("archivo2.csv", "wt", encoding="utf-8") as archivo:
     fichero_csv = csv.DictWriter(f=archivo, fieldnames=["Id", "Nombre", "Sueldo"], delimiter=";", lineterminator="\n")

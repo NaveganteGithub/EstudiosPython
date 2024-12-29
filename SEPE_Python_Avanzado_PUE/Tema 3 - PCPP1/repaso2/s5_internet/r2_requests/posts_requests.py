@@ -2,9 +2,11 @@ import requests as r
 import json
 
 # La libreria requests para los identificadores usa strings
-datos = json.dumps({"id": "6",
-                    "nombre": "Daniel", "apellido": "Peñasco",
-                    "nota": 6, "repetidor": True})
+datos = json.dumps({
+     "id": "6",
+     "nombre": "Daniel", "apellido": "Peñasco",
+     "nota": 6, "repetidor": True
+})
 
 URL = "http://localhost:3000/alumnos"
 

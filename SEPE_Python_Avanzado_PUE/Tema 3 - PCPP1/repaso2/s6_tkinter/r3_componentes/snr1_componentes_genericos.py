@@ -10,6 +10,7 @@ texto.pack()
 
 caja = tk.Entry(ventana)
 caja.pack()
+# caja.get()
 
 radio = tk.Radiobutton(ventana)
 radio.pack()

@@ -11,12 +11,12 @@ print(mensaje_serializado, mensaje_deserializado, sep="\n")
 ##############################################################
 
 fichero = open("./prueba.txt", "rt", encoding="utf-8")
-contenido = fichero.read()
+contenido_en_bytes = fichero.read()
 
 fichero_salida = open("serializado.pckl", "wb")
 
 # Solo puede serializar objetos de Python, como Strings o Clases, ficheros directamente no
-pickle.dump(contenido, fichero_salida)
+pickle.dump(contenido_en_bytes, fichero_salida)
 
 fichero.close()
 fichero_salida.close()

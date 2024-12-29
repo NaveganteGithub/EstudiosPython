@@ -5,24 +5,31 @@ class Calculos:
         self.factor = f
 
     def __iadd__(self, other):
+        print(f"{self.factor} + {other.factor} = ", end="")
         return self.factor + other.factor
 
     def __isub__(self, other):
+        print(f"{self.factor} - {other.factor} = ", end="")
         return self.factor - other.factor
 
     def __imul__(self, other):
+        print(f"{self.factor} * {other.factor} = ", end="")
         return self.factor * other.factor
 
     def __itruediv__(self, other):
+        print(f"{self.factor} / {other.factor} = ", end="")
         return self.factor / other.factor
 
     def __ifloordiv__(self, other):
+        print(f"{self.factor} // {other.factor} = ", end="")
         return self.factor // other.factor
 
     def __imod__(self, other):
+        print(f"{self.factor} % {other.factor} = ", end="")
         return self.factor % other.factor
 
     def __ipow__(self, other):
+        print(f"{self.factor} ** {other.factor} = ", end="")
         return self.factor ** other.factor
 
 

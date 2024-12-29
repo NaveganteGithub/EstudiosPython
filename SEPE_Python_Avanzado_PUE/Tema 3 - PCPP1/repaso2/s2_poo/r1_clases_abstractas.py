@@ -1,7 +1,7 @@
 import abc
 
-# Las clases abstractas son plantillas (blueprints) que nos permiten
-# definir una estructura inicial para las clases
+# Las clases abstractas son plantillas (blueprints) que nos
+# permiten definir una estructura inicial para las clases
 
 # Ojo cuidado, ABC no es una metaclase es una clase
 class ClasesAbstractas(abc.ABC):
